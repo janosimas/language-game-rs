@@ -1,4 +1,4 @@
-use iced::{Column, Command, Element, Text};
+use iced::{Command, Element, Text};
 use crate::general;
 
 pub struct QuestionView {}
