@@ -1,5 +1,5 @@
-use iced::{Command, Element, Text};
 use crate::general;
+use iced::{Command, Element, Text, Length};
 
 pub struct QuestionView {}
 
@@ -12,6 +12,8 @@ impl QuestionView {
     }
 
     pub fn view(&mut self, context: &general::Context) -> Element<general::Message> {
-        Text::new(&context.word_orig).into()
+        Text::new(&context.word_original)
+            .width(Length::FillPortion(1))
+            .into()
     }
 }

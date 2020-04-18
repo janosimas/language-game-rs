@@ -1,5 +1,5 @@
 use dotenv;
-use iced::{executor, Application, Command, Element, Settings};
+use iced::{executor, Application, Column, Command, Element, Length, Row, Settings, Text};
 use rand::seq::SliceRandom;
 use std::env;
 
@@ -46,10 +46,10 @@ impl Game {
             .choose_multiple(&mut rand::thread_rng(), 5)
             .collect();
 
-        let translations: Vec<String> = options
+        let mut translations: Vec<String> = options
             .iter()
             .map(|word| {
-                general::get_translation(word, "de", "en", &self.state)
+                general::get_translation(word, &self.language.language, "en", &self.state)
                     .text
                     .first()
                     .unwrap()
@@ -60,11 +60,16 @@ impl Game {
         let current_word = options.first().unwrap();
         let current_translation = translations.first().unwrap().clone();
 
+        translations.shuffle(&mut rand::thread_rng());
+
         self.context = Some(general::Context::new(
             current_word.to_string(),
+            current_translation,
             translations,
             vec![],
         ));
+
+        self.state.advance_turn();
     }
 }
 
@@ -87,15 +92,41 @@ impl Application for Game {
                 self.advance_turn();
             }
             general::Message::GameEnd => {}
-            general::Message::UserInputReceived => {}
+            general::Message::UserInput(user_input) => match user_input {
+                general::UserInput::OptionSelected(index) => {
+                    let context = self.context.as_ref().unwrap();
+
+                    let selected_option = &context.options_translation[index];
+                    if selected_option == &context.word_translation {
+                        self.state.advance_score();
+                        self.state.add_correct_word(&context.word_original);
+                    } else {
+                        self.state.add_wrong_word(&context.word_original);
+                    }
+
+                    self.advance_turn();
+                }
+                general::UserInput::HintSelected(_) => {}
+                general::UserInput::OptionWritten(_) => {}
+            },
         }
-        self.game_view.update(message)
+        Command::none()
     }
 
     fn view(&mut self) -> Element<Self::Message> {
         if self.context.is_none() {
             self.advance_turn();
         }
-        self.game_view.view(&self.context)
+        Row::new()
+            .push(self.game_view.view(&self.context))
+            .push(
+                Column::new()
+                    .spacing(10)
+                    .height(Length::FillPortion(1))
+                    .width(Length::FillPortion(1))
+                    .push(Text::new(format!("score: {}", &self.state.score())))
+                    .push(Text::new(format!("turn: {}", &self.state.turn()))),
+            )
+            .into()
     }
 }

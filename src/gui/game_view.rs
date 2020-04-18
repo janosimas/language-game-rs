@@ -1,4 +1,4 @@
-use iced::{Column, Command, Element, Text};
+use iced::{Column, Command, Element, Length, Row, Text};
 
 use super::*;
 use crate::general;
@@ -26,6 +26,8 @@ impl GameView {
         if let Some(context) = context {
             Column::new()
                 .spacing(10)
+                .height(Length::FillPortion(1))
+                .width(Length::FillPortion(3))
                 .push(self.question_view.view(&context))
                 .push(self.helper_tips_view.view(&context))
                 .push(self.answer_view.view(&context))
