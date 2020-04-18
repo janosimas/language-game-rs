@@ -1,5 +1,6 @@
 use serde::{Deserialize, Serialize};
 
+use std::fmt;
 use std::fs;
 use std::path::Path;
 
@@ -19,6 +20,17 @@ pub struct Word {
     pub sufix: Option<String>,
     pub translation_aid: Option<String>,
     pub image_search_aid: Option<String>,
+}
+
+impl fmt::Display for Word {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(
+            f,
+            "{} {}",
+            self.prefix.as_ref().unwrap_or(&String::new()),
+            self.word
+        )
+    }
 }
 
 pub fn load_language() -> Option<Language> {

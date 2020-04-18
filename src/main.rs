@@ -1,4 +1,6 @@
 use iced::{executor, Application, Command, Element, Settings};
+use rand::seq::SliceRandom;
+
 mod general;
 mod gui;
 
@@ -8,14 +10,18 @@ pub fn main() {
 
 struct Game {
     game_view: gui::GameView,
-    language: general::Language
+    language: general::Language,
+    state: general::State,
+    context: Option<general::Context>,
 }
 
 impl Game {
     fn new() -> Self {
         Self {
             game_view: gui::GameView::new(),
-            language: general::load_language().unwrap()
+            language: general::load_language().unwrap(),
+            state: general::State::default(),
+            context: None,
         }
     }
 }
@@ -38,6 +44,21 @@ impl Application for Game {
     }
 
     fn view(&mut self) -> Element<Self::Message> {
+        if self.context.is_none() {
+            let current_word = self.language.words.choose(&mut rand::thread_rng()).unwrap();
+
+            let options: Vec<&general::Word> = self
+                .language
+                .words
+                .choose_multiple(&mut rand::thread_rng(), 5)
+                .collect();
+
+            self.context = Some(general::Context::new(
+                current_word.to_string(),
+                vec![],
+                vec![],
+            ))
+        }
         self.game_view.view()
     }
 }

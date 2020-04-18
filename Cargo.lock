@@ -1081,6 +1081,7 @@ dependencies = [
  "directories",
  "iced",
  "iced_native",
+ "rand",
  "serde",
  "serde_json",
  "wasm-timer",
