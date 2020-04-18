@@ -1,5 +1,5 @@
-use iced::{Column, Command, Element, Text};
 use crate::general;
+use iced::{Column, Command, Element, Text};
 
 pub struct AnswerView {}
 
@@ -11,7 +11,7 @@ impl AnswerView {
         Command::none()
     }
 
-    pub fn view(&mut self) -> Element<general::Message> {
-        Text::new("Answer").into()
+    pub fn view(&mut self, context: &general::Context) -> Element<general::Message> {
+        Text::new(context.options_transl.first().unwrap()).into()
     }
 }

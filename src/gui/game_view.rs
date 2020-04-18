@@ -1,4 +1,4 @@
-use iced::{Column, Command, Element};
+use iced::{Column, Command, Element, Text};
 
 use super::*;
 use crate::general;
@@ -22,12 +22,16 @@ impl GameView {
         Command::none()
     }
 
-    pub fn view(&mut self) -> Element<general::Message> {
-        Column::new()
-            .spacing(10)
-            .push(self.question_view.view())
-            .push(self.helper_tips_view.view())
-            .push(self.answer_view.view())
-            .into()
+    pub fn view(&mut self, context: &Option<general::Context>) -> Element<general::Message> {
+        if let Some(context) = context {
+            Column::new()
+                .spacing(10)
+                .push(self.question_view.view(&context))
+                .push(self.helper_tips_view.view(&context))
+                .push(self.answer_view.view(&context))
+                .into()
+        } else {
+            Text::new("Not started").into()
+        }
     }
 }

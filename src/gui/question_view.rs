@@ -11,7 +11,7 @@ impl QuestionView {
         Command::none()
     }
 
-    pub fn view(&mut self) -> Element<general::Message> {
-        Text::new("Question").into()
+    pub fn view(&mut self, context: &general::Context) -> Element<general::Message> {
+        Text::new(&context.word_orig).into()
     }
 }

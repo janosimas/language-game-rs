@@ -11,7 +11,7 @@ impl HelperTipsView {
         Command::none()
     }
 
-    pub fn view(&mut self) -> Element<general::Message> {
+    pub fn view(&mut self, context: &general::Context) -> Element<general::Message> {
         Text::new("Help").into()
     }
 }
