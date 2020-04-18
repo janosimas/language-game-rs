@@ -7,13 +7,15 @@ pub fn main() {
 }
 
 struct Game {
-    game_view: gui::GameView
+    game_view: gui::GameView,
+    language: general::Language
 }
 
 impl Game {
     fn new() -> Self {
         Self {
-            game_view: gui::GameView::new()
+            game_view: gui::GameView::new(),
+            language: general::load_language().unwrap()
         }
     }
 }
