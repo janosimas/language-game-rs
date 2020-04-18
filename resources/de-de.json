@@ -1,0 +1,8008 @@
+{
+  "language": "de",
+  "country": "de",
+  "description": "List of most frequent nouns in german.",
+  "source": "http://frequencylists.blogspot.com/",
+  "words": [
+    {
+      "prefix": "Die",
+      "word": "Zeit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Mann"
+    },
+    {
+      "prefix": "Die",
+      "word": "Hand"
+    },
+    {
+      "prefix": "Der",
+      "word": "Tag"
+    },
+    {
+      "prefix": "Der",
+      "word": "Weg"
+    },
+    {
+      "prefix": "Das",
+      "word": "Auge"
+    },
+    {
+      "prefix": "Das",
+      "word": "Ding"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kopf"
+    },
+    {
+      "prefix": "Das",
+      "word": "Jahr"
+    },
+    {
+      "prefix": "Das",
+      "word": "Zimmer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Tür"
+    },
+    {
+      "prefix": "Die",
+      "word": "Frau"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gesicht"
+    },
+    {
+      "prefix": "Die",
+      "word": "Mutter"
+    },
+    {
+      "prefix": "Das",
+      "word": "Volk"
+    },
+    {
+      "prefix": "Die",
+      "word": "Nacht"
+    },
+    {
+      "prefix": "Das",
+      "word": "Haus"
+    },
+    {
+      "prefix": "Der",
+      "word": "Vater"
+    },
+    {
+      "prefix": "Das",
+      "word": "Leben"
+    },
+    {
+      "prefix": "Der",
+      "word": "Rücken"
+    },
+    {
+      "prefix": "Die",
+      "word": "Stimme"
+    },
+    {
+      "prefix": "Das",
+      "word": "Mädchen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ort"
+    },
+    {
+      "prefix": "Der",
+      "word": "Junge"
+    },
+    {
+      "prefix": "Das",
+      "word": "Auto"
+    },
+    {
+      "prefix": "Die",
+      "word": "Seite"
+    },
+    {
+      "prefix": "Der",
+      "word": "Arm"
+    },
+    {
+      "prefix": "Das",
+      "word": "Kind"
+    },
+    {
+      "prefix": "Das",
+      "word": "Wort"
+    },
+    {
+      "prefix": "Der",
+      "word": "Moment"
+    },
+    {
+      "prefix": "Das",
+      "word": "Haar"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fuß"
+    },
+    {
+      "prefix": "Das",
+      "word": "Wasser"
+    },
+    {
+      "prefix": "Das",
+      "word": "Licht"
+    },
+    {
+      "prefix": "Die",
+      "word": "Welt"
+    },
+    {
+      "prefix": "Der",
+      "word": "Name"
+    },
+    {
+      "prefix": "Der",
+      "word": "Freund"
+    },
+    {
+      "prefix": "Das",
+      "word": "Fenster"
+    },
+    {
+      "prefix": "Der",
+      "word": "Körper"
+    },
+    {
+      "prefix": "Der",
+      "word": "Tisch"
+    },
+    {
+      "prefix": "Der",
+      "word": "Morgen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Bett"
+    },
+    {
+      "prefix": "Die",
+      "word": "Mauer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Straße"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schule"
+    },
+    {
+      "prefix": "Die",
+      "word": "Luft"
+    },
+    {
+      "prefix": "Der",
+      "word": "Boden"
+    },
+    {
+      "prefix": "Die",
+      "word": "Stunde"
+    },
+    {
+      "prefix": "Das",
+      "word": "Ende"
+    },
+    {
+      "prefix": "Die",
+      "word": "Familie"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kerl"
+    },
+    {
+      "prefix": "Die",
+      "word": "Art"
+    },
+    {
+      "prefix": "Die",
+      "word": "Minute"
+    },
+    {
+      "prefix": "Die",
+      "word": "Geschichte"
+    },
+    {
+      "prefix": "Der",
+      "word": "Gott"
+    },
+    {
+      "prefix": "Die",
+      "word": "Woche"
+    },
+    {
+      "prefix": "Die",
+      "word": "Arbeit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schulter"
+    },
+    {
+      "prefix": "Der",
+      "word": "Teil"
+    },
+    {
+      "prefix": "Der",
+      "word": "Geist"
+    },
+    {
+      "prefix": "Das",
+      "word": "Buch"
+    },
+    {
+      "prefix": "Der",
+      "word": "Finger"
+    },
+    {
+      "prefix": "Der",
+      "word": "Mund"
+    },
+    {
+      "prefix": "Das",
+      "word": "Kind"
+    },
+    {
+      "prefix": "Das",
+      "word": "Glas"
+    },
+    {
+      "prefix": "Der",
+      "word": "Baum"
+    },
+    {
+      "prefix": "Der",
+      "word": "Klang"
+    },
+    {
+      "prefix": "Die",
+      "word": "Linie"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ehefrau"
+    },
+    {
+      "prefix": "Das",
+      "word": "Herz"
+    },
+    {
+      "prefix": "Das",
+      "word": "Geld"
+    },
+    {
+      "prefix": "Das",
+      "word": "Telefon"
+    },
+    {
+      "prefix": "Das",
+      "word": "Aussehen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Bein"
+    },
+    {
+      "prefix": "Der",
+      "word": "Stuhl"
+    },
+    {
+      "prefix": "Das",
+      "word": "Büro"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bruder"
+    },
+    {
+      "prefix": "Die",
+      "word": "Frage"
+    },
+    {
+      "prefix": "Die",
+      "word": "Stadt"
+    },
+    {
+      "prefix": "Der",
+      "word": "Monat"
+    },
+    {
+      "prefix": "Das",
+      "word": "Baby"
+    },
+    {
+      "prefix": "Das",
+      "word": "Zuhause"
+    },
+    {
+      "prefix": "Der",
+      "word": "Hund"
+    },
+    {
+      "prefix": "Die",
+      "word": "Straße"
+    },
+    {
+      "prefix": "Die",
+      "word": "Idee"
+    },
+    {
+      "prefix": "Die",
+      "word": "Küche"
+    },
+    {
+      "prefix": "Das",
+      "word": "Ganze"
+    },
+    {
+      "prefix": "Der",
+      "word": "Sohn"
+    },
+    {
+      "prefix": "Der",
+      "word": "Beruf"
+    },
+    {
+      "prefix": "Das",
+      "word": "Papier"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schwester"
+    },
+    {
+      "prefix": "Das",
+      "word": "Lächeln"
+    },
+    {
+      "prefix": "Der",
+      "word": "Punkt"
+    },
+    {
+      "prefix": "Der",
+      "word": "Gedanke"
+    },
+    {
+      "prefix": "Die",
+      "word": "Liebe"
+    },
+    {
+      "prefix": "Die",
+      "word": "Stadt"
+    },
+    {
+      "prefix": "Der",
+      "word": "Tod"
+    },
+    {
+      "prefix": "Der",
+      "word": "Boden"
+    },
+    {
+      "prefix": "Die",
+      "word": "Anderen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Feuer"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schritt"
+    },
+    {
+      "prefix": "Das",
+      "word": "Blut"
+    },
+    {
+      "prefix": "Die",
+      "word": "Tatsache"
+    },
+    {
+      "prefix": "Der",
+      "word": "Atem"
+    },
+    {
+      "prefix": "Die",
+      "word": "Lippe"
+    },
+    {
+      "prefix": "Die",
+      "word": "Sonne"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gebäude"
+    },
+    {
+      "prefix": "Die",
+      "word": "Anzahl"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ehemann"
+    },
+    {
+      "prefix": "Das",
+      "word": "Elternteil"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ecke"
+    },
+    {
+      "prefix": "Das",
+      "word": "Problem"
+    },
+    {
+      "prefix": "Das",
+      "word": "Ehepaar"
+    },
+    {
+      "prefix": "Die",
+      "word": "Tochter"
+    },
+    {
+      "prefix": "Der",
+      "word": "Beutel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Hölle"
+    },
+    {
+      "prefix": "Die",
+      "word": "Rast"
+    },
+    {
+      "prefix": "Das",
+      "word": "Geschäft"
+    },
+    {
+      "prefix": "Der",
+      "word": "Himmel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kiste"
+    },
+    {
+      "prefix": "Die",
+      "word": "Person"
+    },
+    {
+      "prefix": "Der",
+      "word": "Grund"
+    },
+    {
+      "prefix": "Das",
+      "word": "Recht"
+    },
+    {
+      "prefix": "Die",
+      "word": "Haut"
+    },
+    {
+      "prefix": "Der",
+      "word": "Vater"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fall"
+    },
+    {
+      "prefix": "Das",
+      "word": "Stück"
+    },
+    {
+      "prefix": "Der",
+      "word": "Doktor"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ecke"
+    },
+    {
+      "prefix": "Die",
+      "word": "Mama"
+    },
+    {
+      "prefix": "Das",
+      "word": "Bild"
+    },
+    {
+      "prefix": "Der",
+      "word": "Sinn"
+    },
+    {
+      "prefix": "Das",
+      "word": "Ohr"
+    },
+    {
+      "prefix": "Der",
+      "word": "Zweite"
+    },
+    {
+      "prefix": "Die",
+      "word": "Dame"
+    },
+    {
+      "prefix": "Der",
+      "word": "Hals"
+    },
+    {
+      "prefix": "Der",
+      "word": "Wind"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schreibtisch"
+    },
+    {
+      "prefix": "Die",
+      "word": "Waffe"
+    },
+    {
+      "prefix": "Der",
+      "word": "Stein"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kaffee"
+    },
+    {
+      "prefix": "Das",
+      "word": "Schiff"
+    },
+    {
+      "prefix": "Die",
+      "word": "Erde"
+    },
+    {
+      "prefix": "Das",
+      "word": "Essen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Pferd"
+    },
+    {
+      "prefix": "Das",
+      "word": "Feld"
+    },
+    {
+      "prefix": "Der",
+      "word": "Krieg"
+    },
+    {
+      "prefix": "Der",
+      "word": "Nachmittag"
+    },
+    {
+      "prefix": "Die",
+      "word": "Sir"
+    },
+    {
+      "prefix": "Der",
+      "word": "Raum"
+    },
+    {
+      "prefix": "Der",
+      "word": "Abend"
+    },
+    {
+      "prefix": "Der",
+      "word": "Brief"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bar"
+    },
+    {
+      "prefix": "Der",
+      "word": "Traum"
+    },
+    {
+      "prefix": "Die",
+      "word": "Wohnung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Brust"
+    },
+    {
+      "prefix": "Das",
+      "word": "Spiel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Sommer"
+    },
+    {
+      "prefix": "Der",
+      "word": "Grund"
+    },
+    {
+      "prefix": "Die",
+      "word": "Stille"
+    },
+    {
+      "prefix": "Die",
+      "word": "Spitze"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fels"
+    },
+    {
+      "prefix": "Die",
+      "word": "Macht"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kleider"
+    },
+    {
+      "prefix": "Das",
+      "word": "Schild"
+    },
+    {
+      "prefix": "Die",
+      "word": "Aufmerksamkeit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Musik"
+    },
+    {
+      "prefix": "Der",
+      "word": "Staat"
+    },
+    {
+      "prefix": "Die",
+      "word": "Tasche"
+    },
+    {
+      "prefix": "Das",
+      "word": "Abendessen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Halle"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schmerz"
+    },
+    {
+      "prefix": "Das",
+      "word": "Alter"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fluss"
+    },
+    {
+      "prefix": "Die",
+      "word": "Chance"
+    },
+    {
+      "prefix": "Die",
+      "word": "Nase"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schatten"
+    },
+    {
+      "prefix": "Die",
+      "word": "Polizei"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gedächtnis"
+    },
+    {
+      "prefix": "Die",
+      "word": "Farbe"
+    },
+    {
+      "prefix": "Das",
+      "word": "Knie"
+    },
+    {
+      "prefix": "Das",
+      "word": "Holz"
+    },
+    {
+      "prefix": "Das",
+      "word": "Hemd"
+    },
+    {
+      "prefix": "Die",
+      "word": "Party"
+    },
+    {
+      "prefix": "Das",
+      "word": "Land"
+    },
+    {
+      "prefix": "Der",
+      "word": "Lkw"
+    },
+    {
+      "prefix": "Der",
+      "word": "Zahn"
+    },
+    {
+      "prefix": "Die",
+      "word": "Rechnung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Szene"
+    },
+    {
+      "prefix": "Das",
+      "word": "Land"
+    },
+    {
+      "prefix": "Der",
+      "word": "Stern"
+    },
+    {
+      "prefix": "Der",
+      "word": "Vogel"
+    },
+    {
+      "prefix": "Das",
+      "word": "Schlafzimmer"
+    },
+    {
+      "prefix": "Der",
+      "word": "Onkel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Art"
+    },
+    {
+      "prefix": "Die",
+      "word": "Gruppe"
+    },
+    {
+      "prefix": "Die",
+      "word": "Wahrheit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schwierigkeiten"
+    },
+    {
+      "prefix": "Die",
+      "word": "Menge"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bahnhof"
+    },
+    {
+      "prefix": "Die",
+      "word": "Reiß"
+    },
+    {
+      "prefix": "Die",
+      "word": "Klasse"
+    },
+    {
+      "prefix": "Das",
+      "word": "Meer"
+    },
+    {
+      "prefix": "Das",
+      "word": "Tier"
+    },
+    {
+      "prefix": "Das",
+      "word": "Zentrum"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gefühl"
+    },
+    {
+      "prefix": "Das",
+      "word": "Geschäft"
+    },
+    {
+      "prefix": "Der",
+      "word": "Berg"
+    },
+    {
+      "prefix": "Die",
+      "word": "Nachrichten"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schuh"
+    },
+    {
+      "prefix": "Die",
+      "word": "Katze"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bildschirm"
+    },
+    {
+      "prefix": "Die",
+      "word": "Flasche"
+    },
+    {
+      "prefix": "Der",
+      "word": "Anruf"
+    },
+    {
+      "prefix": "Die",
+      "word": "Lebenden"
+    },
+    {
+      "prefix": "Die",
+      "word": "Wange"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schüler"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ball"
+    },
+    {
+      "prefix": "Die",
+      "word": "Sehenswürdigkeit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Hügel"
+    },
+    {
+      "prefix": "Das",
+      "word": "Unternehmen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kirche"
+    },
+    {
+      "prefix": "Der",
+      "word": "Regen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Anzug"
+    },
+    {
+      "prefix": "Der",
+      "word": "Eine"
+    },
+    {
+      "prefix": "Die",
+      "word": "Richtung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Wille"
+    },
+    {
+      "prefix": "Der",
+      "word": "Hals"
+    },
+    {
+      "prefix": "Die",
+      "word": "Mitte"
+    },
+    {
+      "prefix": "Die",
+      "word": "Antwort"
+    },
+    {
+      "prefix": "Das",
+      "word": "Zeug"
+    },
+    {
+      "prefix": "Das",
+      "word": "Krankenhaus"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kamera"
+    },
+    {
+      "prefix": "Das",
+      "word": "Kleid"
+    },
+    {
+      "prefix": "Die",
+      "word": "Karte"
+    },
+    {
+      "prefix": "Der",
+      "word": "Hof"
+    },
+    {
+      "prefix": "Die",
+      "word": "Dunkelheit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Scheiße"
+    },
+    {
+      "prefix": "Das",
+      "word": "Bild"
+    },
+    {
+      "prefix": "Die",
+      "word": "Maschine"
+    },
+    {
+      "prefix": "Die",
+      "word": "Distanz"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gebiet"
+    },
+    {
+      "prefix": "Der",
+      "word": "Erzähler"
+    },
+    {
+      "prefix": "Das",
+      "word": "Eis"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schnee"
+    },
+    {
+      "prefix": "Die",
+      "word": "Notiz"
+    },
+    {
+      "prefix": "Der",
+      "word": "Spiegel"
+    },
+    {
+      "prefix": "Der",
+      "word": "König"
+    },
+    {
+      "prefix": "Die",
+      "word": "Angst"
+    },
+    {
+      "prefix": "Der",
+      "word": "Offizier"
+    },
+    {
+      "prefix": "Das",
+      "word": "Loch"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schuss"
+    },
+    {
+      "prefix": "Der",
+      "word": "Wächter"
+    },
+    {
+      "prefix": "Die",
+      "word": "Unterhaltung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Boot"
+    },
+    {
+      "prefix": "Das",
+      "word": "System"
+    },
+    {
+      "prefix": "Die",
+      "word": "Pflege"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Film"
+    },
+    {
+      "prefix": "Der",
+      "word": "Knochen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Seite"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kapitän"
+    },
+    {
+      "prefix": "Die",
+      "word": "Tante"
+    },
+    {
+      "prefix": "–",
+      "word": "Dunkelheit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kontrolle"
+    },
+    {
+      "prefix": "Das",
+      "word": "Getränk"
+    },
+    {
+      "prefix": "Das",
+      "word": "Hotel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Mantel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Treppen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bestellung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Rose"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fehl"
+    },
+    {
+      "prefix": "Der",
+      "word": "Hut"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gold"
+    },
+    {
+      "prefix": "Die",
+      "word": "Zigarette"
+    },
+    {
+      "prefix": "Die",
+      "word": "Wolke"
+    },
+    {
+      "prefix": "Die",
+      "word": "Aussicht"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fahrer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Tasse"
+    },
+    {
+      "prefix": "Die",
+      "word": "Figur"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ausdruck"
+    },
+    {
+      "prefix": "Der",
+      "word": "Pfad"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schlüssel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Computer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Blume"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ring"
+    },
+    {
+      "prefix": "Das",
+      "word": "Bad"
+    },
+    {
+      "prefix": "Das",
+      "word": "Metall"
+    },
+    {
+      "prefix": "Der",
+      "word": "Mond"
+    },
+    {
+      "prefix": "Das",
+      "word": "Lied"
+    },
+    {
+      "prefix": "Der",
+      "word": "Soldat"
+    },
+    {
+      "prefix": "Das",
+      "word": "Radio"
+    },
+    {
+      "prefix": "Die",
+      "word": "Geschichte"
+    },
+    {
+      "prefix": "Die",
+      "word": "Welle"
+    },
+    {
+      "prefix": "Der",
+      "word": "Plan"
+    },
+    {
+      "prefix": "Das",
+      "word": "College"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fisch"
+    },
+    {
+      "prefix": "Der",
+      "word": "Garten"
+    },
+    {
+      "prefix": "Der",
+      "word": "Zug"
+    },
+    {
+      "prefix": "Das",
+      "word": "Geschäft"
+    },
+    {
+      "prefix": "Der",
+      "word": "Polizist"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kunst"
+    },
+    {
+      "prefix": "Das",
+      "word": "Bier"
+    },
+    {
+      "prefix": "Der",
+      "word": "Nord"
+    },
+    {
+      "prefix": "Die",
+      "word": "Insel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bus"
+    },
+    {
+      "prefix": "Der",
+      "word": "Geruch"
+    },
+    {
+      "prefix": "Das",
+      "word": "Geräusch"
+    },
+    {
+      "prefix": "Die",
+      "word": "Mama"
+    },
+    {
+      "prefix": "Der",
+      "word": "Park"
+    },
+    {
+      "prefix": "Der",
+      "word": "Süden"
+    },
+    {
+      "prefix": "Das",
+      "word": "Paar"
+    },
+    {
+      "prefix": "Der",
+      "word": "Herr"
+    },
+    {
+      "prefix": "Der",
+      "word": "Teller"
+    },
+    {
+      "prefix": "Die",
+      "word": "Jacke"
+    },
+    {
+      "prefix": "Die",
+      "word": "Hilfe"
+    },
+    {
+      "prefix": "Der",
+      "word": "Papa"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gras"
+    },
+    {
+      "prefix": "Die",
+      "word": "Dank"
+    },
+    {
+      "prefix": "Die",
+      "word": "Hitze"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schlaf"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gehirn"
+    },
+    {
+      "prefix": "Der",
+      "word": "Service"
+    },
+    {
+      "prefix": "Die",
+      "word": "Reise"
+    },
+    {
+      "prefix": "Der",
+      "word": "Beat"
+    },
+    {
+      "prefix": "Das",
+      "word": "Messer"
+    },
+    {
+      "prefix": "Der",
+      "word": "Platz"
+    },
+    {
+      "prefix": "Die",
+      "word": "Nachricht"
+    },
+    {
+      "prefix": "Die",
+      "word": "Note"
+    },
+    {
+      "prefix": "Der",
+      "word": "Lehrer"
+    },
+    {
+      "prefix": "Der",
+      "word": "Blick"
+    },
+    {
+      "prefix": "Das",
+      "word": "Dorf"
+    },
+    {
+      "prefix": "Der",
+      "word": "Winter"
+    },
+    {
+      "prefix": "Die",
+      "word": "Front"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gesetz"
+    },
+    {
+      "prefix": "Die",
+      "word": "Oberfläche"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bank"
+    },
+    {
+      "prefix": "Das",
+      "word": "Team"
+    },
+    {
+      "prefix": "Das",
+      "word": "Maximum"
+    },
+    {
+      "prefix": "Die",
+      "word": "Position"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bauch"
+    },
+    {
+      "prefix": "Die",
+      "word": "Wende"
+    },
+    {
+      "prefix": "Der",
+      "word": "Westen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Mittagessen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Wechsel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kreatur"
+    },
+    {
+      "prefix": "Die",
+      "word": "Seele"
+    },
+    {
+      "prefix": "Das",
+      "word": "Blatt"
+    },
+    {
+      "prefix": "Die",
+      "word": "Show"
+    },
+    {
+      "prefix": "Die",
+      "word": "Gate"
+    },
+    {
+      "prefix": "Die",
+      "word": "Palme"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kunststoff"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kraft"
+    },
+    {
+      "prefix": "Der",
+      "word": "Strand"
+    },
+    {
+      "prefix": "Der",
+      "word": "Präsident"
+    },
+    {
+      "prefix": "Die",
+      "word": "Form"
+    },
+    {
+      "prefix": "Der",
+      "word": "Rauch"
+    },
+    {
+      "prefix": "Das",
+      "word": "Rad"
+    },
+    {
+      "prefix": "Das",
+      "word": "Silber"
+    },
+    {
+      "prefix": "Das",
+      "word": "Dach"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gewicht"
+    },
+    {
+      "prefix": "Die",
+      "word": "Zunge"
+    },
+    {
+      "prefix": "Der",
+      "word": "Tee"
+    },
+    {
+      "prefix": "Die",
+      "word": "Strecke"
+    },
+    {
+      "prefix": "Der",
+      "word": "Winkel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Form"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ton"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kreis"
+    },
+    {
+      "prefix": "Der",
+      "word": "Frühling"
+    },
+    {
+      "prefix": "Die",
+      "word": "Vorhalle"
+    },
+    {
+      "prefix": "Das",
+      "word": "Blatt"
+    },
+    {
+      "prefix": "Das",
+      "word": "Mitglied"
+    },
+    {
+      "prefix": "Das",
+      "word": "Schwimmbecken"
+    },
+    {
+      "prefix": "Das",
+      "word": "Bedürfnis"
+    },
+    {
+      "prefix": "Die",
+      "word": "Hoffnung"
+    },
+    {
+      "prefix": "Der",
+      "word": "See"
+    },
+    {
+      "prefix": "Die",
+      "word": "Brust"
+    },
+    {
+      "prefix": "Die",
+      "word": "Überraschung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Interesse"
+    },
+    {
+      "prefix": "Der",
+      "word": "Boden"
+    },
+    {
+      "prefix": "Der",
+      "word": "Geist"
+    },
+    {
+      "prefix": "Der",
+      "word": "Block"
+    },
+    {
+      "prefix": "Die",
+      "word": "Sprache"
+    },
+    {
+      "prefix": "Die",
+      "word": "Brücke"
+    },
+    {
+      "prefix": "Der",
+      "word": "Staub"
+    },
+    {
+      "prefix": "Die",
+      "word": "Zelle"
+    },
+    {
+      "prefix": "Der",
+      "word": "Wein"
+    },
+    {
+      "prefix": "Das",
+      "word": "Boot"
+    },
+    {
+      "prefix": "Die",
+      "word": "Wahl"
+    },
+    {
+      "prefix": "Die",
+      "word": "Reihe"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gespräch"
+    },
+    {
+      "prefix": "Das",
+      "word": "Flugzeug"
+    },
+    {
+      "prefix": "Die",
+      "word": "Uhr"
+    },
+    {
+      "prefix": "Die",
+      "word": "Information"
+    },
+    {
+      "prefix": "Die",
+      "word": "Großmutter"
+    },
+    {
+      "prefix": "Der",
+      "word": "Flügel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bob"
+    },
+    {
+      "prefix": "Der",
+      "word": "Club"
+    },
+    {
+      "prefix": "Der",
+      "word": "Meister"
+    },
+    {
+      "prefix": "Die",
+      "word": "Gnade"
+    },
+    {
+      "prefix": "Der",
+      "word": "Wald"
+    },
+    {
+      "prefix": "Die",
+      "word": "Größe"
+    },
+    {
+      "prefix": "Der",
+      "word": "Satz"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ehe"
+    },
+    {
+      "prefix": "Die",
+      "word": "Stirn"
+    },
+    {
+      "prefix": "Der",
+      "word": "Sturm"
+    },
+    {
+      "prefix": "Die",
+      "word": "Türöffnung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Situation"
+    },
+    {
+      "prefix": "Der",
+      "word": "Zähler"
+    },
+    {
+      "prefix": "Der",
+      "word": "Nachbar"
+    },
+    {
+      "prefix": "Das",
+      "word": "Foto"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bühne"
+    },
+    {
+      "prefix": "Das",
+      "word": "Treffen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Krankenschwester"
+    },
+    {
+      "prefix": "Die",
+      "word": "Sicherheit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Waffe"
+    },
+    {
+      "prefix": "Das",
+      "word": "Ereignis"
+    },
+    {
+      "prefix": "Die",
+      "word": "Decke"
+    },
+    {
+      "prefix": "Der",
+      "word": "Motor"
+    },
+    {
+      "prefix": "Das",
+      "word": "Geschenk"
+    },
+    {
+      "prefix": "Das",
+      "word": "Restaurant"
+    },
+    {
+      "prefix": "Die",
+      "word": "Tafel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Flur"
+    },
+    {
+      "prefix": "Die",
+      "word": "Armee"
+    },
+    {
+      "prefix": "Der",
+      "word": "Aufwand"
+    },
+    {
+      "prefix": "Der",
+      "word": "Osten"
+    },
+    {
+      "prefix": "Der",
+      "word": "Agent"
+    },
+    {
+      "prefix": "Die",
+      "word": "Zukunft"
+    },
+    {
+      "prefix": "Die",
+      "word": "Hose"
+    },
+    {
+      "prefix": "Das",
+      "word": "Leder"
+    },
+    {
+      "prefix": "Der",
+      "word": "Flug"
+    },
+    {
+      "prefix": "Das",
+      "word": "Geschlecht"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gericht"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kurs"
+    },
+    {
+      "prefix": "Der",
+      "word": "Dreck"
+    },
+    {
+      "prefix": "Das",
+      "word": "Ei"
+    },
+    {
+      "prefix": "Das",
+      "word": "Kinn"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fremde"
+    },
+    {
+      "prefix": "Die",
+      "word": "Freude"
+    },
+    {
+      "prefix": "Das",
+      "word": "Detail"
+    },
+    {
+      "prefix": "Die",
+      "word": "Besatzung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Herbst"
+    },
+    {
+      "prefix": "Der",
+      "word": "Gast"
+    },
+    {
+      "prefix": "Das",
+      "word": "Erlebnis"
+    },
+    {
+      "prefix": "Der",
+      "word": "Witz"
+    },
+    {
+      "prefix": "Der",
+      "word": "Sand"
+    },
+    {
+      "prefix": "Die",
+      "word": "Faust"
+    },
+    {
+      "prefix": "Die",
+      "word": "Aktion"
+    },
+    {
+      "prefix": "Das",
+      "word": "Wandern"
+    },
+    {
+      "prefix": "Die",
+      "word": "Hochzeit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Deal"
+    },
+    {
+      "prefix": "Die",
+      "word": "Natur"
+    },
+    {
+      "prefix": "Der",
+      "word": "Planet"
+    },
+    {
+      "prefix": "Der",
+      "word": "Cousin"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bewegung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Fleisch"
+    },
+    {
+      "prefix": "Der",
+      "word": "Datensatz"
+    },
+    {
+      "prefix": "Das",
+      "word": "Camp"
+    },
+    {
+      "prefix": "Die",
+      "word": "Zeitung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Strahl"
+    },
+    {
+      "prefix": "Der",
+      "word": "Mensch"
+    },
+    {
+      "prefix": "Das",
+      "word": "Sofa"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bewegung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Großvater"
+    },
+    {
+      "prefix": "Die",
+      "word": "Fotografie"
+    },
+    {
+      "prefix": "Das",
+      "word": "Geheimnis"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schönheit"
+    },
+    {
+      "prefix": "Das",
+      "word": "Vorhandensein"
+    },
+    {
+      "prefix": "Die",
+      "word": "Glocke"
+    },
+    {
+      "prefix": "Die",
+      "word": "Volks"
+    },
+    {
+      "prefix": "Der",
+      "word": "Knopf"
+    },
+    {
+      "prefix": "Die",
+      "word": "Liste"
+    },
+    {
+      "prefix": "Das",
+      "word": "Level"
+    },
+    {
+      "prefix": "Das",
+      "word": "Datum"
+    },
+    {
+      "prefix": "Das",
+      "word": "Thema"
+    },
+    {
+      "prefix": "Der",
+      "word": "Unterschied"
+    },
+    {
+      "prefix": "Die",
+      "word": "Pause"
+    },
+    {
+      "prefix": "Der",
+      "word": "Van"
+    },
+    {
+      "prefix": "Die",
+      "word": "Klinge"
+    },
+    {
+      "prefix": "Das",
+      "word": "Fernsehen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Titelseite"
+    },
+    {
+      "prefix": "Die",
+      "word": "Vergangenheit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bauernhof"
+    },
+    {
+      "prefix": "Die",
+      "word": "Runden"
+    },
+    {
+      "prefix": "Die",
+      "word": "Band"
+    },
+    {
+      "prefix": "Der",
+      "word": "Anwalt"
+    },
+    {
+      "prefix": "Das",
+      "word": "Magazin"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ast"
+    },
+    {
+      "prefix": "Der",
+      "word": "Rahmen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Deck"
+    },
+    {
+      "prefix": "Der",
+      "word": "Effekt"
+    },
+    {
+      "prefix": "Der",
+      "word": "Tanz"
+    },
+    {
+      "prefix": "Die",
+      "word": "Sicht"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gespenst"
+    },
+    {
+      "prefix": "Der",
+      "word": "Esel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Charakter"
+    },
+    {
+      "prefix": "Der",
+      "word": "Blick"
+    },
+    {
+      "prefix": "Auf",
+      "word": "Wiedersehen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Park"
+    },
+    {
+      "prefix": "Das",
+      "word": "Frühstück"
+    },
+    {
+      "prefix": "Die",
+      "word": "Geste"
+    },
+    {
+      "prefix": "Das",
+      "word": "Glück"
+    },
+    {
+      "prefix": "Die",
+      "word": "Decke"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gas"
+    },
+    {
+      "prefix": "Der",
+      "word": "Korridor"
+    },
+    {
+      "prefix": "Der",
+      "word": "Professor"
+    },
+    {
+      "prefix": "Das",
+      "word": "Spiel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fehler"
+    },
+    {
+      "prefix": "Die",
+      "word": "Universität"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ozean"
+    },
+    {
+      "prefix": "Das",
+      "word": "Jahrhundert"
+    },
+    {
+      "prefix": "Der",
+      "word": "Honig"
+    },
+    {
+      "prefix": "Der",
+      "word": "Stapel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schale"
+    },
+    {
+      "prefix": "–",
+      "word": "Basis"
+    },
+    {
+      "prefix": "Der",
+      "word": "Zaun"
+    },
+    {
+      "prefix": "Die",
+      "word": "Regel"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gelächter"
+    },
+    {
+      "prefix": "Die",
+      "word": "Wut"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schweiß"
+    },
+    {
+      "prefix": "Der",
+      "word": "Unfall"
+    },
+    {
+      "prefix": "Das",
+      "word": "Wetter"
+    },
+    {
+      "prefix": "Die",
+      "word": "Entscheidung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Engel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Stärke"
+    },
+    {
+      "prefix": "Das",
+      "word": "Huhn"
+    },
+    {
+      "prefix": "Die",
+      "word": "Studium"
+    },
+    {
+      "prefix": "Das",
+      "word": "Band"
+    },
+    {
+      "prefix": "Das",
+      "word": "Handgelenk"
+    },
+    {
+      "prefix": "Der",
+      "word": "Halt"
+    },
+    {
+      "prefix": "Die",
+      "word": "Hüfte"
+    },
+    {
+      "prefix": "Die",
+      "word": "Regierung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bauch"
+    },
+    {
+      "prefix": "Die",
+      "word": "Königin"
+    },
+    {
+      "prefix": "–",
+      "word": "Bericht"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schweif"
+    },
+    {
+      "prefix": "Die",
+      "word": "Pflanze"
+    },
+    {
+      "prefix": "Die",
+      "word": "Flamme"
+    },
+    {
+      "prefix": "Der",
+      "word": "Himmel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Gürtel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Nachbarschaft"
+    },
+    {
+      "prefix": "Die",
+      "word": "Energie"
+    },
+    {
+      "prefix": "Das",
+      "word": "Grün"
+    },
+    {
+      "prefix": "Das",
+      "word": "Viertel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Feind"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bewegung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Eingang"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bibliothek"
+    },
+    {
+      "prefix": "Der",
+      "word": "Verfasser"
+    },
+    {
+      "prefix": "Der",
+      "word": "Frieden"
+    },
+    {
+      "prefix": "Die",
+      "word": "Berührung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Topf"
+    },
+    {
+      "prefix": "Der",
+      "word": "Typ"
+    },
+    {
+      "prefix": "Der",
+      "word": "Grund"
+    },
+    {
+      "prefix": "Das",
+      "word": "Seil"
+    },
+    {
+      "prefix": "Der",
+      "word": "Muskel"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gemälde"
+    },
+    {
+      "prefix": "Die",
+      "word": "Gardine"
+    },
+    {
+      "prefix": "Die",
+      "word": "Mahlzeit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Akt"
+    },
+    {
+      "prefix": "Der",
+      "word": "Wolf"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kajüte"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ladung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Uhr"
+    },
+    {
+      "prefix": "Der",
+      "word": "Passagier"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kumpel"
+    },
+    {
+      "prefix": "Das",
+      "word": "Medikament"
+    },
+    {
+      "prefix": "Die",
+      "word": "Verwendung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bank"
+    },
+    {
+      "prefix": "Der",
+      "word": "Verkehr"
+    },
+    {
+      "prefix": "Das",
+      "word": "Relief"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kappe"
+    },
+    {
+      "prefix": "Das",
+      "word": "Rudel"
+    },
+    {
+      "prefix": "Das",
+      "word": "Wochenende"
+    },
+    {
+      "prefix": "Der",
+      "word": "Stand"
+    },
+    {
+      "prefix": "Der",
+      "word": "Aufzug"
+    },
+    {
+      "prefix": "Der",
+      "word": "Geburtstag"
+    },
+    {
+      "prefix": "Das",
+      "word": "Bügeleisen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Fleisch"
+    },
+    {
+      "prefix": "Die",
+      "word": "Augenbraue"
+    },
+    {
+      "prefix": "Die",
+      "word": "Antwort"
+    },
+    {
+      "prefix": "Die",
+      "word": "Geschwindigkeit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Absicht"
+    },
+    {
+      "prefix": "Der",
+      "word": "Rock"
+    },
+    {
+      "prefix": "Das",
+      "word": "Quadrat"
+    },
+    {
+      "prefix": "Die",
+      "word": "Fahrt"
+    },
+    {
+      "prefix": "Den",
+      "word": "Artikel"
+    },
+    {
+      "prefix": "Das",
+      "word": "Englisch"
+    },
+    {
+      "prefix": "Der",
+      "word": "Turm"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kampf"
+    },
+    {
+      "prefix": "Der",
+      "word": "Film"
+    },
+    {
+      "prefix": "Das",
+      "word": "Rennen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schock"
+    },
+    {
+      "prefix": "Die",
+      "word": "Sektion"
+    },
+    {
+      "prefix": "Die",
+      "word": "Methode"
+    },
+    {
+      "prefix": "Das",
+      "word": "Schwert"
+    },
+    {
+      "prefix": "Der",
+      "word": "Stock"
+    },
+    {
+      "prefix": "Die",
+      "word": "Datei"
+    },
+    {
+      "prefix": "Das",
+      "word": "Brot"
+    },
+    {
+      "prefix": "Das",
+      "word": "Öl"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kette"
+    },
+    {
+      "prefix": "Die",
+      "word": "Abteilung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Projekt"
+    },
+    {
+      "prefix": "Der",
+      "word": "Mord"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bär"
+    },
+    {
+      "prefix": "Der",
+      "word": "Test"
+    },
+    {
+      "prefix": "Der",
+      "word": "Besuch"
+    },
+    {
+      "prefix": "Die",
+      "word": "Milch"
+    },
+    {
+      "prefix": "Der",
+      "word": "Chef"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ellbogen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Verlangen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Patient"
+    },
+    {
+      "prefix": "Das",
+      "word": "Grinsen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Liebhaber"
+    },
+    {
+      "prefix": "Der",
+      "word": "Preis"
+    },
+    {
+      "prefix": "Die",
+      "word": "Karte"
+    },
+    {
+      "prefix": "Das",
+      "word": "Wissen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Anfang"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kälte"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schrank"
+    },
+    {
+      "prefix": "Die",
+      "word": "Morgendämmerung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Tempel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Spaß"
+    },
+    {
+      "prefix": "Die",
+      "word": "Pflicht"
+    },
+    {
+      "prefix": "Die",
+      "word": "Übung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ferse"
+    },
+    {
+      "prefix": "Das",
+      "word": "Tal"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kampf"
+    },
+    {
+      "prefix": "Das",
+      "word": "Kabel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Jeans"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kuss"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kiefer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Lauf"
+    },
+    {
+      "prefix": "Der",
+      "word": "Halt"
+    },
+    {
+      "prefix": "Das",
+      "word": "Verhältnis"
+    },
+    {
+      "prefix": "Das",
+      "word": "Objekt"
+    },
+    {
+      "prefix": "Der",
+      "word": "Angriff"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gericht"
+    },
+    {
+      "prefix": "Die",
+      "word": "Autobahn"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schattierung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Verbrechen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Weiß"
+    },
+    {
+      "prefix": "Der",
+      "word": "Partner"
+    },
+    {
+      "prefix": "Der",
+      "word": "Priester"
+    },
+    {
+      "prefix": "Der",
+      "word": "Rasen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Lachen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kofferraum"
+    },
+    {
+      "prefix": "Das",
+      "word": "Weinen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Programm"
+    },
+    {
+      "prefix": "Die",
+      "word": "Fahrt"
+    },
+    {
+      "prefix": "Das",
+      "word": "Regal"
+    },
+    {
+      "prefix": "Der",
+      "word": "Gentleman"
+    },
+    {
+      "prefix": "Das",
+      "word": "Sein"
+    },
+    {
+      "prefix": "Der",
+      "word": "Stahl"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bürgersteig"
+    },
+    {
+      "prefix": "Die",
+      "word": "Uniform"
+    },
+    {
+      "prefix": "Das",
+      "word": "Muster"
+    },
+    {
+      "prefix": "Der",
+      "word": "Beweis"
+    },
+    {
+      "prefix": "Der",
+      "word": "Spieler"
+    },
+    {
+      "prefix": "Der",
+      "word": "Roman"
+    },
+    {
+      "prefix": "Das",
+      "word": "Kissen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Lampe"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schublade"
+    },
+    {
+      "prefix": "Die",
+      "word": "Gefahr"
+    },
+    {
+      "prefix": "Der",
+      "word": "Detektiv"
+    },
+    {
+      "prefix": "Die",
+      "word": "Instant"
+    },
+    {
+      "prefix": "Das",
+      "word": "Denken"
+    },
+    {
+      "prefix": "Der",
+      "word": "Riss"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gebet"
+    },
+    {
+      "prefix": "Das",
+      "word": "Handtuch"
+    },
+    {
+      "prefix": "Der",
+      "word": "Handschuh"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bucht"
+    },
+    {
+      "prefix": "Das",
+      "word": "Publikum"
+    },
+    {
+      "prefix": "Die",
+      "word": "Dose"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bedingung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Pfad"
+    },
+    {
+      "prefix": "Die",
+      "word": "Taille"
+    },
+    {
+      "prefix": "Der",
+      "word": "Druck"
+    },
+    {
+      "prefix": "Das",
+      "word": "Telefon"
+    },
+    {
+      "prefix": "Das",
+      "word": "Waschbecken"
+    },
+    {
+      "prefix": "Die",
+      "word": "Rückkehr"
+    },
+    {
+      "prefix": "Die",
+      "word": "Brise"
+    },
+    {
+      "prefix": "Der",
+      "word": "Geschmack"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fehler"
+    },
+    {
+      "prefix": "Der",
+      "word": "Strom"
+    },
+    {
+      "prefix": "Das",
+      "word": "Ergebnis"
+    },
+    {
+      "prefix": "Der",
+      "word": "Autor"
+    },
+    {
+      "prefix": "Das",
+      "word": "Trinkgeld"
+    },
+    {
+      "prefix": "Die",
+      "word": "Dusche"
+    },
+    {
+      "prefix": "Die",
+      "word": "Zehe"
+    },
+    {
+      "prefix": "Die",
+      "word": "Jahreszeit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Hälfte"
+    },
+    {
+      "prefix": "Der",
+      "word": "Dummkopf"
+    },
+    {
+      "prefix": "Der",
+      "word": "Tunnel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Klient"
+    },
+    {
+      "prefix": "Die",
+      "word": "Garage"
+    },
+    {
+      "prefix": "Die",
+      "word": "Mission"
+    },
+    {
+      "prefix": "Der",
+      "word": "Chef"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kugel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Markt"
+    },
+    {
+      "prefix": "Der",
+      "word": "Verlust"
+    },
+    {
+      "prefix": "Die",
+      "word": "Reihe"
+    },
+    {
+      "prefix": "Der",
+      "word": "Stift"
+    },
+    {
+      "prefix": "Der",
+      "word": "Begriff"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gedicht"
+    },
+    {
+      "prefix": "Der",
+      "word": "Prinz"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ton"
+    },
+    {
+      "prefix": "Das",
+      "word": "Schloss"
+    },
+    {
+      "prefix": "Die",
+      "word": "Realität"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schlange"
+    },
+    {
+      "prefix": "Der",
+      "word": "Apfel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Maske"
+    },
+    {
+      "prefix": "Dem",
+      "word": "Kunden"
+    },
+    {
+      "prefix": "Die",
+      "word": "Geburt"
+    },
+    {
+      "prefix": "Die",
+      "word": "Pause"
+    },
+    {
+      "prefix": "Das",
+      "word": "Wunder"
+    },
+    {
+      "prefix": "Das",
+      "word": "Sonnenlicht"
+    },
+    {
+      "prefix": "Der",
+      "word": "Panzer"
+    },
+    {
+      "prefix": "Das",
+      "word": "Personal"
+    },
+    {
+      "prefix": "Die",
+      "word": "Lüge"
+    },
+    {
+      "prefix": "Der",
+      "word": "Glaube"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ehre"
+    },
+    {
+      "prefix": "Die",
+      "word": "Creme"
+    },
+    {
+      "prefix": "Das",
+      "word": "Wohl"
+    },
+    {
+      "prefix": "Das",
+      "word": "Opfer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Möglichkeit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kontakt"
+    },
+    {
+      "prefix": "Die",
+      "word": "Stimmung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Daumen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Lesen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Spaß"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kerze"
+    },
+    {
+      "prefix": "Die",
+      "word": "Höhle"
+    },
+    {
+      "prefix": "Die",
+      "word": "Post"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gefängnis"
+    },
+    {
+      "prefix": "Die",
+      "word": "Emotion"
+    },
+    {
+      "prefix": "Der",
+      "word": "Führer"
+    },
+    {
+      "prefix": "Der",
+      "word": "Grad"
+    },
+    {
+      "prefix": "Die",
+      "word": "Eigenschaft"
+    },
+    {
+      "prefix": "Das",
+      "word": "Ticket"
+    },
+    {
+      "prefix": "Das",
+      "word": "Alien"
+    },
+    {
+      "prefix": "Der",
+      "word": "Unterricht"
+    },
+    {
+      "prefix": "Die",
+      "word": "Wüste"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schnitt"
+    },
+    {
+      "prefix": "Die",
+      "word": "Unordnung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Warnung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Märchen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Begräbnis"
+    },
+    {
+      "prefix": "Das",
+      "word": "Taxi"
+    },
+    {
+      "prefix": "Der",
+      "word": "Reporter"
+    },
+    {
+      "prefix": "Das",
+      "word": "Geschenk"
+    },
+    {
+      "prefix": "Das",
+      "word": "Theater"
+    },
+    {
+      "prefix": "Die",
+      "word": "Länge"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schlamm"
+    },
+    {
+      "prefix": "Die",
+      "word": "Wissenschaft"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fall"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schnur"
+    },
+    {
+      "prefix": "Die",
+      "word": "Rede"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kopie"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kuh"
+    },
+    {
+      "prefix": "Der",
+      "word": "Arbeiter"
+    },
+    {
+      "prefix": "Der",
+      "word": "Oberschenkel"
+    },
+    {
+      "prefix": "Das",
+      "word": "Labor"
+    },
+    {
+      "prefix": "Die",
+      "word": "Rolle"
+    },
+    {
+      "prefix": "Das",
+      "word": "Obst"
+    },
+    {
+      "prefix": "Der",
+      "word": "Patch"
+    },
+    {
+      "prefix": "Die",
+      "word": "Seide"
+    },
+    {
+      "prefix": "Der",
+      "word": "Buck"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ziegel"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gewehr"
+    },
+    {
+      "prefix": "Die",
+      "word": "Karriere"
+    },
+    {
+      "prefix": "Das",
+      "word": "Thema"
+    },
+    {
+      "prefix": "Die",
+      "word": "Gelegenheit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Direktor"
+    },
+    {
+      "prefix": "Das",
+      "word": "Monster"
+    },
+    {
+      "prefix": "Das",
+      "word": "Fahrzeug"
+    },
+    {
+      "prefix": "Die",
+      "word": "Gasse"
+    },
+    {
+      "prefix": "Die",
+      "word": "Hülse"
+    },
+    {
+      "prefix": "Das",
+      "word": "Grab"
+    },
+    {
+      "prefix": "Der",
+      "word": "Busch"
+    },
+    {
+      "prefix": "Der",
+      "word": "Speisesaal"
+    },
+    {
+      "prefix": "Die",
+      "word": "Eröffnung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Zwilling"
+    },
+    {
+      "prefix": "Die",
+      "word": "Scheune"
+    },
+    {
+      "prefix": "Das",
+      "word": "Pfund"
+    },
+    {
+      "prefix": "Der",
+      "word": "Standort"
+    },
+    {
+      "prefix": "Der",
+      "word": "Blitz"
+    },
+    {
+      "prefix": "Der",
+      "word": "Richter"
+    },
+    {
+      "prefix": "Die",
+      "word": "Masse"
+    },
+    {
+      "prefix": "Der",
+      "word": "Prozess"
+    },
+    {
+      "prefix": "Das",
+      "word": "Band"
+    },
+    {
+      "prefix": "Der",
+      "word": "Geldbeutel"
+    },
+    {
+      "prefix": "Das",
+      "word": "Rohr"
+    },
+    {
+      "prefix": "Der",
+      "word": "Drache"
+    },
+    {
+      "prefix": "Der",
+      "word": "Horizont"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schale"
+    },
+    {
+      "prefix": "Der",
+      "word": "Umschlag"
+    },
+    {
+      "prefix": "Die",
+      "word": "Prüfung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Erwachsene"
+    },
+    {
+      "prefix": "Der",
+      "word": "Notfall"
+    },
+    {
+      "prefix": "Das",
+      "word": "Material"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kindheit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Angewohnheit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Künstler"
+    },
+    {
+      "prefix": "Die",
+      "word": "Adresse"
+    },
+    {
+      "prefix": "Der",
+      "word": "Duft"
+    },
+    {
+      "prefix": "Das",
+      "word": "Universum"
+    },
+    {
+      "prefix": "Das",
+      "word": "Kopfnicken"
+    },
+    {
+      "prefix": "Die",
+      "word": "Muschel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Gemeinde"
+    },
+    {
+      "prefix": "Der",
+      "word": "Anfang"
+    },
+    {
+      "prefix": "Die",
+      "word": "Wunde"
+    },
+    {
+      "prefix": "Die",
+      "word": "Maus"
+    },
+    {
+      "prefix": "Der",
+      "word": "Pilot"
+    },
+    {
+      "prefix": "Die",
+      "word": "Klasse"
+    },
+    {
+      "prefix": "Das",
+      "word": "Video"
+    },
+    {
+      "prefix": "Der",
+      "word": "Korb"
+    },
+    {
+      "prefix": "Der",
+      "word": "Wagen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Versuch"
+    },
+    {
+      "prefix": "Das",
+      "word": "Sofa"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kuchen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kerl"
+    },
+    {
+      "prefix": "Die",
+      "word": "Affäre"
+    },
+    {
+      "prefix": "Die",
+      "word": "Küste"
+    },
+    {
+      "prefix": "Die",
+      "word": "Allgemeine"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ursprung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Robe"
+    },
+    {
+      "prefix": "Die",
+      "word": "Sorge"
+    },
+    {
+      "prefix": "Die",
+      "word": "Presse"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ratte"
+    },
+    {
+      "prefix": "Die",
+      "word": "Gesellschaft"
+    },
+    {
+      "prefix": "Der",
+      "word": "Stil"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kreis"
+    },
+    {
+      "prefix": "Der",
+      "word": "Befehl"
+    },
+    {
+      "prefix": "Der",
+      "word": "Besucher"
+    },
+    {
+      "prefix": "Das",
+      "word": "Model"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kammer"
+    },
+    {
+      "prefix": "Das",
+      "word": "Biest"
+    },
+    {
+      "prefix": "Das",
+      "word": "Bündel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Hintergrund"
+    },
+    {
+      "prefix": "Die",
+      "word": "Einheit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Möbel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Nagel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schrei"
+    },
+    {
+      "prefix": "Die",
+      "word": "Eigenschaft"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ausrüstung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Auffahrt"
+    },
+    {
+      "prefix": "Der",
+      "word": "Griff"
+    },
+    {
+      "prefix": "Das",
+      "word": "Rohr"
+    },
+    {
+      "prefix": "Die",
+      "word": "Asche"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fan"
+    },
+    {
+      "prefix": "Die",
+      "word": "Meinung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Daten"
+    },
+    {
+      "prefix": "Die",
+      "word": "Verbindung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Trick"
+    },
+    {
+      "prefix": "Das",
+      "word": "Mysterium"
+    },
+    {
+      "prefix": "Die",
+      "word": "Periode"
+    },
+    {
+      "prefix": "Das",
+      "word": "Schreiben"
+    },
+    {
+      "prefix": "Der",
+      "word": "Horror"
+    },
+    {
+      "prefix": "Die",
+      "word": "Süßigkeit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bitch"
+    },
+    {
+      "prefix": "Die",
+      "word": "Gesundheit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Geschäftsführer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Sicherheit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Höhe"
+    },
+    {
+      "prefix": "Die",
+      "word": "Erscheinung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Seufzer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Mine"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kleidung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Reaktion"
+    },
+    {
+      "prefix": "Die",
+      "word": "Quelle"
+    },
+    {
+      "prefix": "Das",
+      "word": "Ich"
+    },
+    {
+      "prefix": "Die",
+      "word": "Pistole"
+    },
+    {
+      "prefix": "Der",
+      "word": "Flughafen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Held"
+    },
+    {
+      "prefix": "Das",
+      "word": "Versprechen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bogen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Zelt"
+    },
+    {
+      "prefix": "Der",
+      "word": "Messestand"
+    },
+    {
+      "prefix": "Das",
+      "word": "Geld"
+    },
+    {
+      "prefix": "Die",
+      "word": "Straße"
+    },
+    {
+      "prefix": "Das",
+      "word": "TShirt"
+    },
+    {
+      "prefix": "Der",
+      "word": "Teppich"
+    },
+    {
+      "prefix": "Der",
+      "word": "Keller"
+    },
+    {
+      "prefix": "Die",
+      "word": "Freundin"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bart"
+    },
+    {
+      "prefix": "Die",
+      "word": "Stirn"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bildschirm"
+    },
+    {
+      "prefix": "Das",
+      "word": "Signal"
+    },
+    {
+      "prefix": "Der",
+      "word": "Diener"
+    },
+    {
+      "prefix": "Das",
+      "word": "Flüstern"
+    },
+    {
+      "prefix": "Der",
+      "word": "Zweifel"
+    },
+    {
+      "prefix": "Das",
+      "word": "Konto"
+    },
+    {
+      "prefix": "Die",
+      "word": "Magie"
+    },
+    {
+      "prefix": "Die",
+      "word": "Hank"
+    },
+    {
+      "prefix": "Das",
+      "word": "Glied"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bastard"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schädel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Satz"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kragen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Horn"
+    },
+    {
+      "prefix": "Die",
+      "word": "Eiche"
+    },
+    {
+      "prefix": "Der",
+      "word": "Knöchel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Puppe"
+    },
+    {
+      "prefix": "Das",
+      "word": "Sandwich"
+    },
+    {
+      "prefix": "Das",
+      "word": "Rotkehlchen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Justiz"
+    },
+    {
+      "prefix": "Der",
+      "word": "Stolz"
+    },
+    {
+      "prefix": "Die",
+      "word": "Jugend"
+    },
+    {
+      "prefix": "Der",
+      "word": "Sekretär"
+    },
+    {
+      "prefix": "Die",
+      "word": "Forschung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Sport"
+    },
+    {
+      "prefix": "Die",
+      "word": "Aufgabe"
+    },
+    {
+      "prefix": "Der",
+      "word": "Zuschuss"
+    },
+    {
+      "prefix": "Der",
+      "word": "Sheriff"
+    },
+    {
+      "prefix": "Die",
+      "word": "Mitternachts"
+    },
+    {
+      "prefix": "Der",
+      "word": "Chip"
+    },
+    {
+      "prefix": "Die",
+      "word": "Theorie"
+    },
+    {
+      "prefix": "Den",
+      "word": "Wecker"
+    },
+    {
+      "prefix": "Die",
+      "word": "Sammlung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Kreuz"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kiefer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Generation"
+    },
+    {
+      "prefix": "Die",
+      "word": "Autorität"
+    },
+    {
+      "prefix": "Die",
+      "word": "Papa"
+    },
+    {
+      "prefix": "Die",
+      "word": "Reise"
+    },
+    {
+      "prefix": "Die",
+      "word": "Perle"
+    },
+    {
+      "prefix": "Die",
+      "word": "Toilette"
+    },
+    {
+      "prefix": "Der",
+      "word": "Mörder"
+    },
+    {
+      "prefix": "Das",
+      "word": "Werkzeug"
+    },
+    {
+      "prefix": "Die",
+      "word": "Medizin"
+    },
+    {
+      "prefix": "Der",
+      "word": "Zucker"
+    },
+    {
+      "prefix": "Die",
+      "word": "Prinzessin"
+    },
+    {
+      "prefix": "Das",
+      "word": "Argument"
+    },
+    {
+      "prefix": "Die",
+      "word": "Klippe"
+    },
+    {
+      "prefix": "Der",
+      "word": "Wagen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kristall"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bohne"
+    },
+    {
+      "prefix": "Der",
+      "word": "Käfig"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schokolade"
+    },
+    {
+      "prefix": "Die",
+      "word": "Küste"
+    },
+    {
+      "prefix": "Das",
+      "word": "Jahrzehnt"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bedeutung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Getriebe"
+    },
+    {
+      "prefix": "Der",
+      "word": "Koffer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Operation"
+    },
+    {
+      "prefix": "Das",
+      "word": "Atem"
+    },
+    {
+      "prefix": "Die",
+      "word": "Rolle"
+    },
+    {
+      "prefix": "Die",
+      "word": "Version"
+    },
+    {
+      "prefix": "Der",
+      "word": "Gefangene"
+    },
+    {
+      "prefix": "Das",
+      "word": "Match"
+    },
+    {
+      "prefix": "Der",
+      "word": "Strahl"
+    },
+    {
+      "prefix": "Die",
+      "word": "Burg"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ansturm"
+    },
+    {
+      "prefix": "Die",
+      "word": "Fahrspur"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bekleidung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Pol"
+    },
+    {
+      "prefix": "Die",
+      "word": "Freiheit"
+    },
+    {
+      "prefix": "Das",
+      "word": "Können"
+    },
+    {
+      "prefix": "Die",
+      "word": "Leidenschaft"
+    },
+    {
+      "prefix": "Die",
+      "word": "Aktivität"
+    },
+    {
+      "prefix": "Zum",
+      "word": "Teufel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Platform"
+    },
+    {
+      "prefix": "Das",
+      "word": "Salz"
+    },
+    {
+      "prefix": "Das",
+      "word": "Fahrrad"
+    },
+    {
+      "prefix": "Der",
+      "word": "Stapel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Begleiter"
+    },
+    {
+      "prefix": "Das",
+      "word": "Schicksal"
+    },
+    {
+      "prefix": "Die",
+      "word": "Wut"
+    },
+    {
+      "prefix": "Die",
+      "word": "Versorgung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Wal"
+    },
+    {
+      "prefix": "Das",
+      "word": "Schwein"
+    },
+    {
+      "prefix": "Der",
+      "word": "Hase"
+    },
+    {
+      "prefix": "Der",
+      "word": "Gang"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bildschirm"
+    },
+    {
+      "prefix": "Der",
+      "word": "Helm"
+    },
+    {
+      "prefix": "Der",
+      "word": "Respekt"
+    },
+    {
+      "prefix": "Die",
+      "word": "Aufregung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Lobby"
+    },
+    {
+      "prefix": "Der",
+      "word": "Freund"
+    },
+    {
+      "prefix": "Das",
+      "word": "Fell"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bereich"
+    },
+    {
+      "prefix": "Die",
+      "word": "Dick"
+    },
+    {
+      "prefix": "Der",
+      "word": "Code"
+    },
+    {
+      "prefix": "Das",
+      "word": "Kapitel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Reflexion"
+    },
+    {
+      "prefix": "Die",
+      "word": "Post"
+    },
+    {
+      "prefix": "Der",
+      "word": "Flug"
+    },
+    {
+      "prefix": "Das",
+      "word": "Kabinett"
+    },
+    {
+      "prefix": "Das",
+      "word": "Spielzeug"
+    },
+    {
+      "prefix": "Die",
+      "word": "Baseball"
+    },
+    {
+      "prefix": "Das",
+      "word": "Innere"
+    },
+    {
+      "prefix": "Die",
+      "word": "Geschwindigkeit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Griff"
+    },
+    {
+      "prefix": "Die",
+      "word": "Führung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Summe"
+    },
+    {
+      "prefix": "Der",
+      "word": "Nerv"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schrecken"
+    },
+    {
+      "prefix": "Der",
+      "word": "Pullover"
+    },
+    {
+      "prefix": "Die",
+      "word": "Qualität"
+    },
+    {
+      "prefix": "Der",
+      "word": "Jäger"
+    },
+    {
+      "prefix": "Die",
+      "word": "Farbe"
+    },
+    {
+      "prefix": "Die",
+      "word": "Buster"
+    },
+    {
+      "prefix": "Die",
+      "word": "Baumwolle"
+    },
+    {
+      "prefix": "Der",
+      "word": "Wachtmeister"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kredit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schlag"
+    },
+    {
+      "prefix": "Der",
+      "word": "Teufel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bedrohung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Erfolg"
+    },
+    {
+      "prefix": "Dem",
+      "word": "Vorabend"
+    },
+    {
+      "prefix": "Das",
+      "word": "Kabel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Pfanne"
+    },
+    {
+      "prefix": "Der",
+      "word": "Angestellte"
+    },
+    {
+      "prefix": "Den",
+      "word": "Titel"
+    },
+    {
+      "prefix": "Das",
+      "word": "Messgerät"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schande"
+    },
+    {
+      "prefix": "Die",
+      "word": "Nadel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Lunge"
+    },
+    {
+      "prefix": "Der",
+      "word": "Krieger"
+    },
+    {
+      "prefix": "Der",
+      "word": "Umstand"
+    },
+    {
+      "prefix": "Das",
+      "word": "Studio"
+    },
+    {
+      "prefix": "Die",
+      "word": "Panik"
+    },
+    {
+      "prefix": "Der",
+      "word": "Mangel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bauer"
+    },
+    {
+      "prefix": "Der",
+      "word": "Akzent"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bombe"
+    },
+    {
+      "prefix": "Die",
+      "word": "Platte"
+    },
+    {
+      "prefix": "Die",
+      "word": "Fähigkeit"
+    },
+    {
+      "prefix": "Das",
+      "word": "Glück"
+    },
+    {
+      "prefix": "Der",
+      "word": "Sieger"
+    },
+    {
+      "prefix": "Die",
+      "word": "Feder"
+    },
+    {
+      "prefix": "Die",
+      "word": "Oma"
+    },
+    {
+      "prefix": "Das",
+      "word": "Glühen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Verhalten"
+    },
+    {
+      "prefix": "Der",
+      "word": "Durchgang"
+    },
+    {
+      "prefix": "Die",
+      "word": "Slave"
+    },
+    {
+      "prefix": "Der",
+      "word": "Leutnant"
+    },
+    {
+      "prefix": "Der",
+      "word": "Lauf"
+    },
+    {
+      "prefix": "Die",
+      "word": "Wärme"
+    },
+    {
+      "prefix": "Der",
+      "word": "Eindruck"
+    },
+    {
+      "prefix": "Der",
+      "word": "Maurer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Braut"
+    },
+    {
+      "prefix": "Das",
+      "word": "Paket"
+    },
+    {
+      "prefix": "Der",
+      "word": "Nebel"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gehen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Balance"
+    },
+    {
+      "prefix": "Die",
+      "word": "Socke"
+    },
+    {
+      "prefix": "Der",
+      "word": "Roboter"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kartoffel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Gegenstand"
+    },
+    {
+      "prefix": "Das",
+      "word": "Bad"
+    },
+    {
+      "prefix": "Der",
+      "word": "Diamant"
+    },
+    {
+      "prefix": "Die",
+      "word": "Leiche"
+    },
+    {
+      "prefix": "Die",
+      "word": "Erklärung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Struktur"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ausgang"
+    },
+    {
+      "prefix": "Das",
+      "word": "Pad"
+    },
+    {
+      "prefix": "Der",
+      "word": "Herd"
+    },
+    {
+      "prefix": "Das",
+      "word": "Blaue"
+    },
+    {
+      "prefix": "Die",
+      "word": "Amerikaner"
+    },
+    {
+      "prefix": "Der",
+      "word": "Rubin"
+    },
+    {
+      "prefix": "Der",
+      "word": "Blitz"
+    },
+    {
+      "prefix": "Die",
+      "word": "Grube"
+    },
+    {
+      "prefix": "Der",
+      "word": "Oberst"
+    },
+    {
+      "prefix": "Das",
+      "word": "Dock"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bach"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ratschlag"
+    },
+    {
+      "prefix": "Der",
+      "word": "Tourist"
+    },
+    {
+      "prefix": "Die",
+      "word": "Trauer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Verteidigung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Biss"
+    },
+    {
+      "prefix": "Das",
+      "word": "Museum"
+    },
+    {
+      "prefix": "Die",
+      "word": "Gunst"
+    },
+    {
+      "prefix": "Das",
+      "word": "Abendessen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Komfort"
+    },
+    {
+      "prefix": "Der",
+      "word": "Dekan"
+    },
+    {
+      "prefix": "Der",
+      "word": "Wert"
+    },
+    {
+      "prefix": "Der",
+      "word": "Marsch"
+    },
+    {
+      "prefix": "Das",
+      "word": "Anwesen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Poet"
+    },
+    {
+      "prefix": "Der",
+      "word": "Palast"
+    },
+    {
+      "prefix": "Die",
+      "word": "Suppe"
+    },
+    {
+      "prefix": "Die",
+      "word": "Nation"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gefäss"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ständige"
+    },
+    {
+      "prefix": "Der",
+      "word": "Sack"
+    },
+    {
+      "prefix": "Der",
+      "word": "Dämon"
+    },
+    {
+      "prefix": "Die",
+      "word": "Konferenz"
+    },
+    {
+      "prefix": "Der",
+      "word": "Saft"
+    },
+    {
+      "prefix": "Die",
+      "word": "Verantwortung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Pinsel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Route"
+    },
+    {
+      "prefix": "Der",
+      "word": "Käse"
+    },
+    {
+      "prefix": "Die",
+      "word": "Haube"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ente"
+    },
+    {
+      "prefix": "Der",
+      "word": "Heilige"
+    },
+    {
+      "prefix": "Der",
+      "word": "Pass"
+    },
+    {
+      "prefix": "Das",
+      "word": "Ziel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Orange"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kultur"
+    },
+    {
+      "prefix": "Die",
+      "word": "Reise"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kommandant"
+    },
+    {
+      "prefix": "Der",
+      "word": "Haken"
+    },
+    {
+      "prefix": "Der",
+      "word": "Nebel"
+    },
+    {
+      "prefix": "Das",
+      "word": "Training"
+    },
+    {
+      "prefix": "Die",
+      "word": "Suche"
+    },
+    {
+      "prefix": "Die",
+      "word": "Münze"
+    },
+    {
+      "prefix": "Das",
+      "word": "Wunder"
+    },
+    {
+      "prefix": "Der",
+      "word": "Vorteil"
+    },
+    {
+      "prefix": "Der",
+      "word": "Austausch"
+    },
+    {
+      "prefix": "Die",
+      "word": "Fiktion"
+    },
+    {
+      "prefix": "Der",
+      "word": "Teich"
+    },
+    {
+      "prefix": "Der",
+      "word": "Assistent"
+    },
+    {
+      "prefix": "Das",
+      "word": "Design"
+    },
+    {
+      "prefix": "Die",
+      "word": "Angel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Piste"
+    },
+    {
+      "prefix": "Der",
+      "word": "Graf"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kommentar"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kellner"
+    },
+    {
+      "prefix": "Der",
+      "word": "Lebensmittel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Leiter"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kurve"
+    },
+    {
+      "prefix": "Das",
+      "word": "Volumen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Risiko"
+    },
+    {
+      "prefix": "Der",
+      "word": "Albtraum"
+    },
+    {
+      "prefix": "Die",
+      "word": "Existenz"
+    },
+    {
+      "prefix": "Die",
+      "word": "Spur"
+    },
+    {
+      "prefix": "Die",
+      "word": "Krankheit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Unterstützung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Zeuge"
+    },
+    {
+      "prefix": "Die",
+      "word": "Aktie"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gerät"
+    },
+    {
+      "prefix": "Die",
+      "word": "Landschaft"
+    },
+    {
+      "prefix": "Der",
+      "word": "Urlaub"
+    },
+    {
+      "prefix": "Das",
+      "word": "Ass"
+    },
+    {
+      "prefix": "Das",
+      "word": "Klavier"
+    },
+    {
+      "prefix": "Die",
+      "word": "Eingeweide"
+    },
+    {
+      "prefix": "Das",
+      "word": "Talent"
+    },
+    {
+      "prefix": "Die",
+      "word": "Phantasie"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schwarze"
+    },
+    {
+      "prefix": "Der",
+      "word": "Reed"
+    },
+    {
+      "prefix": "Der",
+      "word": "Deckel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Hinweis"
+    },
+    {
+      "prefix": "Der",
+      "word": "Wanderer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kälte"
+    },
+    {
+      "prefix": "Die",
+      "word": "Studie"
+    },
+    {
+      "prefix": "Das",
+      "word": "Interview"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ansatz"
+    },
+    {
+      "prefix": "Die",
+      "word": "Narbe"
+    },
+    {
+      "prefix": "Die",
+      "word": "Mode"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kanal"
+    },
+    {
+      "prefix": "Die",
+      "word": "Tritt"
+    },
+    {
+      "prefix": "Der",
+      "word": "Aufnehmer"
+    },
+    {
+      "prefix": "Der",
+      "word": "Habicht"
+    },
+    {
+      "prefix": "Der",
+      "word": "Anhänger"
+    },
+    {
+      "prefix": "Die",
+      "word": "Statue"
+    },
+    {
+      "prefix": "Die",
+      "word": "Pille"
+    },
+    {
+      "prefix": "Der",
+      "word": "Käfer"
+    },
+    {
+      "prefix": "Der",
+      "word": "Eimer"
+    },
+    {
+      "prefix": "Den",
+      "word": "Urlaub"
+    },
+    {
+      "prefix": "Die",
+      "word": "Arten"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kolumne"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schaden"
+    },
+    {
+      "prefix": "Das",
+      "word": "Instrument"
+    },
+    {
+      "prefix": "Der",
+      "word": "Hafen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schicht"
+    },
+    {
+      "prefix": "Der",
+      "word": "Streifen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Müll"
+    },
+    {
+      "prefix": "Die",
+      "word": "Rippe"
+    },
+    {
+      "prefix": "Das",
+      "word": "Notebook"
+    },
+    {
+      "prefix": "Der",
+      "word": "Mais"
+    },
+    {
+      "prefix": "Das",
+      "word": "Angebot"
+    },
+    {
+      "prefix": "Die",
+      "word": "Zeichnung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Aussage"
+    },
+    {
+      "prefix": "Die",
+      "word": "Intelligenz"
+    },
+    {
+      "prefix": "Die",
+      "word": "Entschuldigung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Landung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Urheberrechts"
+    },
+    {
+      "prefix": "Die",
+      "word": "Stange"
+    },
+    {
+      "prefix": "Die",
+      "word": "Fantasie"
+    },
+    {
+      "prefix": "Die",
+      "word": "Neugier"
+    },
+    {
+      "prefix": "Das",
+      "word": "Kleid"
+    },
+    {
+      "prefix": "Die",
+      "word": "Grenze"
+    },
+    {
+      "prefix": "Die",
+      "word": "Poesie"
+    },
+    {
+      "prefix": "Die",
+      "word": "Firma"
+    },
+    {
+      "prefix": "Der",
+      "word": "Aufgang"
+    },
+    {
+      "prefix": "Die",
+      "word": "Handvoll"
+    },
+    {
+      "prefix": "Die",
+      "word": "China"
+    },
+    {
+      "prefix": "Die",
+      "word": "Franzosen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Durchschnitts"
+    },
+    {
+      "prefix": "Das",
+      "word": "Reh"
+    },
+    {
+      "prefix": "Die",
+      "word": "Druck"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schiene"
+    },
+    {
+      "prefix": "Die",
+      "word": "Rate"
+    },
+    {
+      "prefix": "Der",
+      "word": "Mut"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ankunft"
+    },
+    {
+      "prefix": "Der",
+      "word": "Wunsch"
+    },
+    {
+      "prefix": "Der",
+      "word": "Grat"
+    },
+    {
+      "prefix": "Der",
+      "word": "Idiot"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bulle"
+    },
+    {
+      "prefix": "Die",
+      "word": "Saat"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fortschritt"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gefühl"
+    },
+    {
+      "prefix": "Die",
+      "word": "Shorts"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bürger"
+    },
+    {
+      "prefix": "Der",
+      "word": "Müll"
+    },
+    {
+      "prefix": "Das",
+      "word": "Protokoll"
+    },
+    {
+      "prefix": "Die",
+      "word": "Geduld"
+    },
+    {
+      "prefix": "Die",
+      "word": "Fledermaus"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fußball"
+    },
+    {
+      "prefix": "Die",
+      "word": "Routine"
+    },
+    {
+      "prefix": "Die",
+      "word": "Explosion"
+    },
+    {
+      "prefix": "Der",
+      "word": "Inhalt"
+    },
+    {
+      "prefix": "Der",
+      "word": "Wissenschaftler"
+    },
+    {
+      "prefix": "Das",
+      "word": "Versagen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Sünde"
+    },
+    {
+      "prefix": "Der",
+      "word": "Hintern"
+    },
+    {
+      "prefix": "Die",
+      "word": "Verwirrung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Verständnis"
+    },
+    {
+      "prefix": "Der",
+      "word": "Handel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kühlschrank"
+    },
+    {
+      "prefix": "Der",
+      "word": "Herr"
+    },
+    {
+      "prefix": "Die",
+      "word": "Taschenlampe"
+    },
+    {
+      "prefix": "Das",
+      "word": "Internet"
+    },
+    {
+      "prefix": "Der",
+      "word": "Seemann"
+    },
+    {
+      "prefix": "Die",
+      "word": "Attitüde"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schuld"
+    },
+    {
+      "prefix": "Das",
+      "word": "Weinen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Sip"
+    },
+    {
+      "prefix": "Die",
+      "word": "Reise"
+    },
+    {
+      "prefix": "Der",
+      "word": "Keks"
+    },
+    {
+      "prefix": "Die",
+      "word": "Flucht"
+    },
+    {
+      "prefix": "Die",
+      "word": "Anleitung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gewebe"
+    },
+    {
+      "prefix": "Der",
+      "word": "Marmor"
+    },
+    {
+      "prefix": "Der",
+      "word": "Blick"
+    },
+    {
+      "prefix": "Die",
+      "word": "Dämmerung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Hütte"
+    },
+    {
+      "prefix": "Der",
+      "word": "Affe"
+    },
+    {
+      "prefix": "Das",
+      "word": "Makeup"
+    },
+    {
+      "prefix": "Die",
+      "word": "Doc"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bluse"
+    },
+    {
+      "prefix": "Der",
+      "word": "Rhythmus"
+    },
+    {
+      "prefix": "Der",
+      "word": "Dampf"
+    },
+    {
+      "prefix": "Der",
+      "word": "Satz"
+    },
+    {
+      "prefix": "Die",
+      "word": "Mutter"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bleistift"
+    },
+    {
+      "prefix": "Der",
+      "word": "Koch"
+    },
+    {
+      "prefix": "Die",
+      "word": "Flagge"
+    },
+    {
+      "prefix": "Der",
+      "word": "Trainer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schaukel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Lautsprecher"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bolzen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Fett"
+    },
+    {
+      "prefix": "Der",
+      "word": "Teppich"
+    },
+    {
+      "prefix": "Die",
+      "word": "Klopf"
+    },
+    {
+      "prefix": "Der",
+      "word": "Zauber"
+    },
+    {
+      "prefix": "Das",
+      "word": "Taxi"
+    },
+    {
+      "prefix": "Die",
+      "word": "Runde"
+    },
+    {
+      "prefix": "Der",
+      "word": "Strohhalm"
+    },
+    {
+      "prefix": "Die",
+      "word": "Luke"
+    },
+    {
+      "prefix": "Die",
+      "word": "Gabel"
+    },
+    {
+      "prefix": "Das",
+      "word": "Böse"
+    },
+    {
+      "prefix": "Das",
+      "word": "Dienstmädchen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Relative"
+    },
+    {
+      "prefix": "Die",
+      "word": "Hexe"
+    },
+    {
+      "prefix": "Der",
+      "word": "Hof"
+    },
+    {
+      "prefix": "Die",
+      "word": "Sensation"
+    },
+    {
+      "prefix": "Die",
+      "word": "Blase"
+    },
+    {
+      "prefix": "Der",
+      "word": "Leser"
+    },
+    {
+      "prefix": "Die",
+      "word": "Locke"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kuchen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Strahl"
+    },
+    {
+      "prefix": "Die",
+      "word": "Verschiebung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Union"
+    },
+    {
+      "prefix": "Der",
+      "word": "Teenager"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ebene"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kellnerin"
+    },
+    {
+      "prefix": "Die",
+      "word": "Antwort"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gerücht"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schwerkraft"
+    },
+    {
+      "prefix": "Die",
+      "word": "Zuflucht"
+    },
+    {
+      "prefix": "Das",
+      "word": "Abenteuer"
+    },
+    {
+      "prefix": "Der",
+      "word": "Löwe"
+    },
+    {
+      "prefix": "Die",
+      "word": "Wirbelsäule"
+    },
+    {
+      "prefix": "Das",
+      "word": "Vertrauen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Tiefe"
+    },
+    {
+      "prefix": "Die",
+      "word": "Reichweite"
+    },
+    {
+      "prefix": "Der",
+      "word": "Hammer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bibel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Vertrag"
+    },
+    {
+      "prefix": "Der",
+      "word": "Geldbeutel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Dschungel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Fabrik"
+    },
+    {
+      "prefix": "Die",
+      "word": "Indische"
+    },
+    {
+      "prefix": "Der",
+      "word": "Balkon"
+    },
+    {
+      "prefix": "Der",
+      "word": "Reis"
+    },
+    {
+      "prefix": "Der",
+      "word": "Knoten"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schnur"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kollege"
+    },
+    {
+      "prefix": "Die",
+      "word": "Absicht"
+    },
+    {
+      "prefix": "Die",
+      "word": "Stare"
+    },
+    {
+      "prefix": "Das",
+      "word": "Motel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Anwalt"
+    },
+    {
+      "prefix": "Der",
+      "word": "Liebling"
+    },
+    {
+      "prefix": "Die",
+      "word": "Diskussion"
+    },
+    {
+      "prefix": "Die",
+      "word": "Atmosphäre"
+    },
+    {
+      "prefix": "Die",
+      "word": "Leistung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Spannung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Text"
+    },
+    {
+      "prefix": "Der",
+      "word": "Strang"
+    },
+    {
+      "prefix": "Die",
+      "word": "Mittags"
+    },
+    {
+      "prefix": "Die",
+      "word": "Vene"
+    },
+    {
+      "prefix": "Der",
+      "word": "Experte"
+    },
+    {
+      "prefix": "Die",
+      "word": "Gruppe"
+    },
+    {
+      "prefix": "Der",
+      "word": "Polizist"
+    },
+    {
+      "prefix": "Der",
+      "word": "Krebs"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fuchs"
+    },
+    {
+      "prefix": "Die",
+      "word": "Scheidung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Impuls"
+    },
+    {
+      "prefix": "Die",
+      "word": "Abwesenheit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Gewalt"
+    },
+    {
+      "prefix": "Der",
+      "word": "Humor"
+    },
+    {
+      "prefix": "Der",
+      "word": "Stuhl"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kies"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schatz"
+    },
+    {
+      "prefix": "Die",
+      "word": "Butter"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schalter"
+    },
+    {
+      "prefix": "Die",
+      "word": "Zigarre"
+    },
+    {
+      "prefix": "Die",
+      "word": "Leinwand"
+    },
+    {
+      "prefix": "Die",
+      "word": "Fröhlichkeit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Führer"
+    },
+    {
+      "prefix": "Der",
+      "word": "Stift"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schauspieler"
+    },
+    {
+      "prefix": "Das",
+      "word": "Ganze"
+    },
+    {
+      "prefix": "Die",
+      "word": "Vereinbarung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Braune"
+    },
+    {
+      "prefix": "Der",
+      "word": "Gastgeber"
+    },
+    {
+      "prefix": "Das",
+      "word": "Farbband"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schal"
+    },
+    {
+      "prefix": "Die",
+      "word": "Skala"
+    },
+    {
+      "prefix": "Der",
+      "word": "Beweis"
+    },
+    {
+      "prefix": "Der",
+      "word": "Pfeil"
+    },
+    {
+      "prefix": "Die",
+      "word": "Temperatur"
+    },
+    {
+      "prefix": "Die",
+      "word": "Technologie"
+    },
+    {
+      "prefix": "Die",
+      "word": "Erlaubnis"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ort"
+    },
+    {
+      "prefix": "Die",
+      "word": "Klaue"
+    },
+    {
+      "prefix": "Der",
+      "word": "Cowboy"
+    },
+    {
+      "prefix": "Die",
+      "word": "Agentur"
+    },
+    {
+      "prefix": "Die",
+      "word": "Konstruktion"
+    },
+    {
+      "prefix": "Das",
+      "word": "Jagd"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gemüse"
+    },
+    {
+      "prefix": "Die",
+      "word": "Dose"
+    },
+    {
+      "prefix": "Der",
+      "word": "Hubschrauber"
+    },
+    {
+      "prefix": "Die",
+      "word": "Falle"
+    },
+    {
+      "prefix": "Das",
+      "word": "Pat"
+    },
+    {
+      "prefix": "Die",
+      "word": "Lücke"
+    },
+    {
+      "prefix": "Das",
+      "word": "Haustier"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bildung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Einkaufen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schuppen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Vereinbarung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Erde"
+    },
+    {
+      "prefix": "Der",
+      "word": "Herzog"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schrotflinte"
+    },
+    {
+      "prefix": "Die",
+      "word": "Vorstellung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Rück"
+    },
+    {
+      "prefix": "Die",
+      "word": "Zeremonie"
+    },
+    {
+      "prefix": "Der",
+      "word": "Löffel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Wanne"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schlüssel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Iris"
+    },
+    {
+      "prefix": "Der",
+      "word": "Vorfall"
+    },
+    {
+      "prefix": "Der",
+      "word": "Absturz"
+    },
+    {
+      "prefix": "Das",
+      "word": "Tagebuch"
+    },
+    {
+      "prefix": "Die",
+      "word": "Zugriffs"
+    },
+    {
+      "prefix": "Der",
+      "word": "Messing"
+    },
+    {
+      "prefix": "Die",
+      "word": "Mama"
+    },
+    {
+      "prefix": "Die",
+      "word": "Seitenleiste"
+    },
+    {
+      "prefix": "Das",
+      "word": "Schaf"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ingenieur"
+    },
+    {
+      "prefix": "Der",
+      "word": "Rumpf"
+    },
+    {
+      "prefix": "Der",
+      "word": "Geruch"
+    },
+    {
+      "prefix": "Der",
+      "word": "Termin"
+    },
+    {
+      "prefix": "Die",
+      "word": "Einladung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Lappen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gute"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kumpel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Behandlung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Weisheit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Preis"
+    },
+    {
+      "prefix": "Das",
+      "word": "Element"
+    },
+    {
+      "prefix": "Der",
+      "word": "Gigant"
+    },
+    {
+      "prefix": "Die",
+      "word": "Serviette"
+    },
+    {
+      "prefix": "Die",
+      "word": "Wäsche"
+    },
+    {
+      "prefix": "Die",
+      "word": "Option"
+    },
+    {
+      "prefix": "Das",
+      "word": "Regal"
+    },
+    {
+      "prefix": "Die",
+      "word": "Anforderung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gefängnis"
+    },
+    {
+      "prefix": "Der",
+      "word": "Opa"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ranch"
+    },
+    {
+      "prefix": "Der",
+      "word": "Punkt"
+    },
+    {
+      "prefix": "Das",
+      "word": "Skript"
+    },
+    {
+      "prefix": "Die",
+      "word": "Einkaufshalle"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ford"
+    },
+    {
+      "prefix": "Die",
+      "word": "Übung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Witwe"
+    },
+    {
+      "prefix": "Die",
+      "word": "Krähe"
+    },
+    {
+      "prefix": "Der",
+      "word": "Faden"
+    },
+    {
+      "prefix": "Die",
+      "word": "Selbstmord"
+    },
+    {
+      "prefix": "Die",
+      "word": "Notiz"
+    },
+    {
+      "prefix": "Der",
+      "word": "Sonnenuntergang"
+    },
+    {
+      "prefix": "Die",
+      "word": "Gallerie"
+    },
+    {
+      "prefix": "Das",
+      "word": "Schiff"
+    },
+    {
+      "prefix": "Der",
+      "word": "Donner"
+    },
+    {
+      "prefix": "Die",
+      "word": "Seife"
+    },
+    {
+      "prefix": "Der",
+      "word": "Whisky"
+    },
+    {
+      "prefix": "Das",
+      "word": "Weibchen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bürgermeister"
+    },
+    {
+      "prefix": "Der",
+      "word": "Hub"
+    },
+    {
+      "prefix": "Der",
+      "word": "Klick"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ruf"
+    },
+    {
+      "prefix": "Der",
+      "word": "Müller"
+    },
+    {
+      "prefix": "Der",
+      "word": "Rat"
+    },
+    {
+      "prefix": "Der",
+      "word": "Stundenplan"
+    },
+    {
+      "prefix": "Der",
+      "word": "Friedhof"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kampf"
+    },
+    {
+      "prefix": "Der",
+      "word": "Instinkt"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ruhe"
+    },
+    {
+      "prefix": "Der",
+      "word": "Arbeitnehmer"
+    },
+    {
+      "prefix": "Das",
+      "word": "Nest"
+    },
+    {
+      "prefix": "Das",
+      "word": "Limit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Deutsche"
+    },
+    {
+      "prefix": "Der",
+      "word": "Mönch"
+    },
+    {
+      "prefix": "Der",
+      "word": "Wurm"
+    },
+    {
+      "prefix": "Das",
+      "word": "Dokument"
+    },
+    {
+      "prefix": "Die",
+      "word": "Traurigkeit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Hütte"
+    },
+    {
+      "prefix": "Die",
+      "word": "Lebensdauer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Tänzerin"
+    },
+    {
+      "prefix": "Die",
+      "word": "Versicherung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schwierigkeit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Matratze"
+    },
+    {
+      "prefix": "Der",
+      "word": "Mann"
+    },
+    {
+      "prefix": "Die",
+      "word": "Klinik"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ad"
+    },
+    {
+      "prefix": "Der",
+      "word": "Becher"
+    },
+    {
+      "prefix": "Das",
+      "word": "Kit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kommunikation"
+    },
+    {
+      "prefix": "Das",
+      "word": "Unglück"
+    },
+    {
+      "prefix": "Die",
+      "word": "Fliese"
+    },
+    {
+      "prefix": "Der",
+      "word": "Empfänger"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gebrüll"
+    },
+    {
+      "prefix": "Die",
+      "word": "Truppe"
+    },
+    {
+      "prefix": "Der",
+      "word": "Sarg"
+    },
+    {
+      "prefix": "Die",
+      "word": "Freundschaft"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ermittlung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Verkauf"
+    },
+    {
+      "prefix": "Das",
+      "word": "Ziel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Krankenwagen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Mondlicht"
+    },
+    {
+      "prefix": "Das",
+      "word": "Mündel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Hosen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Wolle"
+    },
+    {
+      "prefix": "Die",
+      "word": "Mac"
+    },
+    {
+      "prefix": "Der",
+      "word": "Minister"
+    },
+    {
+      "prefix": "Der",
+      "word": "Eintritt"
+    },
+    {
+      "prefix": "Der",
+      "word": "Dieb"
+    },
+    {
+      "prefix": "Die",
+      "word": "Aktentasche"
+    },
+    {
+      "prefix": "Das",
+      "word": "Mitleid"
+    },
+    {
+      "prefix": "Die",
+      "word": "Finger"
+    },
+    {
+      "prefix": "Die",
+      "word": "Marine"
+    },
+    {
+      "prefix": "Das",
+      "word": "Insekt"
+    },
+    {
+      "prefix": "Der",
+      "word": "Samt"
+    },
+    {
+      "prefix": "Die",
+      "word": "Biene"
+    },
+    {
+      "prefix": "Der",
+      "word": "Stock"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Salat"
+    },
+    {
+      "prefix": "Die",
+      "word": "Windschutzscheibe"
+    },
+    {
+      "prefix": "Das",
+      "word": "Outfit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Shuttle"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schrei"
+    },
+    {
+      "prefix": "Die",
+      "word": "Wut"
+    },
+    {
+      "prefix": "Die",
+      "word": "Herausforderung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Zufriedenheit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Motor"
+    },
+    {
+      "prefix": "Das",
+      "word": "Produkt"
+    },
+    {
+      "prefix": "Das",
+      "word": "Unkraut"
+    },
+    {
+      "prefix": "Die",
+      "word": "Strecke"
+    },
+    {
+      "prefix": "Das",
+      "word": "Fitnesscenter"
+    },
+    {
+      "prefix": "Das",
+      "word": "Kapital"
+    },
+    {
+      "prefix": "Der",
+      "word": "Rand"
+    },
+    {
+      "prefix": "Die",
+      "word": "Pfote"
+    },
+    {
+      "prefix": "Die",
+      "word": "Festung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kosten"
+    },
+    {
+      "prefix": "Das",
+      "word": "Plakat"
+    },
+    {
+      "prefix": "Der",
+      "word": "Vampir"
+    },
+    {
+      "prefix": "Die",
+      "word": "Welle"
+    },
+    {
+      "prefix": "Die",
+      "word": "Identität"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bürgersteig"
+    },
+    {
+      "prefix": "Das",
+      "word": "Arschloch"
+    },
+    {
+      "prefix": "Der",
+      "word": "Gurt"
+    },
+    {
+      "prefix": "Das",
+      "word": "Wohnzimmer"
+    },
+    {
+      "prefix": "Der",
+      "word": "Hafen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Beispiel"
+    },
+    {
+      "prefix": "Das",
+      "word": "Netz"
+    },
+    {
+      "prefix": "Der",
+      "word": "Golf"
+    },
+    {
+      "prefix": "Den",
+      "word": "Mist"
+    },
+    {
+      "prefix": "Die",
+      "word": "Freude"
+    },
+    {
+      "prefix": "Die",
+      "word": "Decke"
+    },
+    {
+      "prefix": "Die",
+      "word": "Steuer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Falte"
+    },
+    {
+      "prefix": "Das",
+      "word": "Porträt"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gewebe"
+    },
+    {
+      "prefix": "Der",
+      "word": "Glaube"
+    },
+    {
+      "prefix": "Das",
+      "word": "Kostüm"
+    },
+    {
+      "prefix": "Das",
+      "word": "Maß"
+    },
+    {
+      "prefix": "Der",
+      "word": "Wagen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Gitarre"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ritter"
+    },
+    {
+      "prefix": "Der",
+      "word": "Rang"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bürgermeister"
+    },
+    {
+      "prefix": "Der",
+      "word": "Brunnen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Stall"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ladung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Funke"
+    },
+    {
+      "prefix": "Der",
+      "word": "Müll"
+    },
+    {
+      "prefix": "Der",
+      "word": "Champagner"
+    },
+    {
+      "prefix": "Das",
+      "word": "Viertel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schutz"
+    },
+    {
+      "prefix": "Das",
+      "word": "Urteil"
+    },
+    {
+      "prefix": "Die",
+      "word": "Sympathie"
+    },
+    {
+      "prefix": "Das",
+      "word": "Violett"
+    },
+    {
+      "prefix": "Der",
+      "word": "Aufprall"
+    },
+    {
+      "prefix": "Die",
+      "word": "Enttäuschung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Trink"
+    },
+    {
+      "prefix": "Das",
+      "word": "Bewusstsein"
+    },
+    {
+      "prefix": "Das",
+      "word": "Taschentuch"
+    },
+    {
+      "prefix": "Das",
+      "word": "Tanzen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Parfüm"
+    },
+    {
+      "prefix": "Das",
+      "word": "Netzwerk"
+    },
+    {
+      "prefix": "Der",
+      "word": "Anspruch"
+    },
+    {
+      "prefix": "Die",
+      "word": "Nonne"
+    },
+    {
+      "prefix": "Die",
+      "word": "Krone"
+    },
+    {
+      "prefix": "Das",
+      "word": "Geländer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Lizenz"
+    },
+    {
+      "prefix": "Die",
+      "word": "Barmherzigkeit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ballon"
+    },
+    {
+      "prefix": "Das",
+      "word": "Chaos"
+    },
+    {
+      "prefix": "Das",
+      "word": "Fieber"
+    },
+    {
+      "prefix": "Das",
+      "word": "Schließfach"
+    },
+    {
+      "prefix": "Die",
+      "word": "Sitzung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Burst"
+    },
+    {
+      "prefix": "Der",
+      "word": "Spitzer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Trommel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fokus"
+    },
+    {
+      "prefix": "Der",
+      "word": "Frosch"
+    },
+    {
+      "prefix": "Der",
+      "word": "Vorteil"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bemerkung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Gezeiten"
+    },
+    {
+      "prefix": "Der",
+      "word": "Verdacht"
+    },
+    {
+      "prefix": "Der",
+      "word": "Jeep"
+    },
+    {
+      "prefix": "Die",
+      "word": "Sorge"
+    },
+    {
+      "prefix": "Die",
+      "word": "Literatur"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bogenschütze"
+    },
+    {
+      "prefix": "Der",
+      "word": "Haushalt"
+    },
+    {
+      "prefix": "Das",
+      "word": "Pulver"
+    },
+    {
+      "prefix": "Der",
+      "word": "Hirte"
+    },
+    {
+      "prefix": "Die",
+      "word": "Linse"
+    },
+    {
+      "prefix": "Der",
+      "word": "Favorit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Madame"
+    },
+    {
+      "prefix": "Die",
+      "word": "Villa"
+    },
+    {
+      "prefix": "Der",
+      "word": "Boom"
+    },
+    {
+      "prefix": "Die",
+      "word": "Spitze"
+    },
+    {
+      "prefix": "Die",
+      "word": "Überprüfung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Rezeption"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schrott"
+    },
+    {
+      "prefix": "Der",
+      "word": "Wulst"
+    },
+    {
+      "prefix": "Die",
+      "word": "Blendung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Strömung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Cafe"
+    },
+    {
+      "prefix": "Der",
+      "word": "Status"
+    },
+    {
+      "prefix": "Das",
+      "word": "Pochen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Rakete"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schlucht"
+    },
+    {
+      "prefix": "Die",
+      "word": "Trauer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Spinne"
+    },
+    {
+      "prefix": "Die",
+      "word": "Explosion"
+    },
+    {
+      "prefix": "Die",
+      "word": "Persönlichkeit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Campus"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fluch"
+    },
+    {
+      "prefix": "Das",
+      "word": "Treppenhaus"
+    },
+    {
+      "prefix": "Der",
+      "word": "Drang"
+    },
+    {
+      "prefix": "Die",
+      "word": "Frustration"
+    },
+    {
+      "prefix": "Die",
+      "word": "Pumpe"
+    },
+    {
+      "prefix": "Die",
+      "word": "Leichtigkeit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Zählung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Lösung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schmuck"
+    },
+    {
+      "prefix": "Die",
+      "word": "Sirene"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schlag"
+    },
+    {
+      "prefix": "Die",
+      "word": "Tradition"
+    },
+    {
+      "prefix": "Das",
+      "word": "Leer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Vielfalt"
+    },
+    {
+      "prefix": "Der",
+      "word": "Pirat"
+    },
+    {
+      "prefix": "Die",
+      "word": "Beschreibung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Liebe"
+    },
+    {
+      "prefix": "Die",
+      "word": "Angst"
+    },
+    {
+      "prefix": "Die",
+      "word": "Tonhöhe"
+    },
+    {
+      "prefix": "Die",
+      "word": "Pizza"
+    },
+    {
+      "prefix": "Der",
+      "word": "Elefant"
+    },
+    {
+      "prefix": "Die",
+      "word": "Politik"
+    },
+    {
+      "prefix": "Der",
+      "word": "Tennis"
+    },
+    {
+      "prefix": "Der",
+      "word": "Hunger"
+    },
+    {
+      "prefix": "Das",
+      "word": "Genie"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ziege"
+    },
+    {
+      "prefix": "Der",
+      "word": "Sieg"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kombination"
+    },
+    {
+      "prefix": "Die",
+      "word": "Zugehörigkeit"
+    },
+    {
+      "prefix": "Das",
+      "word": "Momma"
+    },
+    {
+      "prefix": "Der",
+      "word": "Umhang"
+    },
+    {
+      "prefix": "Der",
+      "word": "Scheinwerfer"
+    },
+    {
+      "prefix": "Der",
+      "word": "Gouverneur"
+    },
+    {
+      "prefix": "Die",
+      "word": "Sauerstoff"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bischof"
+    },
+    {
+      "prefix": "Das",
+      "word": "Bündel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Entwicklung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fingernagel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Punktzahl"
+    },
+    {
+      "prefix": "Der",
+      "word": "Steuermann"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fahrer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Umlaufbahn"
+    },
+    {
+      "prefix": "Der",
+      "word": "Weinstock"
+    },
+    {
+      "prefix": "Die",
+      "word": "Suite"
+    },
+    {
+      "prefix": "Der",
+      "word": "Barkeeper"
+    },
+    {
+      "prefix": "Der",
+      "word": "Koks"
+    },
+    {
+      "prefix": "Die",
+      "word": "Melodie"
+    },
+    {
+      "prefix": "Die",
+      "word": "Herrlichkeit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Rabbi"
+    },
+    {
+      "prefix": "Die",
+      "word": "Operation"
+    },
+    {
+      "prefix": "Das",
+      "word": "Vieh"
+    },
+    {
+      "prefix": "Das",
+      "word": "Ritual"
+    },
+    {
+      "prefix": "Die",
+      "word": "Begrüßung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Scheibe"
+    },
+    {
+      "prefix": "Die",
+      "word": "Homer"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kamin"
+    },
+    {
+      "prefix": "Das",
+      "word": "Trikot"
+    },
+    {
+      "prefix": "Die",
+      "word": "Medien"
+    },
+    {
+      "prefix": "Die",
+      "word": "Pop"
+    },
+    {
+      "prefix": "Die",
+      "word": "Fracht"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gasthaus"
+    },
+    {
+      "prefix": "Der",
+      "word": "Stellvertretende"
+    },
+    {
+      "prefix": "Die",
+      "word": "Verzweiflung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Territorium"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schlag"
+    },
+    {
+      "prefix": "Die",
+      "word": "Jazz"
+    },
+    {
+      "prefix": "Die",
+      "word": "Umarmung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Pfeife"
+    },
+    {
+      "prefix": "Die",
+      "word": "Menschlichkeit"
+    },
+    {
+      "prefix": "Das",
+      "word": "Handwerk"
+    },
+    {
+      "prefix": "Das",
+      "word": "Tageslicht"
+    },
+    {
+      "prefix": "Der",
+      "word": "Wert"
+    },
+    {
+      "prefix": "Der",
+      "word": "Slip"
+    },
+    {
+      "prefix": "Die",
+      "word": "Rüstung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Rucksack"
+    },
+    {
+      "prefix": "Der",
+      "word": "Vorschlag"
+    },
+    {
+      "prefix": "Die",
+      "word": "Höhle"
+    },
+    {
+      "prefix": "Das",
+      "word": "Symbol"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kolonie"
+    },
+    {
+      "prefix": "Das",
+      "word": "Fazit"
+    },
+    {
+      "prefix": "Das",
+      "word": "Nasenloch"
+    },
+    {
+      "prefix": "Der",
+      "word": "Speer"
+    },
+    {
+      "prefix": "Der",
+      "word": "Impuls"
+    },
+    {
+      "prefix": "Die",
+      "word": "Tomate"
+    },
+    {
+      "prefix": "Das",
+      "word": "Kalb"
+    },
+    {
+      "prefix": "Der",
+      "word": "Herbst"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fund"
+    },
+    {
+      "prefix": "Das",
+      "word": "Klassenzimmer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Lieferung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Spray"
+    },
+    {
+      "prefix": "Die",
+      "word": "Flüssigkeit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kraftstoff"
+    },
+    {
+      "prefix": "Die",
+      "word": "Unterwäsche"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kuppel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bevölkerung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Neigung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Religion"
+    },
+    {
+      "prefix": "Der",
+      "word": "Sänger"
+    },
+    {
+      "prefix": "Der",
+      "word": "Begleiter"
+    },
+    {
+      "prefix": "Die",
+      "word": "Illusion"
+    },
+    {
+      "prefix": "Der",
+      "word": "Link"
+    },
+    {
+      "prefix": "Das",
+      "word": "Wohnzimmer"
+    },
+    {
+      "prefix": "Der",
+      "word": "Innenraum"
+    },
+    {
+      "prefix": "Die",
+      "word": "Achselzucken"
+    },
+    {
+      "prefix": "Die",
+      "word": "Zone"
+    },
+    {
+      "prefix": "Der",
+      "word": "Standard"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kohlen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Jagd"
+    },
+    {
+      "prefix": "Der",
+      "word": "Klumpen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Charm"
+    },
+    {
+      "prefix": "Die",
+      "word": "Legende"
+    },
+    {
+      "prefix": "Die",
+      "word": "Konsequenz"
+    },
+    {
+      "prefix": "Die",
+      "word": "Beobachtung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Fahrrad"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schaden"
+    },
+    {
+      "prefix": "Die",
+      "word": "Zahlung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Prospekt"
+    },
+    {
+      "prefix": "Die",
+      "word": "UBahn"
+    },
+    {
+      "prefix": "Das",
+      "word": "Muster"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kirsche"
+    },
+    {
+      "prefix": "Der",
+      "word": "Händler"
+    },
+    {
+      "prefix": "Die",
+      "word": "Zuordnung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Eile"
+    },
+    {
+      "prefix": "Die",
+      "word": "Geliebte"
+    },
+    {
+      "prefix": "Der",
+      "word": "Hügel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Unsinn"
+    },
+    {
+      "prefix": "Das",
+      "word": "Komitee"
+    },
+    {
+      "prefix": "Das",
+      "word": "Echo"
+    },
+    {
+      "prefix": "Der",
+      "word": "Durchhang"
+    },
+    {
+      "prefix": "Die",
+      "word": "Decker"
+    },
+    {
+      "prefix": "Das",
+      "word": "Warenhaus"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kampf"
+    },
+    {
+      "prefix": "Der",
+      "word": "Toast"
+    },
+    {
+      "prefix": "Die",
+      "word": "Einrichtung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Basketball"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schnurrbart"
+    },
+    {
+      "prefix": "Der",
+      "word": "Senator"
+    },
+    {
+      "prefix": "Das",
+      "word": "Teilen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Augenlid"
+    },
+    {
+      "prefix": "Die",
+      "word": "Begeisterung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Chunk"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schildkröte"
+    },
+    {
+      "prefix": "Der",
+      "word": "Alkohol"
+    },
+    {
+      "prefix": "Die",
+      "word": "Gummi"
+    },
+    {
+      "prefix": "Der",
+      "word": "Truthahn"
+    },
+    {
+      "prefix": "Der",
+      "word": "Prediger"
+    },
+    {
+      "prefix": "Der",
+      "word": "Besitz"
+    },
+    {
+      "prefix": "Der",
+      "word": "Dolly"
+    },
+    {
+      "prefix": "Das",
+      "word": "Leinen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Entschuldigung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Vortrag"
+    },
+    {
+      "prefix": "Der",
+      "word": "Stein"
+    },
+    {
+      "prefix": "Der",
+      "word": "Heap"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fotograf"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bremse"
+    },
+    {
+      "prefix": "Die",
+      "word": "Nachfrage"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schürze"
+    },
+    {
+      "prefix": "Der",
+      "word": "Mantel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Jury"
+    },
+    {
+      "prefix": "Die",
+      "word": "Anhörung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Graue"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kiste"
+    },
+    {
+      "prefix": "Die",
+      "word": "Methode"
+    },
+    {
+      "prefix": "Die",
+      "word": "Referenz"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ekel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Flotte"
+    },
+    {
+      "prefix": "Der",
+      "word": "Lippenstift"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kern"
+    },
+    {
+      "prefix": "Der",
+      "word": "Einzelne"
+    },
+    {
+      "prefix": "Der",
+      "word": "Container"
+    },
+    {
+      "prefix": "Die",
+      "word": "Hure"
+    },
+    {
+      "prefix": "Das",
+      "word": "Kleinkind"
+    },
+    {
+      "prefix": "Die",
+      "word": "Sonnenbrille"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schlauch"
+    },
+    {
+      "prefix": "Das",
+      "word": "Konzert"
+    },
+    {
+      "prefix": "Das",
+      "word": "Bullshit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Eisenbahn"
+    },
+    {
+      "prefix": "Die",
+      "word": "Parade"
+    },
+    {
+      "prefix": "Das",
+      "word": "Fach"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bewohner"
+    },
+    {
+      "prefix": "Der",
+      "word": "Backofen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Techniker"
+    },
+    {
+      "prefix": "Das",
+      "word": "Verfahren"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kämpfer"
+    },
+    {
+      "prefix": "Das",
+      "word": "Korn"
+    },
+    {
+      "prefix": "Das",
+      "word": "Picknick"
+    },
+    {
+      "prefix": "Der",
+      "word": "Stamm"
+    },
+    {
+      "prefix": "Die",
+      "word": "Knospe"
+    },
+    {
+      "prefix": "Die",
+      "word": "Wiese"
+    },
+    {
+      "prefix": "Die",
+      "word": "Öffentlichkeit"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gift"
+    },
+    {
+      "prefix": "Der",
+      "word": "Büffel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Region"
+    },
+    {
+      "prefix": "Die",
+      "word": "Produktion"
+    },
+    {
+      "prefix": "Das",
+      "word": "Rennen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schleife"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schlaf"
+    },
+    {
+      "prefix": "Die",
+      "word": "Soda"
+    },
+    {
+      "prefix": "Die",
+      "word": "Eule"
+    },
+    {
+      "prefix": "Das",
+      "word": "Menü"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kick"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ruine"
+    },
+    {
+      "prefix": "Die",
+      "word": "Rampe"
+    },
+    {
+      "prefix": "Der",
+      "word": "Streifen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Unterarm"
+    },
+    {
+      "prefix": "Das",
+      "word": "Büro"
+    },
+    {
+      "prefix": "Der",
+      "word": "Achsschenkel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Gans"
+    },
+    {
+      "prefix": "Der",
+      "word": "Vormarsch"
+    },
+    {
+      "prefix": "Die",
+      "word": "Fee"
+    },
+    {
+      "prefix": "Die",
+      "word": "Krankheit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Mannschaft"
+    },
+    {
+      "prefix": "Das",
+      "word": "Offizielle"
+    },
+    {
+      "prefix": "Die",
+      "word": "Marke"
+    },
+    {
+      "prefix": "Die",
+      "word": "Orgel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schmetterling"
+    },
+    {
+      "prefix": "Das",
+      "word": "Reich"
+    },
+    {
+      "prefix": "Das",
+      "word": "Profil"
+    },
+    {
+      "prefix": "Die",
+      "word": "Freiheit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Unglaube"
+    },
+    {
+      "prefix": "Der",
+      "word": "Hain"
+    },
+    {
+      "prefix": "Das",
+      "word": "Schild"
+    },
+    {
+      "prefix": "Der",
+      "word": "Sattel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Chancen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Cluster"
+    },
+    {
+      "prefix": "Der",
+      "word": "Satellit"
+    },
+    {
+      "prefix": "Der",
+      "word": "Abzug"
+    },
+    {
+      "prefix": "Der",
+      "word": "Welpe"
+    },
+    {
+      "prefix": "Die",
+      "word": "Warte"
+    },
+    {
+      "prefix": "Die",
+      "word": "Glühbirne"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kommode"
+    },
+    {
+      "prefix": "Die",
+      "word": "Patrouille"
+    },
+    {
+      "prefix": "Der",
+      "word": "Adler"
+    },
+    {
+      "prefix": "Der",
+      "word": "Privatsphäre"
+    },
+    {
+      "prefix": "Das",
+      "word": "Fluid"
+    },
+    {
+      "prefix": "Die",
+      "word": "Herde"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kopfschmerz"
+    },
+    {
+      "prefix": "Der",
+      "word": "Vergnügungspark"
+    },
+    {
+      "prefix": "Der",
+      "word": "Rollstuhl"
+    },
+    {
+      "prefix": "Die",
+      "word": "Richtlinie"
+    },
+    {
+      "prefix": "Das",
+      "word": "Belle"
+    },
+    {
+      "prefix": "Die",
+      "word": "Tabak"
+    },
+    {
+      "prefix": "Die",
+      "word": "Einstellung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Tätowierung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Last"
+    },
+    {
+      "prefix": "Der",
+      "word": "Händler"
+    },
+    {
+      "prefix": "Die",
+      "word": "Rutsche"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fleck"
+    },
+    {
+      "prefix": "Das",
+      "word": "Essen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bindung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Schwimmen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Grundlage"
+    },
+    {
+      "prefix": "Die",
+      "word": "Verletzung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Liga"
+    },
+    {
+      "prefix": "Die",
+      "word": "Batterie"
+    },
+    {
+      "prefix": "Der",
+      "word": "Regenschirm"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kaiser"
+    },
+    {
+      "prefix": "Der",
+      "word": "Pier"
+    },
+    {
+      "prefix": "Der",
+      "word": "Wasserhahn"
+    },
+    {
+      "prefix": "Der",
+      "word": "Witz"
+    },
+    {
+      "prefix": "Der",
+      "word": "Cutter"
+    },
+    {
+      "prefix": "Der",
+      "word": "Dachboden"
+    },
+    {
+      "prefix": "Der",
+      "word": "Tiger"
+    },
+    {
+      "prefix": "Die",
+      "word": "Pal"
+    },
+    {
+      "prefix": "Der",
+      "word": "Vorfahr"
+    },
+    {
+      "prefix": "Die",
+      "word": "Konzentration"
+    },
+    {
+      "prefix": "Der",
+      "word": "Berg"
+    },
+    {
+      "prefix": "Der",
+      "word": "Aufwand"
+    },
+    {
+      "prefix": "Der",
+      "word": "Segen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Urlaub"
+    },
+    {
+      "prefix": "Die",
+      "word": "Leiste"
+    },
+    {
+      "prefix": "Die",
+      "word": "Fackel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Tinten"
+    },
+    {
+      "prefix": "Die",
+      "word": "Handlung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Miete"
+    },
+    {
+      "prefix": "Das",
+      "word": "Maultier"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bogen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Umgebung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Stirnrunzeln"
+    },
+    {
+      "prefix": "Der",
+      "word": "Inspektor"
+    },
+    {
+      "prefix": "Die",
+      "word": "Mitten"
+    },
+    {
+      "prefix": "Die",
+      "word": "Verlegenheit"
+    },
+    {
+      "prefix": "Die",
+      "word": "Beschwerde"
+    },
+    {
+      "prefix": "Die",
+      "word": "Portion"
+    },
+    {
+      "prefix": "Das",
+      "word": "Spannfutter"
+    },
+    {
+      "prefix": "Die",
+      "word": "Clearing"
+    },
+    {
+      "prefix": "Die",
+      "word": "Krise"
+    },
+    {
+      "prefix": "Die",
+      "word": "Halskette"
+    },
+    {
+      "prefix": "Die",
+      "word": "Laterne"
+    },
+    {
+      "prefix": "Der",
+      "word": "Reichtum"
+    },
+    {
+      "prefix": "Der",
+      "word": "Mörder"
+    },
+    {
+      "prefix": "Die",
+      "word": "Zivilisation"
+    },
+    {
+      "prefix": "Das",
+      "word": "Konzept"
+    },
+    {
+      "prefix": "Das",
+      "word": "Lamm"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schritt"
+    },
+    {
+      "prefix": "Die",
+      "word": "Manschette"
+    },
+    {
+      "prefix": "Die",
+      "word": "Jungfrau"
+    },
+    {
+      "prefix": "Das",
+      "word": "Eichhörnchen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Kind"
+    },
+    {
+      "prefix": "Der",
+      "word": "Star"
+    },
+    {
+      "prefix": "Die",
+      "word": "Depression"
+    },
+    {
+      "prefix": "Das",
+      "word": "Speicher"
+    },
+    {
+      "prefix": "Der",
+      "word": "Altar"
+    },
+    {
+      "prefix": "Die",
+      "word": "Tragödie"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ressource"
+    },
+    {
+      "prefix": "Der",
+      "word": "Reisende"
+    },
+    {
+      "prefix": "Das",
+      "word": "Vertrauen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Bogen"
+    },
+    {
+      "prefix": "Das",
+      "word": "Königreich"
+    },
+    {
+      "prefix": "Das",
+      "word": "Juwel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Musiker"
+    },
+    {
+      "prefix": "Das",
+      "word": "Flugzeug"
+    },
+    {
+      "prefix": "Die",
+      "word": "Junk"
+    },
+    {
+      "prefix": "Der",
+      "word": "Sonnenschein"
+    },
+    {
+      "prefix": "Der",
+      "word": "Knabe"
+    },
+    {
+      "prefix": "Der",
+      "word": "Elf"
+    },
+    {
+      "prefix": "Der",
+      "word": "Protest"
+    },
+    {
+      "prefix": "Die",
+      "word": "Jagd"
+    },
+    {
+      "prefix": "Die",
+      "word": "Exekutive"
+    },
+    {
+      "prefix": "Das",
+      "word": "Tagebuch"
+    },
+    {
+      "prefix": "Das",
+      "word": "Aspekt"
+    },
+    {
+      "prefix": "Das",
+      "word": "Zifferblatt"
+    },
+    {
+      "prefix": "Der",
+      "word": "Hausschuh"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schauspielerin"
+    },
+    {
+      "prefix": "Das",
+      "word": "Shooting"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ohrring"
+    },
+    {
+      "prefix": "Die",
+      "word": "Ameise"
+    },
+    {
+      "prefix": "Die",
+      "word": "Patty"
+    },
+    {
+      "prefix": "Die",
+      "word": "Sauce"
+    },
+    {
+      "prefix": "Die",
+      "word": "Rakete"
+    },
+    {
+      "prefix": "Die",
+      "word": "Intensität"
+    },
+    {
+      "prefix": "Der",
+      "word": "Graben"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gänseblümchen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kapelle"
+    },
+    {
+      "prefix": "Der",
+      "word": "Sumpf"
+    },
+    {
+      "prefix": "Die",
+      "word": "Beziehung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Vermutung"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kran"
+    },
+    {
+      "prefix": "Die",
+      "word": "Begegnung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Sequenz"
+    },
+    {
+      "prefix": "Das",
+      "word": "Fragment"
+    },
+    {
+      "prefix": "Der",
+      "word": "Entwurf"
+    },
+    {
+      "prefix": "Das",
+      "word": "Diner"
+    },
+    {
+      "prefix": "Die",
+      "word": "Funktion"
+    },
+    {
+      "prefix": "Die",
+      "word": "Organisation"
+    },
+    {
+      "prefix": "Das",
+      "word": "Skelett"
+    },
+    {
+      "prefix": "Das",
+      "word": "Elend"
+    },
+    {
+      "prefix": "Das",
+      "word": "Kraut"
+    },
+    {
+      "prefix": "Der",
+      "word": "Stumpf"
+    },
+    {
+      "prefix": "Der",
+      "word": "Einsatz"
+    },
+    {
+      "prefix": "Die",
+      "word": "Puff"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kreation"
+    },
+    {
+      "prefix": "Das",
+      "word": "Gefolge"
+    },
+    {
+      "prefix": "Der",
+      "word": "Zauberer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Matte"
+    },
+    {
+      "prefix": "Die",
+      "word": "Dichtung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Zwielicht"
+    },
+    {
+      "prefix": "Das",
+      "word": "Grunzen"
+    },
+    {
+      "prefix": "Die",
+      "word": "Strafe"
+    },
+    {
+      "prefix": "Der",
+      "word": "Clan"
+    },
+    {
+      "prefix": "Das",
+      "word": "Kupfer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Trümmer"
+    },
+    {
+      "prefix": "Der",
+      "word": "Maler"
+    },
+    {
+      "prefix": "Das",
+      "word": "Steuer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Mathematik"
+    },
+    {
+      "prefix": "Die",
+      "word": "Erkennung"
+    },
+    {
+      "prefix": "Die",
+      "word": "Stimmung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Bedauern"
+    },
+    {
+      "prefix": "Das",
+      "word": "Ziel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Mühle"
+    },
+    {
+      "prefix": "Der",
+      "word": "Fehler"
+    },
+    {
+      "prefix": "Die",
+      "word": "Romantik"
+    },
+    {
+      "prefix": "Das",
+      "word": "Thema"
+    },
+    {
+      "prefix": "Die",
+      "word": "Terrasse"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schaufel"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schlafanzüge"
+    },
+    {
+      "prefix": "Die",
+      "word": "Email"
+    },
+    {
+      "prefix": "Die",
+      "word": "Taube"
+    },
+    {
+      "prefix": "Der",
+      "word": "Dinosaurier"
+    },
+    {
+      "prefix": "Die",
+      "word": "Branche"
+    },
+    {
+      "prefix": "Der",
+      "word": "Betreiber"
+    },
+    {
+      "prefix": "Der",
+      "word": "Lift"
+    },
+    {
+      "prefix": "Der",
+      "word": "Ratgeber"
+    },
+    {
+      "prefix": "Die",
+      "word": "Versammlung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Prinzip"
+    },
+    {
+      "prefix": "Das",
+      "word": "Drama"
+    },
+    {
+      "prefix": "Das",
+      "word": "Küken"
+    },
+    {
+      "prefix": "Das",
+      "word": "Diagramm"
+    },
+    {
+      "prefix": "Die",
+      "word": "Kampagne"
+    },
+    {
+      "prefix": "Der",
+      "word": "Lorbeer"
+    },
+    {
+      "prefix": "Das",
+      "word": "Steak"
+    },
+    {
+      "prefix": "Der",
+      "word": "Kriminelle"
+    },
+    {
+      "prefix": "Der",
+      "word": "Globus"
+    },
+    {
+      "prefix": "Der",
+      "word": "Bluterguss"
+    },
+    {
+      "prefix": "Der",
+      "word": "Knopf"
+    },
+    {
+      "prefix": "Das",
+      "word": "Töten"
+    },
+    {
+      "prefix": "Der",
+      "word": "Schatz"
+    },
+    {
+      "prefix": "Die",
+      "word": "Oper"
+    },
+    {
+      "prefix": "Der",
+      "word": "Frost"
+    },
+    {
+      "prefix": "Der",
+      "word": "Nippel"
+    },
+    {
+      "prefix": "Der",
+      "word": "Pfarrer"
+    },
+    {
+      "prefix": "Die",
+      "word": "Trübung"
+    },
+    {
+      "prefix": "Das",
+      "word": "Hochwasser"
+    },
+    {
+      "prefix": "Das",
+      "word": "Weihnachtslied"
+    },
+    {
+      "prefix": "Die",
+      "word": "Schwäche"
+    },
+    {
+      "prefix": "Das",
+      "word": "Kochen"
+    },
+    {
+      "prefix": "Der",
+      "word": "Metzger"
+    },
+    {
+      "prefix": "Der",
+      "word": "Würfel"
+    }
+  ]
+}
