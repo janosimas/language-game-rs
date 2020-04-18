@@ -1,22 +1,26 @@
-use iced::{executor, Application, Column, Command, Element, Settings, Text};
+use iced::{executor, Application, Command, Element, Settings};
+mod general;
+mod gui;
 
 pub fn main() {
     Game::run(Settings::default())
 }
 
 struct Game {
+    game_view: gui::GameView
 }
 
 impl Game {
     fn new() -> Self {
         Self {
+            game_view: gui::GameView::new()
         }
     }
 }
 
 impl Application for Game {
     type Executor = executor::Null;
-    type Message = ();
+    type Message = general::Message;
     type Flags = ();
 
     fn new(_flags: ()) -> (Self, Command<Self::Message>) {
@@ -28,15 +32,10 @@ impl Application for Game {
     }
 
     fn update(&mut self, message: Self::Message) -> Command<Self::Message> {
-        Command::none()
+        self.game_view.update(message)
     }
 
     fn view(&mut self) -> Element<Self::Message> {
-        Column::new()
-            .spacing(10)
-            .push(
-                Text::new("test")
-            )
-            .into()
+        self.game_view.view()
     }
 }
