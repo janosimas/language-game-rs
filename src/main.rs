@@ -31,9 +31,6 @@ impl Game {
             }
         }
 
-        println!("{}: {}", tranlation_pair.0, tranlation_pair.1);
-        println!("{}: {}", image_pair.0, image_pair.1);
-
         Self {
             game_view: gui::GameView::new(),
             language: general::load_language().unwrap(),

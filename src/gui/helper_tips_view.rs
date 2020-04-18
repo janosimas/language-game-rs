@@ -1,5 +1,5 @@
-use iced::{Column, Command, Element, Text};
 use crate::general;
+use iced::{Command, Element, Row, Text};
 
 pub struct HelperTipsView {}
 
@@ -12,6 +12,12 @@ impl HelperTipsView {
     }
 
     pub fn view(&mut self, context: &general::Context) -> Element<general::Message> {
-        Text::new("Help").into()
+        context
+            .helper_tips
+            .iter()
+            .fold(Row::new().spacing(10), |row, value| {
+                row.push(Text::new(value))
+            })
+            .into()
     }
 }

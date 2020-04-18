@@ -1,5 +1,5 @@
 use crate::general;
-use iced::{Column, Command, Element, Text};
+use iced::{Command, Element, Row, Text};
 
 pub struct AnswerView {}
 
@@ -12,6 +12,12 @@ impl AnswerView {
     }
 
     pub fn view(&mut self, context: &general::Context) -> Element<general::Message> {
-        Text::new(context.options_transl.first().unwrap()).into()
+        context
+            .options_transl
+            .iter()
+            .fold(Row::new().spacing(10), |row, value| {
+                row.push(Text::new(value))
+            })
+            .into()
     }
 }
