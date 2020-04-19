@@ -1,5 +1,5 @@
 use crate::general;
-use iced::{Command, Element, Length, Row, Text};
+use iced::{Command, Element, Image, Length, Row, Text};
 
 pub struct HelperTipsView {}
 
@@ -17,7 +17,7 @@ impl HelperTipsView {
             .iter()
             .fold(
                 Row::new().spacing(10).width(Length::FillPortion(1)),
-                |row, value| row.push(Text::new(value)),
+                |row, value| row.push(Image::new(value).width(Length::FillPortion(1))),
             )
             .into()
     }
