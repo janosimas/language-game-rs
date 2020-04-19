@@ -27,7 +27,10 @@ impl AnswerView {
             .zip(&context.options_translation)
             .enumerate()
             .fold(
-                Row::new().spacing(10).width(Length::FillPortion(1)),
+                Row::new()
+                    .spacing(10)
+                    .width(Length::FillPortion(1))
+                    .height(Length::FillPortion(1)),
                 |row, (index, (state, value))| {
                     row.push(Button::new(state, Text::new(value)).on_press(
                         general::Message::UserInput(general::UserInput::OptionSelected(index)),
