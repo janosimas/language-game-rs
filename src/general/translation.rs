@@ -3,13 +3,13 @@ use attohttpc;
 use super::*;
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct Response {
-    pub code: u16,
-    pub lang: String,
-    pub text: Vec<String>,
+struct Response {
+    code: u16,
+    lang: String,
+    text: Vec<String>,
 }
 
-pub fn get_translation(word: &Word, from: &str, to: &str, state: &State) -> Response {
+pub fn get_translation(word: &Word, from: &str, to: &str, state: &State) -> Vec<std::string::String> {
     let res = attohttpc::get("https://translate.yandex.net/api/v1.5/tr.json/translate")
         .param("key", &state.tranlation_pair.1)
         .param("lang", format!("{}-{}", from, to))
@@ -17,5 +17,5 @@ pub fn get_translation(word: &Word, from: &str, to: &str, state: &State) -> Resp
         .param("format", "plain")
         .send()
         .unwrap();
-    res.json().unwrap()
+    res.json::<Response>().unwrap().text
 }

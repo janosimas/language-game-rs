@@ -50,7 +50,6 @@ impl Game {
             .iter()
             .map(|word| {
                 general::get_translation(word, &self.language.language, "en", &self.state)
-                    .text
                     .first()
                     .unwrap()
                     .clone()
@@ -61,6 +60,8 @@ impl Game {
         let current_translation = translations.first().unwrap().clone();
 
         translations.shuffle(&mut rand::thread_rng());
+
+        let images_uri: Vec<String> = general::get_images(current_word, &self.state);
 
         self.context = Some(general::Context::new(
             current_word.to_string(),
