@@ -1,8 +1,24 @@
 use super::*;
 use attohttpc;
 use serde::{Deserialize, Serialize};
+use std::fs::OpenOptions;
 
-pub fn get_images(word: &Word, state: &State) -> Vec<std::string::String> {
+pub fn download_image(url: &str, name: &str) -> String {
+    let path = format!("{}.jpg", name);
+    let res = attohttpc::get(url).send().unwrap();
+    let mut file = OpenOptions::new()
+        .read(true)
+        .write(true)
+        .create(true)
+        .truncate(true)
+        .open(&path)
+        .unwrap();
+    // let mut file = File::create(format!("{}.jpg", name)).unwrap();
+    res.write_to(file);
+    path
+}
+
+pub fn get_images_url(word: &Word, state: &State) -> Vec<std::string::String> {
     let search_string = if let Some(search_string) = &word.image_search_aid {
         search_string
     } else {
@@ -16,7 +32,8 @@ pub fn get_images(word: &Word, state: &State) -> Vec<std::string::String> {
         .param("q", search_string)
         .send()
         .unwrap();
-    res.json::<Response>().unwrap()
+    res.json::<Response>()
+        .unwrap()
         .hits
         .iter()
         .map(|hit| hit.webformat_url.clone())

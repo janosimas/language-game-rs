@@ -61,7 +61,12 @@ impl Game {
 
         translations.shuffle(&mut rand::thread_rng());
 
-        let images_uri: Vec<String> = general::get_images(current_word, &self.state);
+        let images_uri: Vec<String> = general::get_images_url(current_word, &self.state);
+        let images_path: Vec<String> = images_uri
+            .iter()
+            .enumerate()
+            .map(|(index, url)| general::download_image(&url, &index.to_string()))
+            .collect();
 
         self.context = Some(general::Context::new(
             current_word.to_string(),
