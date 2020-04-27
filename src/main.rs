@@ -1,12 +1,13 @@
 use dotenv;
 use iced::{executor, Application, Column, Command, Element, Length, Row, Settings, Text};
+use iced_futures::futures;
 use rand::seq::SliceRandom;
 use std::env;
 
 mod general;
 mod gui;
 
-pub fn main() {
+fn main() {
     dotenv::dotenv().ok();
 
     Game::run(Settings::default())
@@ -40,36 +41,50 @@ impl Game {
     }
 
     fn advance_turn(&mut self) {
-        let options: Vec<&general::Word> = self
+        let mut options: Vec<&general::Word> = self
             .language
             .words
             .choose_multiple(&mut rand::thread_rng(), 5)
             .collect();
 
-        let mut translations: Vec<String> = options
+        let current_word = options.first().unwrap().clone();
+
+        options.shuffle(&mut rand::thread_rng());
+
+        let translations: Vec<String> = options
             .iter()
             .map(|word| {
-                general::get_translation(word, &self.language.language, "en", &self.state)
-                    .first()
-                    .unwrap()
-                    .clone()
+                general::translation::get_translation(
+                    word,
+                    &self.language.language,
+                    "en",
+                    &self.state,
+                )
             })
+            .map(|f| futures::executor::block_on(f).unwrap())
+            .map(|response: general::translation::Response| response.text.first().unwrap().clone())
             .collect();
 
-        let current_word = options.first().unwrap();
-        let current_translation = translations.first().unwrap().clone();
-
-        translations.shuffle(&mut rand::thread_rng());
-
-        let images_path: Vec<String> = general::get_images_url(current_word, &self.state)
+        let images_path: Vec<String> = general::image::get_images_url(current_word, &self.state)
             .iter()
             .enumerate()
-            .map(|(index, url)| general::download_image(&url, &index.to_string()))
+            .map(|(index, url)| general::image::download_image(&url, &index.to_string()))
             .collect();
 
         self.context = Some(general::Context::new(
             current_word.to_string(),
-            current_translation,
+            options
+                .iter()
+                .enumerate()
+                .filter_map(|(index, word)| {
+                    if *word == current_word {
+                        Some(index)
+                    } else {
+                        None
+                    }
+                })
+                .next()
+                .unwrap(),
             translations,
             images_path,
         ));
@@ -101,8 +116,7 @@ impl Application for Game {
                 general::UserInput::OptionSelected(index) => {
                     let context = self.context.as_ref().unwrap();
 
-                    let selected_option = &context.options_translation[index];
-                    if selected_option == &context.word_translation {
+                    if index == context.current_word_index {
                         self.state.advance_score();
                         self.state.add_correct_word(&context.word_original);
                     } else {

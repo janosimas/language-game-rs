@@ -13,7 +13,6 @@ pub fn download_image(url: &str, name: &str) -> String {
         .truncate(true)
         .open(&path)
         .unwrap();
-    // let mut file = File::create(format!("{}.jpg", name)).unwrap();
     res.write_to(file);
     path
 }

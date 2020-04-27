@@ -13,7 +13,7 @@ pub struct Language {
     pub words: Vec<Word>,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, PartialEq)]
 pub struct Word {
     pub prefix: Option<String>,
     pub word: String,

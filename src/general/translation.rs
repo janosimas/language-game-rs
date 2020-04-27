@@ -1,21 +1,30 @@
-use serde::{Deserialize, Serialize};
-use attohttpc;
 use super::*;
+use reqwest;
+use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Debug)]
-struct Response {
+pub struct Response {
     code: u16,
     lang: String,
-    text: Vec<String>,
+    pub text: Vec<String>,
 }
 
-pub fn get_translation(word: &Word, from: &str, to: &str, state: &State) -> Vec<std::string::String> {
-    let res = attohttpc::get("https://translate.yandex.net/api/v1.5/tr.json/translate")
-        .param("key", &state.tranlation_pair.1)
-        .param("lang", format!("{}-{}", from, to))
-        .param("text", &word.word)
-        .param("format", "plain")
+pub async fn get_translation(
+    word: &Word,
+    from: &str,
+    to: &str,
+    state: &State,
+) -> Result<Response, reqwest::Error> {
+    Ok(reqwest::Client::new()
+        .get("https://translate.yandex.net/api/v1.5/tr.json/translate")
+        .query(&[
+            ("key", &state.tranlation_pair.1),
+            ("lang", &format!("{}-{}", from, to)),
+            ("text", &word.word),
+            ("format", &"plain".to_string()),
+        ])
         .send()
-        .unwrap();
-    res.json::<Response>().unwrap().text
+        .await?
+        .json::<Response>()
+        .await?)
 }
