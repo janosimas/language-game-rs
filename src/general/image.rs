@@ -6,7 +6,7 @@ use std::fs::OpenOptions;
 pub fn download_image(url: &str, name: &str) -> String {
     let path = format!("{}.jpg", name);
     let res = attohttpc::get(url).send().unwrap();
-    let mut file = OpenOptions::new()
+    let file = OpenOptions::new()
         .read(true)
         .write(true)
         .create(true)

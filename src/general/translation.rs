@@ -10,21 +10,27 @@ pub struct Response {
 }
 
 pub async fn get_translation(
-    word: &Word,
-    from: &str,
-    to: &str,
-    state: &State,
-) -> Result<Response, reqwest::Error> {
-    Ok(reqwest::Client::new()
+    word: Word,
+    from: String,
+    to: String,
+    index: usize,
+    key: String,
+) -> Message {
+    let response = reqwest::Client::new()
         .get("https://translate.yandex.net/api/v1.5/tr.json/translate")
         .query(&[
-            ("key", &state.tranlation_pair.1),
+            ("key", &key),
             ("lang", &format!("{}-{}", from, to)),
             ("text", &word.word),
             ("format", &"plain".to_string()),
         ])
         .send()
-        .await?
+        .await
+        .unwrap()
         .json::<Response>()
-        .await?)
+        .await
+        .unwrap();
+
+    let translation = response.text.first().unwrap();
+    Message::TranslationFinished(index, translation.clone())
 }

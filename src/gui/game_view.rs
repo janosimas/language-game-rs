@@ -18,7 +18,15 @@ impl GameView {
         }
     }
 
-    pub fn update(&mut self, _message: general::Message) -> Command<general::Message> {
+    pub fn update(&mut self, message: general::Message) -> Command<general::Message> {
+        match message {
+            general::Message::GameBegin => {}
+            general::Message::GameEnd => {}
+            general::Message::TranslationFinished(_, _) => {
+                self.answer_view.update(message);
+            }
+            general::Message::UserInput(_) => {}
+        }
         Command::none()
     }
 
