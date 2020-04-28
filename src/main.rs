@@ -15,6 +15,7 @@ fn main() {
 
 struct Game {
     game_view: gui::GameView,
+    start_view: gui::StartView,
     language: general::Language,
     state: general::State,
     context: Option<general::Context>,
@@ -34,6 +35,7 @@ impl Game {
 
         Self {
             game_view: gui::GameView::new(),
+            start_view: gui::StartView::new(),
             language: general::load_language().unwrap(),
             state: general::State::new(tranlation_pair, image_pair),
             context: None,
@@ -109,6 +111,7 @@ impl Application for Game {
     fn update(&mut self, message: Self::Message) -> Command<Self::Message> {
         match message {
             general::Message::GameBegin => {
+                self.state.start();
                 self.advance_turn();
             }
             general::Message::GameEnd => {}
@@ -133,19 +136,20 @@ impl Application for Game {
     }
 
     fn view(&mut self) -> Element<Self::Message> {
-        if self.context.is_none() {
-            self.advance_turn();
+        if !self.state.is_game_running() {
+            self.start_view.view().into()
+        } else {
+            Row::new()
+                .push(self.game_view.view(&self.context))
+                .push(
+                    Column::new()
+                        .spacing(10)
+                        .height(Length::FillPortion(1))
+                        .width(Length::FillPortion(1))
+                        .push(Text::new(format!("score: {}", &self.state.score())))
+                        .push(Text::new(format!("turn: {}", &self.state.turn()))),
+                )
+                .into()
         }
-        Row::new()
-            .push(self.game_view.view(&self.context))
-            .push(
-                Column::new()
-                    .spacing(10)
-                    .height(Length::FillPortion(1))
-                    .width(Length::FillPortion(1))
-                    .push(Text::new(format!("score: {}", &self.state.score())))
-                    .push(Text::new(format!("turn: {}", &self.state.turn()))),
-            )
-            .into()
     }
 }

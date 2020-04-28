@@ -35,7 +35,7 @@ impl GameView {
                 .push(self.answer_view.view(&context))
                 .into()
         } else {
-            Text::new("Not started").into()
+            Text::new("No context loaded").into()
         }
     }
 }

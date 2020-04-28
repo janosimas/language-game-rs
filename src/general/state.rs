@@ -1,4 +1,5 @@
 pub struct State {
+    game_running: bool,
     turn_number: u16,
     score: usize,
     failed_words: Vec<String>,
@@ -10,6 +11,7 @@ pub struct State {
 impl State {
     pub fn new(tranlation_pair: (String, String), image_pair: (String, String)) -> Self {
         Self {
+            game_running: false,
             turn_number: 0,
             score: 0,
             failed_words: vec![],
@@ -17,6 +19,14 @@ impl State {
             tranlation_pair,
             image_pair,
         }
+    }
+
+    pub fn start(&mut self) {
+        self.game_running = true;
+    }
+
+    pub fn is_game_running(&self) -> bool {
+        self.game_running
     }
 
     pub fn advance_turn(&mut self) {
