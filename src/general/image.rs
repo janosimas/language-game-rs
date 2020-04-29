@@ -1,12 +1,13 @@
 use super::*;
 use reqwest;
 use serde::{Deserialize, Serialize};
-use std::fs::OpenOptions;
+use std::fs::{create_dir_all, OpenOptions};
 use std::io::Write;
 use uuid::Uuid;
 
 pub async fn download_image(url: String, index: usize) -> Message {
     let name = Uuid::new_v4();
+    create_dir_all("temp");
     let path = format!("temp/{}.jpg", name);
     let res = reqwest::Client::new().get(&url).send().await.unwrap();
     let mut file = OpenOptions::new()
