@@ -1,5 +1,7 @@
 use crate::general;
-use iced::{Column, Command, Element, Image, Length, Row, Text};
+use iced::{Column, Command, Element, Image, Length, Row};
+use std::fs;
+use std::iter;
 
 pub struct HelperTipsView {
     helper_tips: Vec<Option<String>>,
@@ -13,14 +15,21 @@ impl HelperTipsView {
     }
     pub fn update(&mut self, message: general::Message) -> Command<general::Message> {
         match message {
-            general::Message::GameBegin => {}
-            general::Message::GameEnd => {}
             general::Message::ImageDownloaded(index, value) => {
                 self.helper_tips[index] = Some(value);
             }
-            general::Message::UserInput(_) => {}
-            general::Message::RequestImages(_) => {}
-            general::Message::TranslationDownloaded(_, _) => {}
+            general::Message::EndTurn => {
+                self.helper_tips = self
+                    .helper_tips
+                    .iter()
+                    .map(|file| {
+                        // TODO: not working. Probably the gui must close the image first.
+                        fs::remove_file(file.as_ref().unwrap());
+                        None
+                    })
+                    .collect()
+            }
+            _ => {}
         }
         Command::none()
     }
@@ -40,12 +49,20 @@ impl HelperTipsView {
                             .width(Length::FillPortion(1))
                             .height(Length::FillPortion(1))
                             .push(
-                                Image::new(&images[0].as_ref().unwrap_or(&"0.jpg".to_string()))
-                                    .width(Length::FillPortion(1)),
+                                Image::new(
+                                    &images[0]
+                                        .as_ref()
+                                        .unwrap_or(&"resources/loading.jpg".to_string()),
+                                )
+                                .width(Length::FillPortion(1)),
                             )
                             .push(
-                                Image::new(&images[1].as_ref().unwrap_or(&"0.jpg".to_string()))
-                                    .width(Length::FillPortion(1)),
+                                Image::new(
+                                    &images[1]
+                                        .as_ref()
+                                        .unwrap_or(&"resources/loading.jpg".to_string()),
+                                )
+                                .width(Length::FillPortion(1)),
                             ),
                     )
                 },

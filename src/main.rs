@@ -1,6 +1,5 @@
 use dotenv;
-use iced::{executor, Application, Column, Command, Element, Length, Row, Settings, Text};
-use iced_futures::futures;
+use iced::{Application, Column, Command, Element, Length, Row, Settings, Text};
 use rand::seq::SliceRandom;
 use std::env;
 use std::iter;
@@ -121,7 +120,7 @@ impl Application for Game {
                     .into_iter()
                     .enumerate()
                     .map(|(index, url)| {
-                        general::image::download_image(url, index.to_string(), index)
+                        general::image::download_image(url, index)
                     })
                     .map(Command::from)
                     .collect::<Vec<_>>();
@@ -141,11 +140,13 @@ impl Application for Game {
                         self.state.add_wrong_word(&context.word_original);
                     }
 
+                    self.game_view.update(general::Message::EndTurn);
                     self.advance_turn()
                 }
                 general::UserInput::HintSelected(_) => Command::none(),
                 general::UserInput::OptionWritten(_) => Command::none(),
             },
+            general::Message::EndTurn => self.game_view.update(message),
         }
     }
 

@@ -1,5 +1,6 @@
 use crate::general;
 use iced::{button, Button, Command, Element, Length, Row, Text};
+use std::iter;
 
 pub struct AnswerView {
     button_states: Vec<button::State>,
@@ -21,14 +22,13 @@ impl AnswerView {
     }
     pub fn update(&mut self, message: general::Message) -> Command<general::Message> {
         match message {
-            general::Message::GameBegin => {}
-            general::Message::GameEnd => {}
             general::Message::TranslationDownloaded(index, value) => {
                 self.options[index] = Some(value);
             }
-            general::Message::UserInput(_) => {}
-            general::Message::RequestImages(_) => {}
-            general::Message::ImageDownloaded(_, _) => {}
+            general::Message::EndTurn => {
+                self.options = iter::repeat(None).take(5).collect();
+            }
+            _ => {}
         }
         Command::none()
     }

@@ -1136,9 +1136,9 @@ checksum = "8c109c49f00169139cdd57afac6c8a80346fc60fc5743b4ba6a4cfdf1285c2dd"
 
 [[package]]
 name = "iced_futures"
-version = "0.1.1"
+version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9f213e2794425b06c733717732aa2f8952e802db420a79b6484d4ac530238296"
+checksum = "dd2d8494c0b2a1e1977421b4c094fdcd32d79c27fb9b3bbf1021c62de9eb6986"
 dependencies = [
  "futures 0.3.4",
  "log",
@@ -1337,6 +1337,7 @@ dependencies = [
  "reqwest",
  "serde",
  "serde_json",
+ "uuid",
  "wasm-timer",
  "web-sys",
 ]
@@ -2590,6 +2591,15 @@ dependencies = [
  "idna",
  "matches",
  "percent-encoding",
+]
+
+[[package]]
+name = "uuid"
+version = "0.8.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9fde2f6a4bea1d6e007c4ad38c6839fa71cbb63b6dbf5b595aa38dc9b1093c11"
+dependencies = [
+ "rand",
 ]
 
 [[package]]

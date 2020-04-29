@@ -20,16 +20,17 @@ impl GameView {
 
     pub fn update(&mut self, message: general::Message) -> Command<general::Message> {
         match message {
-            general::Message::GameBegin => {}
-            general::Message::GameEnd => {}
             general::Message::TranslationDownloaded(_, _) => {
                 self.answer_view.update(message);
             }
-            general::Message::UserInput(_) => {}
-            general::Message::RequestImages(_) => {}
             general::Message::ImageDownloaded(_, _) => {
                 self.helper_tips_view.update(message);
             }
+            general::Message::EndTurn => {
+                self.helper_tips_view.update(message.clone());
+                self.answer_view.update(message);
+            }
+            _ => {}
         }
         Command::none()
     }
