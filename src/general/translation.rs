@@ -32,5 +32,5 @@ pub async fn get_translation(
         .unwrap();
 
     let translation = response.text.first().unwrap();
-    Message::TranslationFinished(index, translation.clone())
+    Message::TranslationDownloaded(index, translation.clone())
 }

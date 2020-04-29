@@ -1,19 +1,32 @@
 use crate::general;
-use iced::{Column, Command, Element, Image, Length, Row};
+use iced::{Column, Command, Element, Image, Length, Row, Text};
 
-pub struct HelperTipsView {}
+pub struct HelperTipsView {
+    helper_tips: Vec<Option<String>>,
+}
 
 impl HelperTipsView {
     pub fn new() -> Self {
-        Self {}
+        Self {
+            helper_tips: vec![None, None, None, None],
+        }
     }
-    pub fn update(&mut self, _message: general::Message) -> Command<general::Message> {
+    pub fn update(&mut self, message: general::Message) -> Command<general::Message> {
+        match message {
+            general::Message::GameBegin => {}
+            general::Message::GameEnd => {}
+            general::Message::ImageDownloaded(index, value) => {
+                self.helper_tips[index] = Some(value);
+            }
+            general::Message::UserInput(_) => {}
+            general::Message::RequestImages(_) => {}
+            general::Message::TranslationDownloaded(_, _) => {}
+        }
         Command::none()
     }
 
-    pub fn view(&mut self, context: &general::Context) -> Element<general::Message> {
-        context
-            .helper_tips
+    pub fn view(&mut self) -> Element<general::Message> {
+        self.helper_tips
             .chunks(2)
             .fold(
                 Column::new()
@@ -26,8 +39,14 @@ impl HelperTipsView {
                             .spacing(10)
                             .width(Length::FillPortion(1))
                             .height(Length::FillPortion(1))
-                            .push(Image::new(&images[0]).width(Length::FillPortion(1)))
-                            .push(Image::new(&images[1]).width(Length::FillPortion(1))),
+                            .push(
+                                Image::new(&images[0].as_ref().unwrap_or(&"0.jpg".to_string()))
+                                    .width(Length::FillPortion(1)),
+                            )
+                            .push(
+                                Image::new(&images[1].as_ref().unwrap_or(&"0.jpg".to_string()))
+                                    .width(Length::FillPortion(1)),
+                            ),
                     )
                 },
             )

@@ -1,4 +1,4 @@
-use iced::{Column, Command, Element, Length, Text, Align};
+use iced::{Align, Column, Command, Element, Length, Text};
 
 use super::*;
 use crate::general;
@@ -22,10 +22,14 @@ impl GameView {
         match message {
             general::Message::GameBegin => {}
             general::Message::GameEnd => {}
-            general::Message::TranslationFinished(_, _) => {
+            general::Message::TranslationDownloaded(_, _) => {
                 self.answer_view.update(message);
             }
             general::Message::UserInput(_) => {}
+            general::Message::RequestImages(_) => {}
+            general::Message::ImageDownloaded(_, _) => {
+                self.helper_tips_view.update(message);
+            }
         }
         Command::none()
     }
@@ -39,8 +43,8 @@ impl GameView {
                 .height(Length::FillPortion(1))
                 .width(Length::FillPortion(3))
                 .push(self.question_view.view(&context))
-                .push(self.helper_tips_view.view(&context))
-                .push(self.answer_view.view(&context))
+                .push(self.helper_tips_view.view())
+                .push(self.answer_view.view())
                 .into()
         } else {
             Text::new("No context loaded").into()

@@ -1,23 +1,24 @@
 use super::*;
-use attohttpc;
+use reqwest;
 use serde::{Deserialize, Serialize};
 use std::fs::OpenOptions;
+use std::io::Write;
 
-pub fn download_image(url: &str, name: &str) -> String {
+pub async fn download_image(url: String, name: String, index: usize) -> Message {
     let path = format!("{}.jpg", name);
-    let res = attohttpc::get(url).send().unwrap();
-    let file = OpenOptions::new()
+    let res = reqwest::Client::new().get(&url).send().await.unwrap();
+    let mut file = OpenOptions::new()
         .read(true)
         .write(true)
         .create(true)
         .truncate(true)
         .open(&path)
         .unwrap();
-    res.write_to(file);
-    path
+    file.write_all(&res.bytes().await.unwrap());
+    Message::ImageDownloaded(index, path)
 }
 
-pub fn get_images_url(word: &Word, state: &State) -> Vec<std::string::String> {
+pub async fn get_images_url(word: Word, key: String) -> Message {
     let search_string = if let Some(search_string) = &word.image_search_aid {
         search_string
     } else {
@@ -25,18 +26,21 @@ pub fn get_images_url(word: &Word, state: &State) -> Vec<std::string::String> {
     };
 
     // TODO: request error handling
-    let res = attohttpc::get("https://pixabay.com/api/")
-        .param("key", &state.image_pair.1)
-        .param("per_page", 4)
-        .param("q", search_string)
+    let res = reqwest::Client::new()
+        .get("https://pixabay.com/api/")
+        .query(&[
+            ("key", &key),
+            ("per_page", &"4".to_string()),
+            ("q", search_string),
+        ])
         .send()
-        .unwrap();
-    res.json::<Response>()
+        .await
         .unwrap()
-        .hits
-        .iter()
-        .map(|hit| hit.webformat_url.clone())
-        .collect()
+        .json::<Response>()
+        .await
+        .unwrap();
+
+    Message::RequestImages(res.hits.into_iter().map(|hit| hit.webformat_url).collect())
 }
 
 #[derive(Serialize, Deserialize)]

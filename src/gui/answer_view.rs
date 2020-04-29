@@ -23,15 +23,17 @@ impl AnswerView {
         match message {
             general::Message::GameBegin => {}
             general::Message::GameEnd => {}
-            general::Message::TranslationFinished(index, value) => {
+            general::Message::TranslationDownloaded(index, value) => {
                 self.options[index] = Some(value);
             }
             general::Message::UserInput(_) => {}
+            general::Message::RequestImages(_) => {}
+            general::Message::ImageDownloaded(_, _) => {}
         }
         Command::none()
     }
 
-    pub fn view(&mut self, context: &general::Context) -> Element<general::Message> {
+    pub fn view(&mut self) -> Element<general::Message> {
         self.button_states
             .iter_mut()
             .zip(&self.options)

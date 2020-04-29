@@ -2,7 +2,9 @@
 pub enum Message {
     GameBegin,
     GameEnd,
-    TranslationFinished(usize, String),
+    RequestImages(Vec<String>),
+    ImageDownloaded(usize, String),
+    TranslationDownloaded(usize, String),
     UserInput(UserInput),
 }
 

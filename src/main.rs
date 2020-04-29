@@ -3,6 +3,7 @@ use iced::{executor, Application, Column, Command, Element, Length, Row, Setting
 use iced_futures::futures;
 use rand::seq::SliceRandom;
 use std::env;
+use std::iter;
 
 mod general;
 mod gui;
@@ -42,36 +43,17 @@ impl Game {
         }
     }
 
-    fn advance_turn(&mut self) {
-        let mut options: Vec<&general::Word> = self
+    fn advance_turn(&mut self) -> Command<general::Message> {
+        let mut options: Vec<general::Word> = self
             .language
             .words
             .choose_multiple(&mut rand::thread_rng(), 5)
+            .cloned()
             .collect();
 
         let current_word = options.first().unwrap().clone();
 
         options.shuffle(&mut rand::thread_rng());
-
-        let translations: Vec<String> = options
-            .iter()
-            .map(|word| {
-                general::translation::get_translation(
-                    word,
-                    &self.language.language,
-                    "en",
-                    &self.state,
-                )
-            })
-            .map(|f| futures::executor::block_on(f).unwrap())
-            .map(|response: general::translation::Response| response.text.first().unwrap().clone())
-            .collect();
-
-        let images_path: Vec<String> = general::image::get_images_url(current_word, &self.state)
-            .iter()
-            .enumerate()
-            .map(|(index, url)| general::image::download_image(&url, &index.to_string()))
-            .collect();
 
         self.context = Some(general::Context::new(
             current_word.to_string(),
@@ -87,16 +69,36 @@ impl Game {
                 })
                 .next()
                 .unwrap(),
-            translations,
-            images_path,
         ));
 
         self.state.advance_turn();
+
+        let translations = options
+            .iter()
+            .cloned()
+            .enumerate()
+            .map(|(index, word)| {
+                general::translation::get_translation(
+                    word,
+                    self.language.language.clone(),
+                    "en".to_string(),
+                    index,
+                    self.state.tranlation_pair.1.clone(),
+                )
+            })
+            .map(Command::from)
+            .collect::<Vec<_>>();
+        Command::batch(translations.into_iter().chain(iter::once(Command::from(
+            general::image::get_images_url(
+                current_word.clone(),
+                self.state.image_pair.1.to_string(),
+            ),
+        ))))
     }
 }
 
 impl Application for Game {
-    type Executor = executor::Null;
+    type Executor = iced::executor::Default;
     type Message = general::Message;
     type Flags = ();
 
@@ -112,9 +114,22 @@ impl Application for Game {
         match message {
             general::Message::GameBegin => {
                 self.state.start();
-                self.advance_turn();
+                self.advance_turn()
             }
-            general::Message::GameEnd => {}
+            general::Message::RequestImages(images_uri) => {
+                let images = images_uri
+                    .into_iter()
+                    .enumerate()
+                    .map(|(index, url)| {
+                        general::image::download_image(url, index.to_string(), index)
+                    })
+                    .map(Command::from)
+                    .collect::<Vec<_>>();
+                Command::batch(images.into_iter())
+            }
+            general::Message::TranslationDownloaded(_, _) => self.game_view.update(message),
+            general::Message::ImageDownloaded(_, _) => self.game_view.update(message),
+            general::Message::GameEnd => Command::none(),
             general::Message::UserInput(user_input) => match user_input {
                 general::UserInput::OptionSelected(index) => {
                     let context = self.context.as_ref().unwrap();
@@ -126,13 +141,12 @@ impl Application for Game {
                         self.state.add_wrong_word(&context.word_original);
                     }
 
-                    self.advance_turn();
+                    self.advance_turn()
                 }
-                general::UserInput::HintSelected(_) => {}
-                general::UserInput::OptionWritten(_) => {}
+                general::UserInput::HintSelected(_) => Command::none(),
+                general::UserInput::OptionWritten(_) => Command::none(),
             },
         }
-        Command::none()
     }
 
     fn view(&mut self) -> Element<Self::Message> {
