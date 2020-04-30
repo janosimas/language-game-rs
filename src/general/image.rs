@@ -2,26 +2,33 @@ use super::*;
 use reqwest;
 use serde::{Deserialize, Serialize};
 use std::fs::{create_dir_all, OpenOptions};
-use std::io::Write;
+use std::io::{Write};
 use uuid::Uuid;
 
-pub async fn download_image(url: String, index: usize) -> Message {
+async fn checked_download_image(url: String) -> Option<String> {
     let name = Uuid::new_v4();
-    create_dir_all("temp");
+    create_dir_all("temp").ok()?;
     let path = format!("temp/{}.jpg", name);
-    let res = reqwest::Client::new().get(&url).send().await.unwrap();
+    let res = reqwest::Client::new().get(&url).send().await.ok()?;
     let mut file = OpenOptions::new()
         .read(true)
         .write(true)
         .create(true)
         .truncate(true)
         .open(&path)
-        .unwrap();
-    file.write_all(&res.bytes().await.unwrap());
-    Message::ImageDownloaded(index, path)
+        .ok()?;
+    file.write_all(&res.bytes().await.ok()?).ok()?;
+    Some(path)
 }
 
-pub async fn get_images_url(word: Word, key: String) -> Message {
+pub async fn download_image(url: String, index: usize) -> Message {
+    match checked_download_image(url).await {
+        Some(path) => Message::ImageDownloaded(index, path),
+        None => Message::Error(Error::ErrorDownloadingImage(index)),
+    }
+}
+
+async fn checked_get_images_url(word: Word, key: String) -> Option<Response> {
     let search_string = if let Some(search_string) = &word.image_search_aid {
         search_string
     } else {
@@ -38,12 +45,18 @@ pub async fn get_images_url(word: Word, key: String) -> Message {
         ])
         .send()
         .await
-        .unwrap()
+        .ok()?
         .json::<Response>()
         .await
-        .unwrap();
+        .ok()?;
+    Some(res)
+}
 
-    Message::RequestImages(res.hits.into_iter().map(|hit| hit.webformat_url).collect())
+pub async fn get_images_url(word: Word, key: String) -> Message {
+    match checked_get_images_url(word, key).await {
+        Some(res) => Message::RequestImages(res.hits.into_iter().map(|hit| hit.webformat_url).collect()),
+        None => Message::Error(Error::ErrorRequestingImages),
+    }
 }
 
 #[derive(Serialize, Deserialize)]

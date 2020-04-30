@@ -7,6 +7,13 @@ pub enum Message {
     ImageDownloaded(usize, String),
     TranslationDownloaded(usize, String),
     UserInput(UserInput),
+    Error(Error)
+}
+
+#[derive(Debug, Clone)]
+pub enum Error {
+    ErrorDownloadingImage(usize),
+    ErrorRequestingImages
 }
 
 #[derive(Debug, Clone)]
