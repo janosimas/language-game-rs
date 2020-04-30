@@ -1,5 +1,8 @@
+use chrono;
 use dotenv;
+use fern;
 use iced::{Application, Column, Command, Element, Length, Row, Settings, Text};
+use log::{debug, error, info, trace, warn};
 use rand::seq::SliceRandom;
 use std::env;
 use std::iter;
@@ -9,6 +12,34 @@ mod gui;
 
 fn main() {
     dotenv::dotenv().ok();
+
+    // Configure logger at runtime
+    fern::Dispatch::new()
+        // Perform allocation-free log formatting
+        .format(|out, message, record| {
+            out.finish(format_args!(
+                "{}[{}][{}] {}",
+                chrono::Local::now().format("[%Y-%m-%d][%H:%M:%S]"),
+                record.target(),
+                record.level(),
+                message
+            ))
+        })
+        // Add blanket level filter -
+        .level(log::LevelFilter::Debug)
+        // disable libraries logging
+        .level_for("hyper", log::LevelFilter::Off)
+        .level_for("reqwest", log::LevelFilter::Off)
+        .level_for("iced_winit", log::LevelFilter::Off)
+        .level_for("iced_wgpu", log::LevelFilter::Off)
+        .level_for("wgpu_native", log::LevelFilter::Off)
+        .level_for("gfx_backend_vulkan", log::LevelFilter::Off)
+        .level_for("gfx_backend_dx11", log::LevelFilter::Off)
+        // Output to stdout, files, and other Dispatch configurations
+        .chain(std::io::stdout())
+        // Apply globally
+        .apply()
+        .unwrap();
 
     Game::run(Settings::default())
 }
@@ -119,16 +150,19 @@ impl Application for Game {
                 let images = images_uri
                     .into_iter()
                     .enumerate()
-                    .map(|(index, url)| {
-                        general::image::download_image(url, index)
-                    })
+                    .map(|(index, url)| general::image::download_image(url, index))
                     .map(Command::from)
                     .collect::<Vec<_>>();
                 Command::batch(images.into_iter())
             }
             general::Message::TranslationDownloaded(_, _) => self.game_view.update(message),
             general::Message::ImageDownloaded(_, _) => self.game_view.update(message),
+            general::Message::EndTurn => self.game_view.update(message),
             general::Message::GameEnd => Command::none(),
+            general::Message::Error(_) => {
+                error!("Some error happened!!!");
+                Command::none()
+            }
             general::Message::UserInput(user_input) => match user_input {
                 general::UserInput::OptionSelected(index) => {
                     let context = self.context.as_ref().unwrap();
@@ -146,7 +180,6 @@ impl Application for Game {
                 general::UserInput::HintSelected(_) => Command::none(),
                 general::UserInput::OptionWritten(_) => Command::none(),
             },
-            general::Message::EndTurn => self.game_view.update(message),
         }
     }
 
