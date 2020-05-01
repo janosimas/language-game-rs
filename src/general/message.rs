@@ -8,13 +8,7 @@ pub enum Message {
     TranslationDownloaded(usize, String),
     UserInput(UserInput),
     Error(Error),
-    GuiUpdated(GuiUpdate),
 }
-#[derive(Debug, Clone)]
-pub enum GuiUpdate {
-    LanguageUpdated(String)
-}
-
 
 #[derive(Debug, Clone)]
 pub enum Error {
