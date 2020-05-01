@@ -1022,7 +1022,8 @@
     },
     {
       "prefix": "Das",
-      "word": "Boot"
+      "word": "Boot",
+      "image_search_aid": "boat"
     },
     {
       "prefix": "Das",
@@ -2034,7 +2035,8 @@
     },
     {
       "prefix": "Der",
-      "word": "Fehler"
+      "word": "Fehler",
+      "image_search_aid": "mistake"
     },
     {
       "prefix": "Die",
@@ -2710,7 +2712,8 @@
     },
     {
       "prefix": "Die",
-      "word": "Taille"
+      "word": "Taille",
+      "image_search_aid": "waist"
     },
     {
       "prefix": "Der",
@@ -2958,7 +2961,8 @@
     },
     {
       "prefix": "Die",
-      "word": "Eigenschaft"
+      "word": "Eigenschaft",
+      "image_search_aid": "property"
     },
     {
       "prefix": "Das",
@@ -3934,7 +3938,9 @@
     },
     {
       "prefix": "Die",
-      "word": "Dick"
+      "word": "Dick",
+      "translation_aid": "fat",
+      "image_search_aid": "fat"
     },
     {
       "prefix": "Der",
@@ -5750,7 +5756,8 @@
     },
     {
       "prefix": "Der",
-      "word": "Wurm"
+      "word": "Wurm",
+      "image_search_aid": "earthworm"
     },
     {
       "prefix": "Das",
