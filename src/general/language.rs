@@ -35,7 +35,7 @@ impl fmt::Display for Word {
 }
 
 pub fn load_language() -> Option<Language> {
-    let language_file = Path::new("./resources/de-de.json");
+    let language_file = Path::new("./resources/words/de-de.json");
     match fs::read_to_string(language_file) {
         Ok(content) => match serde_json::from_str(&content) {
             Ok(language) => {

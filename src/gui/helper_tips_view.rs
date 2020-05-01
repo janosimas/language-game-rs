@@ -55,7 +55,7 @@ impl HelperTipsView {
                                 Image::new(
                                     &images[0]
                                         .as_ref()
-                                        .unwrap_or(&"resources/loading.jpg".to_string()),
+                                        .unwrap_or(&"resources/icons/download.png".to_string()),
                                 )
                                 .width(Length::FillPortion(1)),
                             )
@@ -63,7 +63,7 @@ impl HelperTipsView {
                                 Image::new(
                                     &images[1]
                                         .as_ref()
-                                        .unwrap_or(&"resources/loading.jpg".to_string()),
+                                        .unwrap_or(&"resources/icons/download.png".to_string()),
                                 )
                                 .width(Length::FillPortion(1)),
                             ),
