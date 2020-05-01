@@ -2,14 +2,16 @@ use super::*;
 use reqwest;
 use serde::{Deserialize, Serialize};
 use std::fs::{create_dir_all, OpenOptions};
-use std::io::{Write};
-use uuid::Uuid;
+use std::io::Write;
 
 async fn checked_download_image(url: String) -> Option<String> {
-    let name = Uuid::new_v4();
     create_dir_all("temp").ok()?;
-    let path = format!("temp/{}.jpg", name);
     let res = reqwest::Client::new().get(&url).send().await.ok()?;
+
+    let path = format!(
+        "temp/{}",
+        reqwest::Url::parse(&url).ok()?.path_segments()?.last()?
+    );
     let mut file = OpenOptions::new()
         .read(true)
         .write(true)
@@ -17,6 +19,7 @@ async fn checked_download_image(url: String) -> Option<String> {
         .truncate(true)
         .open(&path)
         .ok()?;
+
     file.write_all(&res.bytes().await.ok()?).ok()?;
     Some(path)
 }
@@ -35,7 +38,6 @@ async fn checked_get_images_url(word: Word, key: String) -> Option<Response> {
         &word.word
     };
 
-    // TODO: request error handling
     let res = reqwest::Client::new()
         .get("https://pixabay.com/api/")
         .query(&[
@@ -54,7 +56,9 @@ async fn checked_get_images_url(word: Word, key: String) -> Option<Response> {
 
 pub async fn get_images_url(word: Word, key: String) -> Message {
     match checked_get_images_url(word, key).await {
-        Some(res) => Message::RequestImages(res.hits.into_iter().map(|hit| hit.webformat_url).collect()),
+        Some(res) => {
+            Message::RequestImages(res.hits.into_iter().map(|hit| hit.webformat_url).collect())
+        }
         None => Message::Error(Error::ErrorRequestingImages),
     }
 }
