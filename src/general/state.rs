@@ -1,3 +1,9 @@
+pub enum GameState{
+    NotRunning,
+    Running,
+    Ended
+}
+
 pub struct State {
     game_running: bool,
     turn_number: u16,
@@ -21,6 +27,18 @@ impl State {
             tranlation_pair,
             image_pair,
         }
+    }
+
+    pub fn game_state(&self) -> GameState {
+        if !self.is_game_running() {
+            return GameState::NotRunning;
+        }
+
+        if self.has_game_ended() {
+            return GameState::Ended;
+        }
+
+        GameState::Running
     }
 
     pub fn start(&mut self) {

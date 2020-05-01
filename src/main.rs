@@ -47,6 +47,7 @@ fn main() {
 struct Game {
     game_view: gui::GameView,
     start_view: gui::StartView,
+    end_view: gui::EndView,
     language: general::Language,
     state: general::State,
     context: Option<general::Context>,
@@ -67,6 +68,7 @@ impl Game {
         Self {
             game_view: gui::GameView::new(),
             start_view: gui::StartView::new(),
+            end_view: gui::EndView::new(),
             language: general::load_language().unwrap(),
             state: general::State::new(tranlation_pair, image_pair),
             context: None,
@@ -201,10 +203,10 @@ impl Application for Game {
     }
 
     fn view(&mut self) -> Element<Self::Message> {
-        if !self.state.is_game_running() {
-            self.start_view.view().into()
-        } else {
-            Row::new()
+        match self.state.game_state() {
+            general::GameState::NotRunning => self.start_view.view().into(),
+            general::GameState::Ended => self.end_view.view().into(),
+            general::GameState::Running => Row::new()
                 .push(self.game_view.view(&self.context))
                 .push(
                     Column::new()
@@ -214,7 +216,7 @@ impl Application for Game {
                         .push(Text::new(format!("score: {}", &self.state.score())))
                         .push(Text::new(format!("turn: {}", &self.state.turn()))),
                 )
-                .into()
+                .into(),
         }
     }
 }
