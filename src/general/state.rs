@@ -51,7 +51,7 @@ impl State {
 
     pub fn has_game_ended(&self) -> bool {
         if let Some(final_score) = self.final_score {
-            return self.score() == final_score;
+            return self.score() >= final_score;
         }
         false
     }
