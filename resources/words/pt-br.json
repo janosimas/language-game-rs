@@ -1,0 +1,3324 @@
+{
+    "language": "pt",
+    "country": "br",
+    "description": "List of most frequent nouns in portuguese.",
+    "source": "http://hackingportuguese.com/sample-page/the-1000-most-common-nouns-in-portuguese/",
+    "words": [
+        {
+            "prefix": "o",
+            "word": "ano"
+        },
+        {
+            "prefix": "o",
+            "word": "dia"
+        },
+        {
+            "prefix": "a",
+            "word": "vez"
+        },
+        {
+            "prefix": "a",
+            "word": "coisa"
+        },
+        {
+            "prefix": "o",
+            "word": "tempo"
+        },
+        {
+            "prefix": "o",
+            "word": "homem"
+        },
+        {
+            "prefix": "a",
+            "word": "casa"
+        },
+        {
+            "prefix": "a",
+            "word": "vida"
+        },
+        {
+            "prefix": "a",
+            "word": "pessoa"
+        },
+        {
+            "prefix": "o",
+            "word": "país"
+        },
+        {
+            "prefix": "a",
+            "word": "forma"
+        },
+        {
+            "prefix": "a",
+            "word": "parte"
+        },
+        {
+            "prefix": "o",
+            "word": "estado"
+        },
+        {
+            "prefix": "o",
+            "word": "governo"
+        },
+        {
+            "prefix": "o",
+            "word": "caso"
+        },
+        {
+            "prefix": "o",
+            "word": "trabalho"
+        },
+        {
+            "prefix": "o/a",
+            "word": "presidente"
+        },
+        {
+            "prefix": "a",
+            "word": "mulher"
+        },
+        {
+            "prefix": "a",
+            "word": "gente"
+        },
+        {
+            "prefix": "a",
+            "word": "cidade"
+        },
+        {
+            "prefix": "o",
+            "word": "mundo"
+        },
+        {
+            "prefix": "a",
+            "word": "mão"
+        },
+        {
+            "prefix": "o",
+            "word": "público"
+        },
+        {
+            "prefix": "a",
+            "word": "hora"
+        },
+        {
+            "prefix": "o",
+            "word": "lado"
+        },
+        {
+            "prefix": "o",
+            "word": "olho"
+        },
+        {
+            "prefix": "o",
+            "word": "grupo"
+        },
+        {
+            "prefix": "a",
+            "word": "obra"
+        },
+        {
+            "prefix": "o",
+            "word": "senhor"
+        },
+        {
+            "prefix": "a",
+            "word": "terra"
+        },
+        {
+            "prefix": "o",
+            "word": "nome"
+        },
+        {
+            "prefix": "o",
+            "word": "filho"
+        },
+        {
+            "prefix": "a",
+            "word": "relação"
+        },
+        {
+            "prefix": "o",
+            "word": "real"
+        },
+        {
+            "prefix": "a",
+            "word": "noite"
+        },
+        {
+            "prefix": "o",
+            "word": "pai"
+        },
+        {
+            "prefix": "o",
+            "word": "problema"
+        },
+        {
+            "prefix": "a",
+            "word": "empresa"
+        },
+        {
+            "prefix": "o",
+            "word": "direito"
+        },
+        {
+            "prefix": "a",
+            "word": "água"
+        },
+        {
+            "prefix": "o",
+            "word": "processo"
+        },
+        {
+            "prefix": "o",
+            "word": "sistema"
+        },
+        {
+            "prefix": "a",
+            "word": "região"
+        },
+        {
+            "prefix": "o",
+            "word": "ponto"
+        },
+        {
+            "prefix": "o",
+            "word": "fim"
+        },
+        {
+            "prefix": "a",
+            "word": "palavra"
+        },
+        {
+            "prefix": "o",
+            "word": "mês"
+        },
+        {
+            "prefix": "a",
+            "word": "história"
+        },
+        {
+            "prefix": "o",
+            "word": "número"
+        },
+        {
+            "prefix": "o",
+            "word": "fato"
+        },
+        {
+            "prefix": "o",
+            "word": "século"
+        },
+        {
+            "prefix": "a",
+            "word": "área"
+        },
+        {
+            "prefix": "o",
+            "word": "milhão"
+        },
+        {
+            "prefix": "o",
+            "word": "corpo"
+        },
+        {
+            "prefix": "o",
+            "word": "projecto"
+        },
+        {
+            "prefix": "a",
+            "word": "força"
+        },
+        {
+            "prefix": "o",
+            "word": "momento"
+        },
+        {
+            "prefix": "a",
+            "word": "guerra"
+        },
+        {
+            "prefix": "o",
+            "word": "tipo"
+        },
+        {
+            "prefix": "o",
+            "word": "lugar"
+        },
+        {
+            "prefix": "a",
+            "word": "família"
+        },
+        {
+            "prefix": "a",
+            "word": "cabeça"
+        },
+        {
+            "prefix": "a",
+            "word": "ideia"
+        },
+        {
+            "prefix": "o",
+            "word": "valor"
+        },
+        {
+            "prefix": "o",
+            "word": "livro"
+        },
+        {
+            "prefix": "a",
+            "word": "rua"
+        },
+        {
+            "prefix": "o",
+            "word": "serviço"
+        },
+        {
+            "prefix": "a",
+            "word": "tarde"
+        },
+        {
+            "prefix": "a",
+            "word": "acção"
+        },
+        {
+            "prefix": "o",
+            "word": "lei"
+        },
+        {
+            "prefix": "a",
+            "word": "mãe"
+        },
+        {
+            "prefix": "o",
+            "word": "final"
+        },
+        {
+            "prefix": "o",
+            "word": "movimento"
+        },
+        {
+            "prefix": "o",
+            "word": "rio"
+        },
+        {
+            "prefix": "o",
+            "word": "partido"
+        },
+        {
+            "prefix": "o",
+            "word": "local"
+        },
+        {
+            "prefix": "a",
+            "word": "porta"
+        },
+        {
+            "prefix": "o",
+            "word": "deus"
+        },
+        {
+            "prefix": "a",
+            "word": "espécie"
+        },
+        {
+            "prefix": "a",
+            "word": "situação"
+        },
+        {
+            "prefix": "a",
+            "word": "frente"
+        },
+        {
+            "prefix": "a",
+            "word": "câmara"
+        },
+        {
+            "prefix": "o",
+            "word": "mercado"
+        },
+        {
+            "prefix": "o",
+            "word": "acordo"
+        },
+        {
+            "prefix": "o",
+            "word": "branco"
+        },
+        {
+            "prefix": "o",
+            "word": "período"
+        },
+        {
+            "prefix": "a",
+            "word": "morte"
+        },
+        {
+            "prefix": "a",
+            "word": "semana"
+        },
+        {
+            "prefix": "o",
+            "word": "campo"
+        },
+        {
+            "prefix": "a",
+            "word": "questão"
+        },
+        {
+            "prefix": "o",
+            "word": "fundo"
+        },
+        {
+            "prefix": "a",
+            "word": "conta"
+        },
+        {
+            "prefix": "a",
+            "word": "voz"
+        },
+        {
+            "prefix": "a",
+            "word": "informação"
+        },
+        {
+            "prefix": "o",
+            "word": "santo"
+        },
+        {
+            "prefix": "o",
+            "word": "estudo"
+        },
+        {
+            "prefix": "a",
+            "word": "verdade"
+        },
+        {
+            "prefix": "a",
+            "word": "escola"
+        },
+        {
+            "prefix": "a",
+            "word": "criança"
+        },
+        {
+            "prefix": "o",
+            "word": "programa"
+        },
+        {
+            "prefix": "o",
+            "word": "modo"
+        },
+        {
+            "prefix": "a",
+            "word": "arte"
+        },
+        {
+            "prefix": "o",
+            "word": "centro"
+        },
+        {
+            "prefix": "o",
+            "word": "jogo"
+        },
+        {
+            "prefix": "a",
+            "word": "volta"
+        },
+        {
+            "prefix": "o",
+            "word": "dinheiro"
+        },
+        {
+            "prefix": "a",
+            "word": "actividade"
+        },
+        {
+            "prefix": "o",
+            "word": "ministro"
+        },
+        {
+            "prefix": "o",
+            "word": "sul"
+        },
+        {
+            "prefix": "o",
+            "word": "professor"
+        },
+        {
+            "prefix": "o",
+            "word": "utilizado"
+        },
+        {
+            "prefix": "a",
+            "word": "luz"
+        },
+        {
+            "prefix": "a",
+            "word": "medida"
+        },
+        {
+            "prefix": "o",
+            "word": "pé"
+        },
+        {
+            "prefix": "o",
+            "word": "banco"
+        },
+        {
+            "prefix": "a",
+            "word": "condição"
+        },
+        {
+            "prefix": "o",
+            "word": "termo"
+        },
+        {
+            "prefix": "a",
+            "word": "sociedade"
+        },
+        {
+            "prefix": "a",
+            "word": "senhora"
+        },
+        {
+            "prefix": "o",
+            "word": "preço"
+        },
+        {
+            "prefix": "a",
+            "word": "ordem"
+        },
+        {
+            "prefix": "a",
+            "word": "equipa"
+        },
+        {
+            "prefix": "o",
+            "word": "papel"
+        },
+        {
+            "prefix": "a",
+            "word": "produção"
+        },
+        {
+            "prefix": "o",
+            "word": "nível"
+        },
+        {
+            "prefix": "o",
+            "word": "ar"
+        },
+        {
+            "prefix": "o",
+            "word": "plano"
+        },
+        {
+            "prefix": "a",
+            "word": "música"
+        },
+        {
+            "prefix": "a",
+            "word": "causa"
+        },
+        {
+            "prefix": "o",
+            "word": "desenvolvimento"
+        },
+        {
+            "prefix": "o",
+            "word": "produto"
+        },
+        {
+            "prefix": "o",
+            "word": "povo"
+        },
+        {
+            "prefix": "a",
+            "word": "imagem"
+        },
+        {
+            "prefix": "o",
+            "word": "texto"
+        },
+        {
+            "prefix": "a",
+            "word": "população"
+        },
+        {
+            "prefix": "o",
+            "word": "doutor"
+        },
+        {
+            "prefix": "o",
+            "word": "animal"
+        },
+        {
+            "prefix": "o",
+            "word": "objectivo"
+        },
+        {
+            "prefix": "a",
+            "word": "base"
+        },
+        {
+            "prefix": "a",
+            "word": "altura"
+        },
+        {
+            "prefix": "o",
+            "word": "resultado"
+        },
+        {
+            "prefix": "o",
+            "word": "capital"
+        },
+        {
+            "prefix": "a",
+            "word": "época"
+        },
+        {
+            "prefix": "o",
+            "word": "norte"
+        },
+        {
+            "prefix": "a",
+            "word": "costa"
+        },
+        {
+            "prefix": "a",
+            "word": "razão"
+        },
+        {
+            "prefix": "o",
+            "word": "filme"
+        },
+        {
+            "prefix": "a",
+            "word": "cima"
+        },
+        {
+            "prefix": "o",
+            "word": "passo"
+        },
+        {
+            "prefix": "o",
+            "word": "jornal"
+        },
+        {
+            "prefix": "a",
+            "word": "função"
+        },
+        {
+            "prefix": "a",
+            "word": "linha"
+        },
+        {
+            "prefix": "o",
+            "word": "início"
+        },
+        {
+            "prefix": "o",
+            "word": "sentido"
+        },
+        {
+            "prefix": "a",
+            "word": "maneira"
+        },
+        {
+            "prefix": "o",
+            "word": "conto"
+        },
+        {
+            "prefix": "o",
+            "word": "carro"
+        },
+        {
+            "prefix": "o",
+            "word": "caminho"
+        },
+        {
+            "prefix": "o",
+            "word": "autor"
+        },
+        {
+            "prefix": "o",
+            "word": "espaço"
+        },
+        {
+            "prefix": "o",
+            "word": "braço"
+        },
+        {
+            "prefix": "o",
+            "word": "efeito"
+        },
+        {
+            "prefix": "a",
+            "word": "saúde"
+        },
+        {
+            "prefix": "o",
+            "word": "amor"
+        },
+        {
+            "prefix": "a",
+            "word": "estructura"
+        },
+        {
+            "prefix": "a",
+            "word": "direcção"
+        },
+        {
+            "prefix": "o",
+            "word": "futuro"
+        },
+        {
+            "prefix": "a",
+            "word": "figura"
+        },
+        {
+            "prefix": "a",
+            "word": "posição"
+        },
+        {
+            "prefix": "o",
+            "word": "conjunto"
+        },
+        {
+            "prefix": "a",
+            "word": "igreja"
+        },
+        {
+            "prefix": "o",
+            "word": "deputado"
+        },
+        {
+            "prefix": "a",
+            "word": "comissão"
+        },
+        {
+            "prefix": "a",
+            "word": "guarda"
+        },
+        {
+            "prefix": "o",
+            "word": "técnico"
+        },
+        {
+            "prefix": "o",
+            "word": "interesse"
+        },
+        {
+            "prefix": "a",
+            "word": "maioria"
+        },
+        {
+            "prefix": "o",
+            "word": "quarto"
+        },
+        {
+            "prefix": "a",
+            "word": "decisão"
+        },
+        {
+            "prefix": "o",
+            "word": "sol"
+        },
+        {
+            "prefix": "a",
+            "word": "república"
+        },
+        {
+            "prefix": "o",
+            "word": "recurso"
+        },
+        {
+            "prefix": "a",
+            "word": "sala"
+        },
+        {
+            "prefix": "a",
+            "word": "construção"
+        },
+        {
+            "prefix": "a",
+            "word": "universidade"
+        },
+        {
+            "prefix": "a",
+            "word": "filha"
+        },
+        {
+            "prefix": "a",
+            "word": "falta"
+        },
+        {
+            "prefix": "o",
+            "word": "título"
+        },
+        {
+            "prefix": "a",
+            "word": "língua"
+        },
+        {
+            "prefix": "o",
+            "word": "elemento"
+        },
+        {
+            "prefix": "a",
+            "word": "eleição"
+        },
+        {
+            "prefix": "a",
+            "word": "cultura"
+        },
+        {
+            "prefix": "o",
+            "word": "inglés"
+        },
+        {
+            "prefix": "o",
+            "word": "setor"
+        },
+        {
+            "prefix": "o",
+            "word": "líder"
+        },
+        {
+            "prefix": "a",
+            "word": "polícia"
+        },
+        {
+            "prefix": "a",
+            "word": "origem"
+        },
+        {
+            "prefix": "o",
+            "word": "modelo"
+        },
+        {
+            "prefix": "o",
+            "word": "rei"
+        },
+        {
+            "prefix": "o",
+            "word": "teatro"
+        },
+        {
+            "prefix": "a",
+            "word": "zona"
+        },
+        {
+            "prefix": "a/o",
+            "word": "cara"
+        },
+        {
+            "prefix": "a",
+            "word": "qualidade"
+        },
+        {
+            "prefix": "o",
+            "word": "director"
+        },
+        {
+            "prefix": "o",
+            "word": "apoio"
+        },
+        {
+            "prefix": "o",
+            "word": "mar"
+        },
+        {
+            "prefix": "o",
+            "word": "unido"
+        },
+        {
+            "prefix": "o",
+            "word": "princípio"
+        },
+        {
+            "prefix": "o",
+            "word": "material"
+        },
+        {
+            "prefix": "a",
+            "word": "proposta"
+        },
+        {
+            "prefix": "a",
+            "word": "mesa"
+        },
+        {
+            "prefix": "a",
+            "word": "necessidade"
+        },
+        {
+            "prefix": "o",
+            "word": "assunto"
+        },
+        {
+            "prefix": "a",
+            "word": "rede"
+        },
+        {
+            "prefix": "a",
+            "word": "cor"
+        },
+        {
+            "prefix": "a",
+            "word": "reforma"
+        },
+        {
+            "prefix": "o",
+            "word": "membro"
+        },
+        {
+            "prefix": "o",
+            "word": "negócio"
+        },
+        {
+            "prefix": "a",
+            "word": "manhã"
+        },
+        {
+            "prefix": "o",
+            "word": "encontro"
+        },
+        {
+            "prefix": "a",
+            "word": "vontade"
+        },
+        {
+            "prefix": "o",
+            "word": "último"
+        },
+        {
+            "prefix": "a",
+            "word": "fase"
+        },
+        {
+            "prefix": "o",
+            "word": "conhecimento"
+        },
+        {
+            "prefix": "a",
+            "word": "doença"
+        },
+        {
+            "prefix": "a",
+            "word": "carta"
+        },
+        {
+            "prefix": "o",
+            "word": "interior"
+        },
+        {
+            "prefix": "a",
+            "word": "organização"
+        },
+        {
+            "prefix": "a",
+            "word": "segurança"
+        },
+        {
+            "prefix": "o",
+            "word": "candidato"
+        },
+        {
+            "prefix": "o",
+            "word": "conselho"
+        },
+        {
+            "prefix": "a",
+            "word": "ilha"
+        },
+        {
+            "prefix": "o",
+            "word": "ministério"
+        },
+        {
+            "prefix": "o",
+            "word": "contrário"
+        },
+        {
+            "prefix": "a",
+            "word": "união"
+        },
+        {
+            "prefix": "a",
+            "word": "indústria"
+        },
+        {
+            "prefix": "a",
+            "word": "formação"
+        },
+        {
+            "prefix": "a",
+            "word": "televisão"
+        },
+        {
+            "prefix": "a",
+            "word": "associação"
+        },
+        {
+            "prefix": "a",
+            "word": "economia"
+        },
+        {
+            "prefix": "a",
+            "word": "idade"
+        },
+        {
+            "prefix": "o",
+            "word": "padre"
+        },
+        {
+            "prefix": "a",
+            "word": "boca"
+        },
+        {
+            "prefix": "o",
+            "word": "espírito"
+        },
+        {
+            "prefix": "a",
+            "word": "presença"
+        },
+        {
+            "prefix": "a",
+            "word": "alma"
+        },
+        {
+            "prefix": "a",
+            "word": "peça"
+        },
+        {
+            "prefix": "a",
+            "word": "venda"
+        },
+        {
+            "prefix": "o",
+            "word": "uso"
+        },
+        {
+            "prefix": "a",
+            "word": "pena"
+        },
+        {
+            "prefix": "a",
+            "word": "justiça"
+        },
+        {
+            "prefix": "a",
+            "word": "média"
+        },
+        {
+            "prefix": "a",
+            "word": "criação"
+        },
+        {
+            "prefix": "a",
+            "word": "pesquisa"
+        },
+        {
+            "prefix": "a",
+            "word": "característica"
+        },
+        {
+            "prefix": "a",
+            "word": "resposta"
+        },
+        {
+            "prefix": "a",
+            "word": "fonte"
+        },
+        {
+            "prefix": "o",
+            "word": "clube"
+        },
+        {
+            "prefix": "a",
+            "word": "energia"
+        },
+        {
+            "prefix": "o",
+            "word": "médico"
+        },
+        {
+            "prefix": "o",
+            "word": "aumento"
+        },
+        {
+            "prefix": "a",
+            "word": "unidade"
+        },
+        {
+            "prefix": "o",
+            "word": "silêncio"
+        },
+        {
+            "prefix": "a",
+            "word": "realidade"
+        },
+        {
+            "prefix": "a",
+            "word": "natureza"
+        },
+        {
+            "prefix": "a",
+            "word": "ciência"
+        },
+        {
+            "prefix": "a",
+            "word": "companhia"
+        },
+        {
+            "prefix": "o",
+            "word": "coração"
+        },
+        {
+            "prefix": "a",
+            "word": "análise"
+        },
+        {
+            "prefix": "o",
+            "word": "objecto"
+        },
+        {
+            "prefix": "o",
+            "word": "curso"
+        },
+        {
+            "prefix": "a",
+            "word": "experiência"
+        },
+        {
+            "prefix": "a",
+            "word": "operação"
+        },
+        {
+            "prefix": "a",
+            "word": "pedra"
+        },
+        {
+            "prefix": "o",
+            "word": "medo"
+        },
+        {
+            "prefix": "a",
+            "word": "viagem"
+        },
+        {
+            "prefix": "o",
+            "word": "método"
+        },
+        {
+            "prefix": "a",
+            "word": "série"
+        },
+        {
+            "prefix": "o",
+            "word": "preso"
+        },
+        {
+            "prefix": "o",
+            "word": "dado"
+        },
+        {
+            "prefix": "a",
+            "word": "cinema"
+        },
+        {
+            "prefix": "o",
+            "word": "estrangeiro"
+        },
+        {
+            "prefix": "a",
+            "word": "possibilidade"
+        },
+        {
+            "prefix": "a",
+            "word": "defesa"
+        },
+        {
+            "prefix": "o",
+            "word": "militar"
+        },
+        {
+            "prefix": "o",
+            "word": "sangue"
+        },
+        {
+            "prefix": "o",
+            "word": "respeito"
+        },
+        {
+            "prefix": "a",
+            "word": "vitória"
+        },
+        {
+            "prefix": "a",
+            "word": "administração"
+        },
+        {
+            "prefix": "o",
+            "word": "aspecto"
+        },
+        {
+            "prefix": "o",
+            "word": "ambiente"
+        },
+        {
+            "prefix": "o",
+            "word": "rapaz"
+        },
+        {
+            "prefix": "a",
+            "word": "árvore"
+        },
+        {
+            "prefix": "o",
+            "word": "minuto"
+        },
+        {
+            "prefix": "a",
+            "word": "prova"
+        },
+        {
+            "prefix": "a",
+            "word": "importância"
+        },
+        {
+            "prefix": "o",
+            "word": "quilómetro"
+        },
+        {
+            "prefix": "a",
+            "word": "dúvida"
+        },
+        {
+            "prefix": "a",
+            "word": "regra"
+        },
+        {
+            "prefix": "o",
+            "word": "rosto"
+        },
+        {
+            "prefix": "a",
+            "word": "estrada"
+        },
+        {
+            "prefix": "o",
+            "word": "tribunal"
+        },
+        {
+            "prefix": "o",
+            "word": "irmão"
+        },
+        {
+            "prefix": "o",
+            "word": "largo"
+        },
+        {
+            "prefix": "a",
+            "word": "reunião"
+        },
+        {
+            "prefix": "a",
+            "word": "taxa"
+        },
+        {
+            "prefix": "o",
+            "word": "prazo"
+        },
+        {
+            "prefix": "o",
+            "word": "município"
+        },
+        {
+            "prefix": "a",
+            "word": "dificuldade"
+        },
+        {
+            "prefix": "o",
+            "word": "cargo"
+        },
+        {
+            "prefix": "o",
+            "word": "trabalhador"
+        },
+        {
+            "prefix": "a",
+            "word": "mudança"
+        },
+        {
+            "prefix": "o",
+            "word": "jogador"
+        },
+        {
+            "prefix": "o",
+            "word": "chefe"
+        },
+        {
+            "prefix": "o/a",
+            "word": "artista"
+        },
+        {
+            "prefix": "a",
+            "word": "classe"
+        },
+        {
+            "word": "artigo"
+        },
+        {
+            "word": "planta"
+        },
+        {
+            "word": "resto"
+        },
+        {
+            "word": "educação"
+        },
+        {
+            "word": "assembleia"
+        },
+        {
+            "word": "marido"
+        },
+        {
+            "word": "entrada"
+        },
+        {
+            "word": "opinião"
+        },
+        {
+            "word": "tema"
+        },
+        {
+            "word": "sinal"
+        },
+        {
+            "word": "instituição"
+        },
+        {
+            "word": "xx"
+        },
+        {
+            "word": "teoria"
+        },
+        {
+            "word": "capacidade"
+        },
+        {
+            "word": "pensamento"
+        },
+        {
+            "word": "prática"
+        },
+        {
+            "word": "face"
+        },
+        {
+            "word": "frio"
+        },
+        {
+            "word": "comércio"
+        },
+        {
+            "word": "janela"
+        },
+        {
+            "word": "território"
+        },
+        {
+            "word": "campanha"
+        },
+        {
+            "word": "luta"
+        },
+        {
+            "word": "existência"
+        },
+        {
+            "word": "menino"
+        },
+        {
+            "word": "solução"
+        },
+        {
+            "word": "atenção"
+        },
+        {
+            "word": "metro"
+        },
+        {
+            "word": "quadro"
+        },
+        {
+            "word": "investimento"
+        },
+        {
+            "word": "década"
+        },
+        {
+            "word": "vila"
+        },
+        {
+            "word": "diferença"
+        },
+        {
+            "word": "género"
+        },
+        {
+            "word": "prémio"
+        },
+        {
+            "word": "graça"
+        },
+        {
+            "word": "paz"
+        },
+        {
+            "word": "indivíduo"
+        },
+        {
+            "word": "expressão"
+        },
+        {
+            "word": "festa"
+        },
+        {
+            "word": "poeta"
+        },
+        {
+            "word": "custo"
+        },
+        {
+            "word": "exército"
+        },
+        {
+            "word": "crime"
+        },
+        {
+            "word": "índio"
+        },
+        {
+            "word": "dona"
+        },
+        {
+            "word": "comunicação"
+        },
+        {
+            "word": "parede"
+        },
+        {
+            "word": "amigo"
+        },
+        {
+            "word": "vale"
+        },
+        {
+            "word": "voto"
+        },
+        {
+            "word": "próprio"
+        },
+        {
+            "word": "influência"
+        },
+        {
+            "word": "céu"
+        },
+        {
+            "word": "chão"
+        },
+        {
+            "word": "congresso"
+        },
+        {
+            "word": "meio"
+        },
+        {
+            "word": "futebol"
+        },
+        {
+            "word": "motivo"
+        },
+        {
+            "word": "erro"
+        },
+        {
+            "word": "cabo"
+        },
+        {
+            "word": "carreira"
+        },
+        {
+            "word": "risco"
+        },
+        {
+            "word": "governador"
+        },
+        {
+            "word": "madeira"
+        },
+        {
+            "word": "secretário"
+        },
+        {
+            "word": "massa"
+        },
+        {
+            "word": "crescimento"
+        },
+        {
+            "word": "factor"
+        },
+        {
+            "word": "cama"
+        },
+        {
+            "word": "sucesso"
+        },
+        {
+            "word": "literatura"
+        },
+        {
+            "word": "escritor"
+        },
+        {
+            "word": "estilo"
+        },
+        {
+            "word": "único"
+        },
+        {
+            "word": "órgão"
+        },
+        {
+            "word": "autoridade"
+        },
+        {
+            "word": "estrela"
+        },
+        {
+            "word": "documento"
+        },
+        {
+            "word": "comunidade"
+        },
+        {
+            "word": "conversa"
+        },
+        {
+            "word": "perna"
+        },
+        {
+            "word": "participação"
+        },
+        {
+            "word": "arma"
+        },
+        {
+            "word": "menina"
+        },
+        {
+            "word": "instituto"
+        },
+        {
+            "word": "cabelo"
+        },
+        {
+            "word": "café"
+        },
+        {
+            "word": "certeza"
+        },
+        {
+            "word": "visita"
+        },
+        {
+            "word": "dor"
+        },
+        {
+            "word": "sonho"
+        },
+        {
+            "word": "data"
+        },
+        {
+            "word": "esforço"
+        },
+        {
+            "word": "fazenda"
+        },
+        {
+            "word": "exposição"
+        },
+        {
+            "word": "matéria"
+        },
+        {
+            "word": "máquina"
+        },
+        {
+            "word": "contacto"
+        },
+        {
+            "word": "instrumento"
+        },
+        {
+            "word": "liberdade"
+        },
+        {
+            "word": "superfície"
+        },
+        {
+            "word": "quantidade"
+        },
+        {
+            "word": "som"
+        },
+        {
+            "word": "passagem"
+        },
+        {
+            "word": "sentença"
+        },
+        {
+            "word": "lista"
+        },
+        {
+            "word": "crise"
+        },
+        {
+            "word": "preto"
+        },
+        {
+            "word": "sombra"
+        },
+        {
+            "word": "contracto"
+        },
+        {
+            "word": "ouro"
+        },
+        {
+            "word": "vento"
+        },
+        {
+            "word": "memória"
+        },
+        {
+            "word": "regime"
+        },
+        {
+            "word": "oposição"
+        },
+        {
+            "word": "dedo"
+        },
+        {
+            "word": "investigação"
+        },
+        {
+            "word": "notícia"
+        },
+        {
+            "word": "hospital"
+        },
+        {
+            "word": "discurso"
+        },
+        {
+            "word": "outubro"
+        },
+        {
+            "word": "roupa"
+        },
+        {
+            "word": "pressão"
+        },
+        {
+            "word": "onda"
+        },
+        {
+            "word": "funcionário"
+        },
+        {
+            "word": "aluno"
+        },
+        {
+            "word": "constituição"
+        },
+        {
+            "word": "terreno"
+        },
+        {
+            "word": "volume"
+        },
+        {
+            "word": "conceito"
+        },
+        {
+            "word": "ataque"
+        },
+        {
+            "word": "tratamento"
+        },
+        {
+            "word": "célula"
+        },
+        {
+            "word": "distância"
+        },
+        {
+            "word": "peso"
+        },
+        {
+            "word": "carne"
+        },
+        {
+            "word": "ensino"
+        },
+        {
+            "word": "pintura"
+        },
+        {
+            "word": "banda"
+        },
+        {
+            "word": "carácter"
+        },
+        {
+            "word": "museu"
+        },
+        {
+            "word": "velocidade"
+        },
+        {
+            "word": "acesso"
+        },
+        {
+            "word": "emprego"
+        },
+        {
+            "word": "desejo"
+        },
+        {
+            "word": "ligado"
+        },
+        {
+            "word": "pergunta"
+        },
+        {
+            "word": "fogo"
+        },
+        {
+            "word": "gesto"
+        },
+        {
+            "word": "domínio"
+        },
+        {
+            "word": "peixe"
+        },
+        {
+            "word": "tamanho"
+        },
+        {
+            "word": "batalha"
+        },
+        {
+            "word": "temperatura"
+        },
+        {
+            "word": "romance"
+        },
+        {
+            "word": "favor"
+        },
+        {
+            "word": "espera"
+        },
+        {
+            "word": "intenção"
+        },
+        {
+            "word": "sede"
+        },
+        {
+            "word": "ferro"
+        },
+        {
+            "word": "representante"
+        },
+        {
+            "word": "representação"
+        },
+        {
+            "word": "aplicação"
+        },
+        {
+            "word": "irmã"
+        },
+        {
+            "word": "bilhão"
+        },
+        {
+            "word": "cavalo"
+        },
+        {
+            "word": "jardim"
+        },
+        {
+            "word": "ramo"
+        },
+        {
+            "word": "letra"
+        },
+        {
+            "word": "canto"
+        },
+        {
+            "word": "responsabilidade"
+        },
+        {
+            "word": "revolução"
+        },
+        {
+            "word": "margem"
+        },
+        {
+            "word": "par"
+        },
+        {
+            "word": "destino"
+        },
+        {
+            "word": "revista"
+        },
+        {
+            "word": "folha"
+        },
+        {
+            "word": "mestre"
+        },
+        {
+            "word": "distrito"
+        },
+        {
+            "word": "pagamento"
+        },
+        {
+            "word": "companheiro"
+        },
+        {
+            "word": "iniciativa"
+        },
+        {
+            "word": "tom"
+        },
+        {
+            "word": "caixa"
+        },
+        {
+            "word": "pequeno"
+        },
+        {
+            "word": "concelho"
+        },
+        {
+            "word": "comportamento"
+        },
+        {
+            "word": "juiz"
+        },
+        {
+            "word": "entidade"
+        },
+        {
+            "word": "propriedade"
+        },
+        {
+            "word": "acidente"
+        },
+        {
+            "word": "pele"
+        },
+        {
+            "word": "tentativa"
+        },
+        {
+            "word": "visão"
+        },
+        {
+            "word": "preocupação"
+        },
+        {
+            "word": "crédito"
+        },
+        {
+            "word": "rádio"
+        },
+        {
+            "word": "habitante"
+        },
+        {
+            "word": "imposto"
+        },
+        {
+            "word": "computador"
+        },
+        {
+            "word": "geração"
+        },
+        {
+            "word": "gestão"
+        },
+        {
+            "word": "avaliação"
+        },
+        {
+            "word": "sentimento"
+        },
+        {
+            "word": "moça"
+        },
+        {
+            "word": "vítima"
+        },
+        {
+            "word": "compra"
+        },
+        {
+            "word": "nota"
+        },
+        {
+            "word": "advogado"
+        },
+        {
+            "word": "chuva"
+        },
+        {
+            "word": "torno"
+        },
+        {
+            "word": "corte"
+        },
+        {
+            "word": "espectáculo"
+        },
+        {
+            "word": "esquerda"
+        },
+        {
+            "word": "nação"
+        },
+        {
+            "word": "praça"
+        },
+        {
+            "word": "oportunidade"
+        },
+        {
+            "word": "tecnologia"
+        },
+        {
+            "word": "filosofia"
+        },
+        {
+            "word": "atitude"
+        },
+        {
+            "word": "política"
+        },
+        {
+            "word": "linguagem"
+        },
+        {
+            "word": "monte"
+        },
+        {
+            "word": "estação"
+        },
+        {
+            "word": "dívida"
+        },
+        {
+            "word": "gás"
+        },
+        {
+            "word": "disco"
+        },
+        {
+            "word": "loja"
+        },
+        {
+            "word": "tendência"
+        },
+        {
+            "word": "imprensa"
+        },
+        {
+            "word": "reino"
+        },
+        {
+            "word": "seguro"
+        },
+        {
+            "word": "alteração"
+        },
+        {
+            "word": "instante"
+        },
+        {
+            "word": "príncipe"
+        },
+        {
+            "word": "cadeira"
+        },
+        {
+            "word": "exterior"
+        },
+        {
+            "word": "empresário"
+        },
+        {
+            "word": "consciência"
+        },
+        {
+            "word": "hipótese"
+        },
+        {
+            "word": "limite"
+        },
+        {
+            "word": "redução"
+        },
+        {
+            "word": "personagem"
+        },
+        {
+            "word": "jornalista"
+        },
+        {
+            "word": "grau"
+        },
+        {
+            "word": "cena"
+        },
+        {
+            "word": "tradição"
+        },
+        {
+            "word": "soldado"
+        },
+        {
+            "word": "automóvel"
+        },
+        {
+            "word": "moeda"
+        },
+        {
+            "word": "juro"
+        },
+        {
+            "word": "primeiro-ministro"
+        },
+        {
+            "word": "peito"
+        },
+        {
+            "word": "consequência"
+        },
+        {
+            "word": "salário"
+        },
+        {
+            "word": "estudante"
+        },
+        {
+            "word": "reacção"
+        },
+        {
+            "word": "divisão"
+        },
+        {
+            "word": "elevado"
+        },
+        {
+            "word": "conflito"
+        },
+        {
+            "word": "porto"
+        },
+        {
+            "word": "abertura"
+        },
+        {
+            "word": "utilização"
+        },
+        {
+            "word": "cão"
+        },
+        {
+            "word": "realização"
+        },
+        {
+            "word": "ligação"
+        },
+        {
+            "word": "transporte"
+        },
+        {
+            "word": "dólar"
+        },
+        {
+            "word": "ombro"
+        },
+        {
+            "word": "casamento"
+        },
+        {
+            "word": "clássico"
+        },
+        {
+            "word": "aldeia"
+        },
+        {
+            "word": "saída"
+        },
+        {
+            "word": "actor"
+        },
+        {
+            "word": "esperança"
+        },
+        {
+            "word": "executivo"
+        },
+        {
+            "word": "queda"
+        },
+        {
+            "word": "campeonato"
+        },
+        {
+            "word": "vestido"
+        },
+        {
+            "word": "metade"
+        },
+        {
+            "word": "secção"
+        },
+        {
+            "word": "poesia"
+        },
+        {
+            "word": "intervenção"
+        },
+        {
+            "word": "parque"
+        },
+        {
+            "word": "ponta"
+        },
+        {
+            "word": "tropa"
+        },
+        {
+            "word": "agente"
+        },
+        {
+            "word": "discussão"
+        },
+        {
+            "word": "violência"
+        },
+        {
+            "word": "senador"
+        },
+        {
+            "word": "padrão"
+        },
+        {
+            "word": "calor"
+        },
+        {
+            "word": "referência"
+        },
+        {
+            "word": "missão"
+        },
+        {
+            "word": "impressão"
+        },
+        {
+            "word": "carga"
+        },
+        {
+            "word": "núcleo"
+        },
+        {
+            "word": "busca"
+        },
+        {
+            "word": "acto"
+        },
+        {
+            "word": "complexo"
+        },
+        {
+            "word": "cidadão"
+        },
+        {
+            "word": "tarefa"
+        },
+        {
+            "word": "controle"
+        },
+        {
+            "word": "coronel"
+        },
+        {
+            "word": "marca"
+        },
+        {
+            "word": "edifício"
+        },
+        {
+            "word": "agência"
+        },
+        {
+            "word": "grego"
+        },
+        {
+            "word": "rapariga"
+        },
+        {
+            "word": "praia"
+        },
+        {
+            "word": "frase"
+        },
+        {
+            "word": "partida"
+        },
+        {
+            "word": "solo"
+        },
+        {
+            "word": "jeito"
+        },
+        {
+            "word": "cruz"
+        },
+        {
+            "word": "palácio"
+        },
+        {
+            "word": "perda"
+        },
+        {
+            "word": "presidência"
+        },
+        {
+            "word": "negociação"
+        },
+        {
+            "word": "general"
+        },
+        {
+            "word": "produtor"
+        },
+        {
+            "word": "vantagem"
+        },
+        {
+            "word": "estratégia"
+        },
+        {
+            "word": "bolsa"
+        },
+        {
+            "word": "organismo"
+        },
+        {
+            "word": "dente"
+        },
+        {
+            "word": "página"
+        },
+        {
+            "word": "mina"
+        },
+        {
+            "word": "ponte"
+        },
+        {
+            "word": "comprimento"
+        },
+        {
+            "word": "veículo"
+        },
+        {
+            "word": "teste"
+        },
+        {
+            "word": "bem"
+        },
+        {
+            "word": "gosto"
+        },
+        {
+            "word": "vizinho"
+        },
+        {
+            "word": "pertencente"
+        },
+        {
+            "word": "prazer"
+        },
+        {
+            "word": "sujeito"
+        },
+        {
+            "word": "ajuda"
+        },
+        {
+            "word": "bola"
+        },
+        {
+            "word": "grosso"
+        },
+        {
+            "word": "procura"
+        },
+        {
+            "word": "edição"
+        },
+        {
+            "word": "equipamento"
+        },
+        {
+            "word": "consumidor"
+        },
+        {
+            "word": "vinho"
+        },
+        {
+            "word": "relatório"
+        },
+        {
+            "word": "dono"
+        },
+        {
+            "word": "declaração"
+        },
+        {
+            "word": "alimento"
+        },
+        {
+            "word": "fenómeno"
+        },
+        {
+            "word": "flor"
+        },
+        {
+            "word": "alegria"
+        },
+        {
+            "word": "categoria"
+        },
+        {
+            "word": "distribuição"
+        },
+        {
+            "word": "império"
+        },
+        {
+            "word": "entrevista"
+        },
+        {
+            "word": "renda"
+        },
+        {
+            "word": "chamada"
+        },
+        {
+            "word": "cliente"
+        },
+        {
+            "word": "torre"
+        },
+        {
+            "word": "versão"
+        },
+        {
+            "word": "telefone"
+        },
+        {
+            "word": "escolha"
+        },
+        {
+            "word": "cadeia"
+        },
+        {
+            "word": "breve"
+        },
+        {
+            "word": "feira"
+        },
+        {
+            "word": "fronteira"
+        },
+        {
+            "word": "manifestação"
+        },
+        {
+            "word": "perspectiva"
+        },
+        {
+            "word": "sorriso"
+        },
+        {
+            "word": "exemplo"
+        },
+        {
+            "word": "receita"
+        },
+        {
+            "word": "património"
+        },
+        {
+            "word": "privado"
+        },
+        {
+            "word": "consumo"
+        },
+        {
+            "word": "agricultura"
+        },
+        {
+            "word": "resistência"
+        },
+        {
+            "word": "secretaria"
+        },
+        {
+            "word": "floresta"
+        },
+        {
+            "word": "hotel"
+        },
+        {
+            "word": "substância"
+        },
+        {
+            "word": "conclusão"
+        },
+        {
+            "word": "componente"
+        },
+        {
+            "word": "candidatura"
+        },
+        {
+            "word": "grito"
+        },
+        {
+            "word": "selecção"
+        },
+        {
+            "word": "roda"
+        },
+        {
+            "word": "prisão"
+        },
+        {
+            "word": "ocasião"
+        },
+        {
+            "word": "tabela"
+        },
+        {
+            "word": "fábrica"
+        },
+        {
+            "word": "sequência"
+        },
+        {
+            "word": "evolução"
+        },
+        {
+            "word": "freguesia"
+        },
+        {
+            "word": "composto"
+        },
+        {
+            "word": "canal"
+        },
+        {
+            "word": "dirigente"
+        },
+        {
+            "word": "sorte"
+        },
+        {
+            "word": "leite"
+        },
+        {
+            "word": "comando"
+        },
+        {
+            "word": "composição"
+        },
+        {
+            "word": "perigo"
+        },
+        {
+            "word": "exercício"
+        },
+        {
+            "word": "leitor"
+        },
+        {
+            "word": "aprovado"
+        },
+        {
+            "word": "variação"
+        },
+        {
+            "word": "orçamento"
+        },
+        {
+            "word": "beleza"
+        },
+        {
+            "word": "concepção"
+        },
+        {
+            "word": "instalação"
+        },
+        {
+            "word": "avião"
+        },
+        {
+            "word": "pintor"
+        },
+        {
+            "word": "mandato"
+        },
+        {
+            "word": "leitura"
+        },
+        {
+            "word": "combate"
+        },
+        {
+            "word": "pão"
+        },
+        {
+            "word": "ave"
+        },
+        {
+            "word": "protecção"
+        },
+        {
+            "word": "time"
+        },
+        {
+            "word": "raio"
+        },
+        {
+            "word": "critério"
+        },
+        {
+            "word": "aliado"
+        },
+        {
+            "word": "fruto"
+        },
+        {
+            "word": "diário"
+        },
+        {
+            "word": "opção"
+        },
+        {
+            "word": "sessão"
+        },
+        {
+            "word": "castelo"
+        },
+        {
+            "word": "droga"
+        },
+        {
+            "word": "colega"
+        },
+        {
+            "word": "frequência"
+        },
+        {
+            "word": "crítica"
+        },
+        {
+            "word": "reportagem"
+        },
+        {
+            "word": "poder"
+        },
+        {
+            "word": "tio"
+        },
+        {
+            "word": "contexto"
+        },
+        {
+            "word": "propósito"
+        },
+        {
+            "word": "sítio"
+        },
+        {
+            "word": "fundação"
+        },
+        {
+            "word": "autarquia"
+        },
+        {
+            "word": "senado"
+        },
+        {
+            "word": "arquitectura"
+        },
+        {
+            "word": "fotografia"
+        },
+        {
+            "word": "reserva"
+        },
+        {
+            "word": "navio"
+        },
+        {
+            "word": "lucro"
+        },
+        {
+            "word": "lágrima"
+        },
+        {
+            "word": "camada"
+        },
+        {
+            "word": "capítulo"
+        },
+        {
+            "word": "disposição"
+        },
+        {
+            "word": "independência"
+        },
+        {
+            "word": "paixão"
+        },
+        {
+            "word": "verão"
+        },
+        {
+            "word": "fio"
+        },
+        {
+            "word": "dimensão"
+        },
+        {
+            "word": "acontecimento"
+        },
+        {
+            "word": "ausência"
+        },
+        {
+            "word": "sindicato"
+        },
+        {
+            "word": "clima"
+        },
+        {
+            "word": "símbolo"
+        },
+        {
+            "word": "parlamento"
+        },
+        {
+            "word": "confiança"
+        },
+        {
+            "word": "etapa"
+        },
+        {
+            "word": "alternativa"
+        },
+        {
+            "word": "nomeado"
+        },
+        {
+            "word": "troca"
+        },
+        {
+            "word": "bicho"
+        },
+        {
+            "word": "aula"
+        },
+        {
+            "word": "cuidado"
+        },
+        {
+            "word": "vazio"
+        },
+        {
+            "word": "chave"
+        },
+        {
+            "word": "desenho"
+        },
+        {
+            "word": "hábito"
+        },
+        {
+            "word": "corredor"
+        },
+        {
+            "word": "surpresa"
+        },
+        {
+            "word": "coluna"
+        },
+        {
+            "word": "prefeito"
+        },
+        {
+            "word": "religião"
+        },
+        {
+            "word": "fome"
+        },
+        {
+            "word": "evento"
+        },
+        {
+            "word": "vidro"
+        },
+        {
+            "word": "prefeitura"
+        },
+        {
+            "word": "diabo"
+        },
+        {
+            "word": "conferência"
+        },
+        {
+            "word": "aparelho"
+        },
+        {
+            "word": "ritmo"
+        },
+        {
+            "word": "inflação"
+        },
+        {
+            "word": "debate"
+        },
+        {
+            "word": "faculdade"
+        },
+        {
+            "word": "garantia"
+        },
+        {
+            "word": "departamento"
+        },
+        {
+            "word": "bocado"
+        },
+        {
+            "word": "chapéu"
+        },
+        {
+            "word": "ciclo"
+        },
+        {
+            "word": "neto"
+        },
+        {
+            "word": "privatização"
+        },
+        {
+            "word": "rainha"
+        },
+        {
+            "word": "associado"
+        },
+        {
+            "word": "sensação"
+        },
+        {
+            "word": "cigarro"
+        },
+        {
+            "word": "posse"
+        },
+        {
+            "word": "raiz"
+        },
+        {
+            "word": "lançamento"
+        },
+        {
+            "word": "casal"
+        },
+        {
+            "word": "província"
+        },
+        {
+            "word": "adversário"
+        },
+        {
+            "word": "metal"
+        },
+        {
+            "word": "argumento"
+        },
+        {
+            "word": "certo"
+        },
+        {
+            "word": "apresentação"
+        },
+        {
+            "word": "exame"
+        },
+        {
+            "word": "explicação"
+        },
+        {
+            "word": "activo"
+        },
+        {
+            "word": "expectativa"
+        },
+        {
+            "word": "tiro"
+        },
+        {
+            "word": "poema"
+        },
+        {
+            "word": "despesa"
+        },
+        {
+            "word": "resolução"
+        },
+        {
+            "word": "medicina"
+        },
+        {
+            "word": "junta"
+        },
+        {
+            "word": "inimigo"
+        },
+        {
+            "word": "corrida"
+        },
+        {
+            "word": "milhar"
+        },
+        {
+            "word": "lua"
+        },
+        {
+            "word": "denominado"
+        },
+        {
+            "word": "estabelecimento"
+        },
+        {
+            "word": "barro"
+        },
+        {
+            "word": "golpe"
+        },
+        {
+            "word": "índice"
+        },
+        {
+            "word": "lábio"
+        },
+        {
+            "word": "cenário"
+        },
+        {
+            "word": "impacto"
+        },
+        {
+            "word": "mensagem"
+        },
+        {
+            "word": "carvalho"
+        },
+        {
+            "word": "motor"
+        },
+        {
+            "word": "pedaço"
+        },
+        {
+            "word": "conteúdo"
+        },
+        {
+            "word": "destaque"
+        },
+        {
+            "word": "financiamento"
+        },
+        {
+            "word": "leste"
+        },
+        {
+            "word": "concurso"
+        },
+        {
+            "word": "culpa"
+        },
+        {
+            "word": "retrato"
+        },
+        {
+            "word": "sexta-feira"
+        },
+        {
+            "word": "designação"
+        },
+        {
+            "word": "marquês"
+        },
+        {
+            "word": "tia"
+        },
+        {
+            "word": "norma"
+        },
+        {
+            "word": "inverno"
+        },
+        {
+            "word": "prédio"
+        },
+        {
+            "word": "observação"
+        },
+        {
+            "word": "faixa"
+        },
+        {
+            "word": "coragem"
+        },
+        {
+            "word": "madrugada"
+        },
+        {
+            "word": "planeta"
+        },
+        {
+            "word": "obrigação"
+        },
+        {
+            "word": "código"
+        },
+        {
+            "word": "engenheiro"
+        },
+        {
+            "word": "vereador"
+        },
+        {
+            "word": "via"
+        },
+        {
+            "word": "excepção"
+        },
+        {
+            "word": "escada"
+        },
+        {
+            "word": "oeste"
+        },
+        {
+            "word": "tecido"
+        },
+        {
+            "word": "cheiro"
+        },
+        {
+            "word": "interpretação"
+        },
+        {
+            "word": "segredo"
+        },
+        {
+            "word": "publicação"
+        },
+        {
+            "word": "centímetro"
+        },
+        {
+            "word": "pescoço"
+        },
+        {
+            "word": "definição"
+        },
+        {
+            "word": "honra"
+        },
+        {
+            "word": "funcionamento"
+        },
+        {
+            "word": "montanha"
+        },
+        {
+            "word": "revisão"
+        },
+        {
+            "word": "comandante"
+        },
+        {
+            "word": "copa"
+        },
+        {
+            "word": "turismo"
+        },
+        {
+            "word": "chegada"
+        },
+        {
+            "word": "baseado"
+        },
+        {
+            "word": "ovo"
+        },
+        {
+            "word": "asa"
+        },
+        {
+            "word": "âmbito"
+        },
+        {
+            "word": "democracia"
+        },
+        {
+            "word": "cozinha"
+        },
+        {
+            "word": "segunda-feira"
+        },
+        {
+            "word": "profissão"
+        },
+        {
+            "word": "votação"
+        },
+        {
+            "word": "feito"
+        },
+        {
+            "word": "cientista"
+        },
+        {
+            "word": "rocha"
+        },
+        {
+            "word": "barco"
+        },
+        {
+            "word": "paciente"
+        },
+        {
+            "word": "apto"
+        },
+        {
+            "word": "ameaça"
+        },
+        {
+            "word": "gabinete"
+        },
+        {
+            "word": "pedido"
+        },
+        {
+            "word": "dança"
+        },
+        {
+            "word": "petróleo"
+        },
+        {
+            "word": "novidade"
+        },
+        {
+            "word": "universo"
+        },
+        {
+            "word": "federação"
+        },
+        {
+            "word": "moda"
+        },
+        {
+            "word": "compromisso"
+        },
+        {
+            "word": "fé"
+        },
+        {
+            "word": "especialista"
+        },
+        {
+            "word": "costume"
+        },
+        {
+            "word": "mecanismo"
+        },
+        {
+            "word": "corda"
+        },
+        {
+            "word": "parágrafo"
+        },
+        {
+            "word": "continente"
+        },
+        {
+            "word": "bloco"
+        },
+        {
+            "word": "diálogo"
+        },
+        {
+            "word": "desafio"
+        },
+        {
+            "word": "academia"
+        },
+        {
+            "word": "tratado"
+        },
+        {
+            "word": "nordeste"
+        },
+        {
+            "word": "sexo"
+        },
+        {
+            "word": "escrita"
+        },
+        {
+            "word": "horizonte"
+        },
+        {
+            "word": "usuário"
+        },
+        {
+            "word": "sono"
+        },
+        {
+            "word": "saudade"
+        },
+        {
+            "word": "marcha"
+        },
+        {
+            "word": "álcool"
+        },
+        {
+            "word": "fórmula"
+        },
+        {
+            "word": "personalidade"
+        },
+        {
+            "word": "proprietário"
+        },
+        {
+            "word": "liderança"
+        },
+        {
+            "word": "aliança"
+        },
+        {
+            "word": "cálculo"
+        },
+        {
+            "word": "escala"
+        },
+        {
+            "word": "osso"
+        },
+        {
+            "word": "raça"
+        },
+        {
+            "word": "féria"
+        },
+        {
+            "word": "actuação"
+        },
+        {
+            "word": "bandeira"
+        },
+        {
+            "word": "estreito"
+        },
+        {
+            "word": "colégio"
+        },
+        {
+            "word": "gato"
+        },
+        {
+            "word": "nuvem"
+        },
+        {
+            "word": "procedimento"
+        },
+        {
+            "word": "riso"
+        },
+        {
+            "word": "extensão"
+        },
+        {
+            "word": "nascimento"
+        },
+        {
+            "word": "transformação"
+        },
+        {
+            "word": "corpus"
+        },
+        {
+            "word": "classificação"
+        },
+        {
+            "word": "cartão"
+        },
+        {
+            "word": "exploração"
+        },
+        {
+            "word": "partícula"
+        },
+        {
+            "word": "círculo"
+        },
+        {
+            "word": "avô"
+        },
+        {
+            "word": "expansão"
+        },
+        {
+            "word": "papa"
+        },
+        {
+            "word": "prejuízo"
+        },
+        {
+            "word": "passeio"
+        },
+        {
+            "word": "canção"
+        },
+        {
+            "word": "patrão"
+        },
+        {
+            "word": "potencial"
+        },
+        {
+            "word": "horário"
+        },
+        {
+            "word": "derrota"
+        },
+        {
+            "word": "desempenho"
+        },
+        {
+            "word": "deserto"
+        },
+        {
+            "word": "emoção"
+        },
+        {
+            "word": "aprovação"
+        },
+        {
+            "word": "gado"
+        },
+        {
+            "word": "competição"
+        },
+        {
+            "word": "juventude"
+        },
+        {
+            "word": "orientação"
+        },
+        {
+            "word": "colecção"
+        },
+        {
+            "word": "almoço"
+        },
+        {
+            "word": "espelho"
+        },
+        {
+            "word": "circunstância"
+        },
+        {
+            "word": "sócio"
+        },
+        {
+            "word": "capitão"
+        },
+        {
+            "word": "protesto"
+        },
+        {
+            "word": "centena"
+        },
+        {
+            "word": "avenida"
+        },
+        {
+            "word": "exportação"
+        },
+        {
+            "word": "julgamento"
+        },
+        {
+            "word": "festival"
+        },
+        {
+            "word": "pau"
+        }
+    ]
+}
