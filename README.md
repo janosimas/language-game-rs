@@ -37,3 +37,10 @@ After that go to the folder in your command line and execute `cargo run`.
 [Powered by Yandex.](http://translate.yandex.com/)
 
 [Powered by Pixabay.](https://pixabay.com/)
+
+
+## Icons
+
+Flag Icons made by [Freepik](https://www.flaticon.com/authors/freepik) from [Flaticon](https://www.flaticon.com/)
+
+Downlaod image by [Papirus Development Team](https://github.com/PapirusDevelopmentTeam)
