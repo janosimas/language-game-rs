@@ -2,6 +2,7 @@ pub struct State {
     game_running: bool,
     turn_number: u16,
     score: usize,
+    final_score: Option<usize>,
     failed_words: Vec<String>,
     success_words: Vec<String>,
     pub tranlation_pair: (String, String),
@@ -14,6 +15,7 @@ impl State {
             game_running: false,
             turn_number: 0,
             score: 0,
+            final_score: Some(10),
             failed_words: vec![],
             success_words: vec![],
             tranlation_pair,
@@ -27,6 +29,13 @@ impl State {
 
     pub fn is_game_running(&self) -> bool {
         self.game_running
+    }
+
+    pub fn has_game_ended(&self) -> bool {
+        if let Some(final_score) = self.final_score {
+            return self.score() == final_score;
+        }
+        false
     }
 
     pub fn advance_turn(&mut self) {

@@ -9,13 +9,12 @@ pub struct Response {
     pub text: Vec<String>,
 }
 
-pub async fn get_translation(
+async fn checked_get_translation(
     word: Word,
     from: String,
     to: String,
-    index: usize,
     key: String,
-) -> Message {
+) -> Option<String> {
     let response = reqwest::Client::new()
         .get("https://translate.yandex.net/api/v1.5/tr.json/translate")
         .query(&[
@@ -26,11 +25,23 @@ pub async fn get_translation(
         ])
         .send()
         .await
-        .unwrap()
+        .ok()?
         .json::<Response>()
         .await
-        .unwrap();
+        .ok()?;
 
-    let translation = response.text.first().unwrap();
-    Message::TranslationDownloaded(index, translation.clone())
+    Some(response.text.first()?.clone())
+}
+
+pub async fn get_translation(
+    word: Word,
+    from: String,
+    to: String,
+    index: usize,
+    key: String,
+) -> Message {
+    match checked_get_translation(word, from, to, key).await {
+        Some(translation) => Message::TranslationDownloaded(index, translation),
+        None => Message::Error(Error::ErrorDownloadingTranslation(index)),
+    }
 }

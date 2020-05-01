@@ -1,7 +1,7 @@
 use crate::general;
 use iced::{Column, Command, Element, Image, Length, Row};
+use log::{error};
 use std::fs;
-use std::iter;
 
 pub struct HelperTipsView {
     helper_tips: Vec<Option<String>>,
@@ -23,8 +23,11 @@ impl HelperTipsView {
                     .helper_tips
                     .iter()
                     .map(|file| {
-                        // TODO: not working. Probably the gui must close the image first.
-                        fs::remove_file(file.as_ref().unwrap());
+                        if let Some(path) = file.as_ref() {
+                            if let Err(err) = fs::remove_file(path) {
+                                error!("{}", err);
+                            }
+                        }
                         None
                     })
                     .collect()

@@ -1,4 +1,4 @@
-use iced::{Row, Command, Element, Length, button, Button, Align, Text};
+use iced::{Row, Element, Length, button, Button, Align, Text};
 
 use crate::general;
 
@@ -11,10 +11,6 @@ impl StartView {
         Self {
             start_btn_state: button::State::new()
         }
-    }
-
-    pub fn update(&mut self, _message: general::Message) -> Command<general::Message> {
-        Command::none()
     }
 
     pub fn view(&mut self) -> Element<general::Message> {

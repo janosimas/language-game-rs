@@ -1,5 +1,5 @@
+use log::{error, info};
 use serde::{Deserialize, Serialize};
-
 use std::fmt;
 use std::fs;
 use std::path::Path;
@@ -35,6 +35,15 @@ impl fmt::Display for Word {
 
 pub fn load_language() -> Option<Language> {
     let language_file = Path::new("./resources/de-de.json");
-    let content = fs::read_to_string(language_file).ok()?;
-    serde_json::from_str(&content).ok()
+    match fs::read_to_string(language_file) {
+        Ok(content) => match serde_json::from_str(&content) {
+            Ok(language) => {
+                info!("file loaded: {:?}", language_file.to_str());
+                return Some(language);
+            }
+            Err(err) => error!("{}", err),
+        },
+        Err(err) => error!("{}", err),
+    }
+    None
 }

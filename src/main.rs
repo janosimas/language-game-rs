@@ -2,7 +2,7 @@ use chrono;
 use dotenv;
 use fern;
 use iced::{Application, Column, Command, Element, Length, Row, Settings, Text};
-use log::{debug, error, info, trace, warn};
+use log::{error, info};
 use rand::seq::SliceRandom;
 use std::env;
 use std::iter;
@@ -29,7 +29,7 @@ fn main() {
         .level(log::LevelFilter::Debug)
         // disable libraries logging
         .level_for("hyper", log::LevelFilter::Off)
-        .level_for("reqwest", log::LevelFilter::Off)
+        // .level_for("reqwest", log::LevelFilter::Off)
         .level_for("iced_winit", log::LevelFilter::Off)
         .level_for("iced_wgpu", log::LevelFilter::Off)
         .level_for("wgpu_native", log::LevelFilter::Off)
@@ -81,10 +81,15 @@ impl Game {
             .cloned()
             .collect();
 
+        // get teh first word to use as "question word"
+        // should never fail
         let current_word = options.first().unwrap().clone();
 
+        // shuffle the options
+        // we got the first one from the list, remember?
         options.shuffle(&mut rand::thread_rng());
 
+        // Create a contex with the current word and the index of it in the options list
         self.context = Some(general::Context::new(
             current_word.to_string(),
             options
@@ -101,8 +106,11 @@ impl Game {
                 .unwrap(),
         ));
 
+        // Advance the turn in the game state
         self.state.advance_turn();
 
+        // create a list of future for the translations
+        // these futures will send a message to update the interface with the translations
         let translations = options
             .iter()
             .cloned()
@@ -118,6 +126,8 @@ impl Game {
             })
             .map(Command::from)
             .collect::<Vec<_>>();
+        // convert the futures to iced::Command
+        // and create a future for the list of images
         Command::batch(translations.into_iter().chain(iter::once(Command::from(
             general::image::get_images_url(
                 current_word.clone(),
@@ -158,7 +168,10 @@ impl Application for Game {
             general::Message::TranslationDownloaded(_, _) => self.game_view.update(message),
             general::Message::ImageDownloaded(_, _) => self.game_view.update(message),
             general::Message::EndTurn => self.game_view.update(message),
-            general::Message::GameEnd => Command::none(),
+            general::Message::GameEnd => {
+                info!("Game ended!!!");
+                Command::none()
+            }
             general::Message::Error(_) => {
                 error!("Some error happened!!!");
                 Command::none()
@@ -172,6 +185,10 @@ impl Application for Game {
                         self.state.add_correct_word(&context.word_original);
                     } else {
                         self.state.add_wrong_word(&context.word_original);
+                    }
+
+                    if self.state.has_game_ended() {
+                        return Command::from((|| async { general::Message::GameEnd })());
                     }
 
                     self.game_view.update(general::Message::EndTurn);
