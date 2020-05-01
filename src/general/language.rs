@@ -1,4 +1,5 @@
 use log::{error, info};
+use rand::seq::SliceRandom;
 use serde::{Deserialize, Serialize};
 use std::fmt;
 use std::fs;
@@ -46,4 +47,12 @@ pub fn load_language() -> Option<Language> {
         Err(err) => error!("{}", err),
     }
     None
+}
+
+pub fn select_random_words(language: &Language, number_of_words: usize) -> Vec<Word> {
+    language
+        .words
+        .choose_multiple(&mut rand::thread_rng(), number_of_words)
+        .cloned()
+        .collect()
 }

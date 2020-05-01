@@ -76,14 +76,9 @@ impl Game {
     }
 
     fn advance_turn(&mut self) -> Command<general::Message> {
-        let mut options: Vec<general::Word> = self
-            .language
-            .words
-            .choose_multiple(&mut rand::thread_rng(), 5)
-            .cloned()
-            .collect();
+        let mut options = general::select_random_words(&self.language, 5);
 
-        // get teh first word to use as "question word"
+        // get the first word to use as "question word"
         // should never fail
         let current_word = options.first().unwrap().clone();
 
@@ -121,7 +116,7 @@ impl Game {
                 general::translation::get_translation(
                     word,
                     self.language.language.clone(),
-                    "en".to_string(),
+                    self.state.known_language.clone(),
                     index,
                     self.state.tranlation_pair.1.clone(),
                 )
@@ -154,7 +149,8 @@ impl Application for Game {
 
     fn update(&mut self, message: Self::Message) -> Command<Self::Message> {
         match message {
-            general::Message::GameBegin => {
+            general::Message::GameBegin(known_language) => {
+                self.state.known_language = known_language;
                 self.state.start();
                 self.advance_turn()
             }
@@ -171,6 +167,7 @@ impl Application for Game {
             general::Message::ImageDownloaded(_, _) => self.game_view.update(message),
             general::Message::EndTurn => self.game_view.update(message),
             general::Message::GameEnd => {
+                self.game_view.update(general::Message::EndTurn);
                 info!("Game ended!!!");
                 Command::none()
             }
@@ -178,6 +175,9 @@ impl Application for Game {
                 error!("Some error happened!!!");
                 Command::none()
             }
+            general::Message::GuiUpdated(_) => {
+                self.start_view.update(message)
+            },
             general::Message::UserInput(user_input) => match user_input {
                 general::UserInput::OptionSelected(index) => {
                     let context = self.context.as_ref().unwrap();
