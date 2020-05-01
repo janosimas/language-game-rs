@@ -134,6 +134,12 @@ impl Game {
     }
 }
 
+impl Drop for Game {
+    fn drop(&mut self) {
+        self.update(general::Message::GameEnd);
+    }
+}
+
 impl Application for Game {
     type Executor = iced::executor::Default;
     type Message = general::Message;
@@ -175,9 +181,6 @@ impl Application for Game {
                 error!("Some error happened!!!");
                 Command::none()
             }
-            general::Message::GuiUpdated(_) => {
-                self.start_view.update(message)
-            },
             general::Message::UserInput(user_input) => match user_input {
                 general::UserInput::OptionSelected(index) => {
                     let context = self.context.as_ref().unwrap();
