@@ -10,7 +10,7 @@ pub struct Response {
 }
 
 async fn checked_get_translation(
-    word: Word,
+    word: language::Word,
     from: String,
     to: String,
     key: String,
@@ -34,7 +34,7 @@ async fn checked_get_translation(
 }
 
 pub async fn get_translation(
-    word: Word,
+    word: language::Word,
     from: String,
     to: String,
     index: usize,

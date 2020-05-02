@@ -48,7 +48,7 @@ struct Game {
     game_view: gui::GameView,
     start_view: gui::StartView,
     end_view: gui::EndView,
-    language: general::Language,
+    language: Option<general::language::Language>,
     state: general::State,
     context: Option<general::Context>,
 }
@@ -69,14 +69,15 @@ impl Game {
             game_view: gui::GameView::new(),
             start_view: gui::StartView::new(),
             end_view: gui::EndView::new(),
-            language: general::load_language().unwrap(),
+            language: None,
             state: general::State::new(tranlation_pair, image_pair),
             context: None,
         }
     }
 
     fn advance_turn(&mut self) -> Command<general::Message> {
-        let mut options = general::select_random_words(&self.language, 5);
+        let mut options =
+            general::language::select_random_words(&self.language.as_ref().unwrap(), 5);
 
         // get the first word to use as "question word"
         // should never fail
@@ -115,7 +116,7 @@ impl Game {
             .map(|(index, word)| {
                 general::translation::get_translation(
                     word,
-                    self.language.language.clone(),
+                    self.language.as_ref().unwrap().language.clone(),
                     self.state.known_language.clone(),
                     index,
                     self.state.tranlation_pair.1.clone(),
@@ -157,6 +158,7 @@ impl Application for Game {
         match message {
             general::Message::GameBegin(known_language) => {
                 self.state.known_language = known_language;
+                self.language = Some(self.start_view.word_pack());
                 self.state.start();
                 self.advance_turn()
             }
@@ -201,6 +203,9 @@ impl Application for Game {
                 }
                 general::UserInput::HintSelected(_) => Command::none(),
                 general::UserInput::OptionWritten(_) => Command::none(),
+                general::UserInput::WordPackSelected(_) => self
+                    .start_view
+                    .update(general::Message::UserInput(user_input)),
             },
         }
     }

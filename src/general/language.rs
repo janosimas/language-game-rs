@@ -5,7 +5,7 @@ use std::fmt;
 use std::fs;
 use std::path::Path;
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Clone)]
 pub struct Language {
     pub language: String,
     pub country: String,
@@ -34,8 +34,7 @@ impl fmt::Display for Word {
     }
 }
 
-pub fn load_language() -> Option<Language> {
-    let language_file = Path::new("./resources/words/de-de.json");
+pub fn load(language_file: &Path) -> Option<Language> {
     match fs::read_to_string(language_file) {
         Ok(content) => match serde_json::from_str(&content) {
             Ok(language) => {

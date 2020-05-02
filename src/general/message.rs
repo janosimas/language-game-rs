@@ -19,6 +19,7 @@ pub enum Error {
 
 #[derive(Debug, Clone)]
 pub enum UserInput {
+    WordPackSelected(usize),
     OptionSelected(usize),
     HintSelected(usize),
     OptionWritten(String),
