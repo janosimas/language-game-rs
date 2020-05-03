@@ -1,4 +1,6 @@
-use iced::{button, Align, Button, Column, Command, Element, Image, Length, Row, Text};
+use iced::{
+    button, Align, Button, Column, Command, Element, Image, Length, Radio, Row, Text,
+};
 
 use crate::general;
 
@@ -18,28 +20,8 @@ impl LanguageButton {
     }
 }
 
-struct WordPackButton {
-    index: usize,
-    language: general::language::Language,
-    state: button::State,
-}
-
-impl WordPackButton {
-    fn view(&mut self) -> Element<general::Message> {
-        Button::new(&mut self.state, Text::new(&self.language.description))
-            .on_press(general::Message::UserInput(
-                general::UserInput::WordPackSelected(self.index),
-            ))
-            .into()
-    }
-
-    fn word_pack(&self) -> general::language::Language {
-        self.language.clone()
-    }
-}
-
 pub struct StartView {
-    available_word_packs: Vec<WordPackButton>,
+    available_word_packs: Vec<general::language::Language>,
     known_languages: Vec<LanguageButton>,
     selected_word_pack: Option<usize>,
 }
@@ -54,47 +36,16 @@ impl StartView {
                 state: button::State::new(),
             })
             .collect();
-        let available_word_packs_load = general::word_pack::load();
-        let available_word_packs = available_word_packs_load
-            .into_iter()
-            .enumerate()
-            .map(|(index, language)| WordPackButton {
-                index,
-                language,
-                state: button::State::new(),
-            })
-            .collect();
+        let available_word_packs = general::word_pack::load();
         Self {
             available_word_packs,
             known_languages,
-            selected_word_pack: None,
+            selected_word_pack: Some(0),
         }
     }
 
     pub fn word_pack(&self) -> general::language::Language {
-        self.available_word_packs[self.selected_word_pack.unwrap()].word_pack()
-    }
-
-    fn page1(&mut self) -> Element<general::Message> {
-        self.available_word_packs
-            .iter_mut()
-            .fold(Column::new(), |col, button| col.push(button.view()))
-            .into()
-    }
-
-    fn page2(&mut self) -> Element<general::Message> {
-        Column::new()
-            .spacing(10)
-            .padding(50)
-            .align_items(Align::Center)
-            .height(Length::FillPortion(1))
-            .push(Text::new("Select the known language:"))
-            .push(
-                self.known_languages
-                    .iter_mut()
-                    .fold(Row::new(), |row, button| row.push(button.view())),
-            )
-            .into()
+        self.available_word_packs[self.selected_word_pack.unwrap()].clone()
     }
 
     pub fn update(&mut self, message: general::Message) -> Command<general::Message> {
@@ -108,9 +59,38 @@ impl StartView {
     }
 
     pub fn view(&mut self) -> Element<general::Message> {
-        match self.selected_word_pack {
-            None => self.page1(),
-            Some(_) => self.page2(),
-        }
+        let option = self.selected_word_pack.clone();
+        Column::new()
+            .spacing(10)
+            .padding(50)
+            .align_items(Align::Center)
+            .height(Length::FillPortion(1))
+            .push(self.available_word_packs.iter().enumerate().fold(
+                Column::new(),
+                |col, (index, language)| {
+                    col.push(Radio::new(
+                        index,
+                        &language.description,
+                        option.clone(),
+                        |index| {
+                            general::Message::UserInput(general::UserInput::WordPackSelected(index))
+                        },
+                    ))
+                },
+            ))
+            .push(
+                Column::new()
+                    .spacing(10)
+                    .padding(50)
+                    .align_items(Align::Center)
+                    .height(Length::FillPortion(1))
+                    .push(Text::new("Select the known language:"))
+                    .push(
+                        self.known_languages
+                            .iter_mut()
+                            .fold(Row::new(), |row, button| row.push(button.view())),
+                    ),
+            )
+            .into()
     }
 }
