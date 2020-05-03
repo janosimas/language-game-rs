@@ -24,6 +24,7 @@ async fn checked_download_image(url: String) -> Option<String> {
     Some(path)
 }
 
+/// Download the image from `url` and signal the image widget in position `index` when finished.
 pub async fn download_image(url: String, index: usize) -> Message {
     match checked_download_image(url).await {
         Some(path) => Message::ImageDownloaded(index, path),
@@ -54,6 +55,7 @@ async fn checked_get_images_url(word: word_pack::Word, key: String) -> Option<Re
     Some(res)
 }
 
+/// Download a list of images for `word`.
 pub async fn get_images_url(word: word_pack::Word, key: String) -> Message {
     match checked_get_images_url(word, key).await {
         Some(res) => {
@@ -64,7 +66,7 @@ pub async fn get_images_url(word: word_pack::Word, key: String) -> Message {
 }
 
 #[derive(Serialize, Deserialize)]
-pub struct Response {
+struct Response {
     total: i64,
     #[serde(rename = "totalHits")]
     total_hits: i64,
@@ -72,7 +74,7 @@ pub struct Response {
 }
 
 #[derive(Serialize, Deserialize)]
-pub struct Hit {
+struct Hit {
     id: i64,
     #[serde(rename = "pageURL")]
     page_url: String,

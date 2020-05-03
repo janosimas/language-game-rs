@@ -3,13 +3,13 @@ use reqwest;
 use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct Response {
+struct Response {
     code: u16,
     lang: String,
-    pub text: Vec<String>,
+    text: Vec<String>,
 }
 
-async fn checked_get_translation(
+async fn checked_translate(
     word: word_pack::Word,
     from: String,
     to: String,
@@ -33,14 +33,15 @@ async fn checked_get_translation(
     Some(response.text.first()?.clone())
 }
 
-pub async fn get_translation(
+/// Request a translation for the `word` and signal the option widget at `index` when finished.
+pub async fn translate(
     word: word_pack::Word,
     from: String,
     to: String,
     index: usize,
     key: String,
 ) -> Message {
-    match checked_get_translation(word, from, to, key).await {
+    match checked_translate(word, from, to, key).await {
         Some(translation) => Message::TranslationDownloaded(index, translation),
         None => Message::Error(Error::ErrorDownloadingTranslation(index)),
     }

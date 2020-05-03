@@ -76,8 +76,7 @@ impl Game {
     }
 
     fn advance_turn(&mut self) -> Command<general::Message> {
-        let mut options =
-            general::word_pack::select_random_words(&self.word_pack.as_ref().unwrap(), 5);
+        let mut options = self.word_pack.as_ref().unwrap().choose_random(5);
 
         // get the first word to use as "question word"
         // should never fail
@@ -114,7 +113,7 @@ impl Game {
             .cloned()
             .enumerate()
             .map(|(index, word)| {
-                general::translation::get_translation(
+                general::translation::translate(
                     word,
                     self.word_pack.as_ref().unwrap().language.clone(),
                     self.state.known_language.clone(),
