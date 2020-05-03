@@ -48,7 +48,7 @@ struct Game {
     game_view: gui::GameView,
     start_view: gui::StartView,
     end_view: gui::EndView,
-    language: Option<general::language::Language>,
+    word_pack: Option<general::word_pack::WordPack>,
     state: general::State,
     context: Option<general::Context>,
 }
@@ -69,7 +69,7 @@ impl Game {
             game_view: gui::GameView::new(),
             start_view: gui::StartView::new(),
             end_view: gui::EndView::new(),
-            language: None,
+            word_pack: None,
             state: general::State::new(tranlation_pair, image_pair),
             context: None,
         }
@@ -77,7 +77,7 @@ impl Game {
 
     fn advance_turn(&mut self) -> Command<general::Message> {
         let mut options =
-            general::language::select_random_words(&self.language.as_ref().unwrap(), 5);
+            general::word_pack::select_random_words(&self.word_pack.as_ref().unwrap(), 5);
 
         // get the first word to use as "question word"
         // should never fail
@@ -116,7 +116,7 @@ impl Game {
             .map(|(index, word)| {
                 general::translation::get_translation(
                     word,
-                    self.language.as_ref().unwrap().language.clone(),
+                    self.word_pack.as_ref().unwrap().language.clone(),
                     self.state.known_language.clone(),
                     index,
                     self.state.tranlation_pair.1.clone(),
@@ -158,7 +158,7 @@ impl Application for Game {
         match message {
             general::Message::GameBegin(known_language) => {
                 self.state.known_language = known_language;
-                self.language = Some(self.start_view.word_pack());
+                self.word_pack = Some(self.start_view.word_pack());
                 self.state.start();
                 self.advance_turn()
             }

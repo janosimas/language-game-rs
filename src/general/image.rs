@@ -31,7 +31,7 @@ pub async fn download_image(url: String, index: usize) -> Message {
     }
 }
 
-async fn checked_get_images_url(word: language::Word, key: String) -> Option<Response> {
+async fn checked_get_images_url(word: word_pack::Word, key: String) -> Option<Response> {
     let search_string = if let Some(search_string) = &word.image_search_aid {
         search_string
     } else {
@@ -54,7 +54,7 @@ async fn checked_get_images_url(word: language::Word, key: String) -> Option<Res
     Some(res)
 }
 
-pub async fn get_images_url(word: language::Word, key: String) -> Message {
+pub async fn get_images_url(word: word_pack::Word, key: String) -> Message {
     match checked_get_images_url(word, key).await {
         Some(res) => {
             Message::RequestImages(res.hits.into_iter().map(|hit| hit.webformat_url).collect())

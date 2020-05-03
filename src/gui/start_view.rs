@@ -19,14 +19,14 @@ impl LanguageButton {
 }
 
 pub struct StartView {
-    available_word_packs: Vec<general::language::Language>,
+    available_word_packs: Vec<general::word_pack::WordPack>,
     known_languages: Vec<LanguageButton>,
     selected_word_pack: Option<usize>,
 }
 
 impl StartView {
     pub fn new() -> Self {
-        let known_languages_str = general::word_pack::available_languages();
+        let known_languages_str = general::word_pack::available_knonw_languages();
         let known_languages = known_languages_str
             .into_iter()
             .map(|language| LanguageButton {
@@ -42,7 +42,7 @@ impl StartView {
         }
     }
 
-    pub fn word_pack(&self) -> general::language::Language {
+    pub fn word_pack(&self) -> general::word_pack::WordPack {
         self.available_word_packs[self.selected_word_pack.unwrap()].clone()
     }
 
@@ -57,7 +57,7 @@ impl StartView {
     }
 
     fn word_packs_radio<'a>(
-        available_word_packs: &Vec<general::language::Language>,
+        available_word_packs: &Vec<general::word_pack::WordPack>,
         option: &Option<usize>,
     ) -> Element<'a, general::Message> {
         available_word_packs

@@ -1,6 +1,5 @@
 mod context;
 pub mod image;
-pub mod language;
 mod message;
 mod state;
 pub mod translation;
