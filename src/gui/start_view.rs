@@ -11,7 +11,12 @@ impl LanguageButton {
     fn view(&mut self) -> Element<general::Message> {
         Button::new(
             &mut self.state,
-            Image::new(format!("resources/icons/languages/{}.png", self.language)).width(Length::Units(50)),
+            Image::new(format!(
+                "{}/{}.png",
+                general::resources::LANGUAGES_FOLDER,
+                self.language
+            ))
+            .width(Length::Units(50)),
         )
         .on_press(general::Message::GameBegin(self.language.clone()))
         .into()
@@ -76,7 +81,9 @@ impl StartView {
             .into()
     }
 
-    fn known_languages_buttons(known_languages: &mut Vec<LanguageButton>) -> Element<general::Message> {
+    fn known_languages_buttons(
+        known_languages: &mut Vec<LanguageButton>,
+    ) -> Element<general::Message> {
         Column::new()
             .spacing(10)
             .padding(50)
@@ -101,7 +108,9 @@ impl StartView {
                 &self.available_word_packs,
                 &self.selected_word_pack,
             ))
-            .push(StartView::known_languages_buttons(&mut self.known_languages))
+            .push(StartView::known_languages_buttons(
+                &mut self.known_languages,
+            ))
             .into()
     }
 }

@@ -4,6 +4,7 @@ use serde::{Deserialize, Serialize};
 use std::fmt;
 use std::fs;
 use std::path::Path;
+use crate::general::resources;
 
 #[derive(Serialize, Deserialize, Clone)]
 pub struct WordPack {
@@ -57,7 +58,7 @@ pub fn select_random_words(word_pack: &WordPack, number_of_words: usize) -> Vec<
 }
 
 pub fn load() -> Vec<WordPack> {
-    fs::read_dir("resources/word_pack")
+    fs::read_dir(resources::WORD_PACK_FOLDER)
         .expect("Unable to read word pack folder!")
         .into_iter()
         .filter_map(Result::ok)
@@ -75,7 +76,7 @@ pub fn load() -> Vec<WordPack> {
 }
 
 pub fn available_knonw_languages() -> Vec<String> {
-    fs::read_dir("resources/icons/languages")
+    fs::read_dir(resources::LANGUAGES_FOLDER)
         .expect("Unable to read languages folder!")
         .into_iter()
         .filter_map(Result::ok)
