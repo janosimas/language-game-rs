@@ -1,6 +1,4 @@
-use iced::{
-    button, Align, Button, Column, Command, Element, Image, Length, Radio, Row, Text,
-};
+use iced::{button, Align, Button, Column, Command, Element, Image, Length, Radio, Row, Text};
 
 use crate::general;
 
@@ -58,39 +56,52 @@ impl StartView {
         Command::none()
     }
 
-    pub fn view(&mut self) -> Element<general::Message> {
-        let option = self.selected_word_pack.clone();
+    fn word_packs_radio<'a>(
+        available_word_packs: &Vec<general::language::Language>,
+        option: &Option<usize>,
+    ) -> Element<'a, general::Message> {
+        available_word_packs
+            .iter()
+            .enumerate()
+            .fold(Column::new(), |col, (index, language)| {
+                col.push(Radio::new(
+                    index,
+                    &language.description,
+                    option.clone(),
+                    |index| {
+                        general::Message::UserInput(general::UserInput::WordPackSelected(index))
+                    },
+                ))
+            })
+            .into()
+    }
+
+    fn known_languages_buttons(known_languages: &mut Vec<LanguageButton>) -> Element<general::Message> {
         Column::new()
             .spacing(10)
             .padding(50)
             .align_items(Align::Center)
             .height(Length::FillPortion(1))
-            .push(self.available_word_packs.iter().enumerate().fold(
-                Column::new(),
-                |col, (index, language)| {
-                    col.push(Radio::new(
-                        index,
-                        &language.description,
-                        option.clone(),
-                        |index| {
-                            general::Message::UserInput(general::UserInput::WordPackSelected(index))
-                        },
-                    ))
-                },
-            ))
+            .push(Text::new("Select the known language:"))
             .push(
-                Column::new()
-                    .spacing(10)
-                    .padding(50)
-                    .align_items(Align::Center)
-                    .height(Length::FillPortion(1))
-                    .push(Text::new("Select the known language:"))
-                    .push(
-                        self.known_languages
-                            .iter_mut()
-                            .fold(Row::new(), |row, button| row.push(button.view())),
-                    ),
+                known_languages
+                    .iter_mut()
+                    .fold(Row::new(), |row, button| row.push(button.view())),
             )
+            .into()
+    }
+
+    pub fn view(&mut self) -> Element<general::Message> {
+        Column::new()
+            .spacing(10)
+            .padding(50)
+            .align_items(Align::Center)
+            .height(Length::FillPortion(1))
+            .push(StartView::word_packs_radio(
+                &self.available_word_packs,
+                &self.selected_word_pack,
+            ))
+            .push(StartView::known_languages_buttons(&mut self.known_languages))
             .into()
     }
 }
