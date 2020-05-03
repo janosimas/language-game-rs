@@ -28,7 +28,7 @@ pub struct StartView {
 
 impl StartView {
     pub fn new() -> Self {
-        let known_languages_str = vec!["en".to_string(), "pt".to_string()];
+        let known_languages_str = vec!["en".to_string(), "pt".to_string(), "de".to_string()];
         let known_languages = known_languages_str
             .into_iter()
             .map(|language| LanguageButton {
