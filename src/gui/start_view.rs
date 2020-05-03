@@ -11,7 +11,7 @@ impl LanguageButton {
     fn view(&mut self) -> Element<general::Message> {
         Button::new(
             &mut self.state,
-            Image::new(format!("resources/icons/{}.png", self.language)).width(Length::Units(50)),
+            Image::new(format!("resources/icons/languages/{}.png", self.language)).width(Length::Units(50)),
         )
         .on_press(general::Message::GameBegin(self.language.clone()))
         .into()
@@ -26,7 +26,7 @@ pub struct StartView {
 
 impl StartView {
     pub fn new() -> Self {
-        let known_languages_str = vec!["en".to_string(), "pt".to_string(), "de".to_string()];
+        let known_languages_str = general::word_pack::available_languages();
         let known_languages = known_languages_str
             .into_iter()
             .map(|language| LanguageButton {
