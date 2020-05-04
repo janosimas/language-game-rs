@@ -1,6 +1,6 @@
 use iced::{
-    button, Align, Button, Column, Command, Element, HorizontalAlignment, Image, Length, Radio,
-    Row, Text,
+    button, scrollable, Align, Button, Column, Command, Element, HorizontalAlignment, Image,
+    Length, Radio, Row, Scrollable, Text,
 };
 
 use crate::general;
@@ -30,6 +30,7 @@ pub struct StartView {
     available_word_packs: Vec<general::word_pack::WordPack>,
     known_languages: Vec<LanguageButton>,
     selected_word_pack: Option<usize>,
+    scroll_state: scrollable::State,
 }
 
 impl StartView {
@@ -47,6 +48,7 @@ impl StartView {
             available_word_packs,
             known_languages,
             selected_word_pack: Some(0),
+            scroll_state: scrollable::State::new(),
         }
     }
 
@@ -94,16 +96,20 @@ impl StartView {
             .spacing(10)
             .padding(50)
             .align_items(Align::Center)
+            .height(Length::Fill)
             .width(Length::Fill)
             .align_items(Align::Start)
             .push(
                 Text::new("Select the known language:")
                     .horizontal_alignment(HorizontalAlignment::Left),
             )
-            .push(known_languages.iter_mut().fold(
-                Row::new().width(Length::Fill),
-                |row, button| row.push(button.view()),
-            ))
+            .push(
+                known_languages
+                    .iter_mut()
+                    .fold(Row::new().width(Length::Fill), |row, button| {
+                        row.push(button.view())
+                    }),
+            )
             .into()
     }
 
@@ -113,10 +119,14 @@ impl StartView {
             .padding(50)
             .align_items(Align::Center)
             .height(Length::FillPortion(1))
-            .push(StartView::word_packs_radio(
-                &self.available_word_packs,
-                &self.selected_word_pack,
-            ))
+            .push(
+                Scrollable::new(&mut self.scroll_state)
+                    .height(Length::Fill)
+                    .push(StartView::word_packs_radio(
+                        &self.available_word_packs,
+                        &self.selected_word_pack,
+                    )),
+            )
             .push(StartView::known_languages_buttons(
                 &mut self.known_languages,
             ))
