@@ -25,13 +25,6 @@ This link should give all the instructions: https://www.rust-lang.org/tools/inst
 
 After that go to the folder in your command line and execute `cargo run`.
 
-## TODO (short term)
-
-- I only added a file with words in German, should be easy to find lists of words in other languages.
-- The translations are in english, the translations are online, any language should work.
-- Improve error handling
-
-
 # Acknowledgments
 
 [Powered by Yandex.](http://translate.yandex.com/)
