@@ -1,4 +1,7 @@
-use iced::{button, Align, Button, Column, Command, Element, Image, Length, Radio, Row, Text};
+use iced::{
+    button, Align, Button, Column, Command, Element, HorizontalAlignment, Image, Length, Radio,
+    Row, Text,
+};
 
 use crate::general;
 
@@ -68,16 +71,19 @@ impl StartView {
         available_word_packs
             .iter()
             .enumerate()
-            .fold(Column::new(), |col, (index, language)| {
-                col.push(Radio::new(
-                    index,
-                    &language.description,
-                    option.clone(),
-                    |index| {
-                        general::Message::UserInput(general::UserInput::WordPackSelected(index))
-                    },
-                ))
-            })
+            .fold(
+                Column::new().width(Length::Fill),
+                |col, (index, language)| {
+                    col.push(Radio::new(
+                        index,
+                        &language.description,
+                        option.clone(),
+                        |index| {
+                            general::Message::UserInput(general::UserInput::WordPackSelected(index))
+                        },
+                    ))
+                },
+            )
             .into()
     }
 
@@ -88,13 +94,16 @@ impl StartView {
             .spacing(10)
             .padding(50)
             .align_items(Align::Center)
-            .height(Length::FillPortion(1))
-            .push(Text::new("Select the known language:"))
+            .width(Length::Fill)
+            .align_items(Align::Start)
             .push(
-                known_languages
-                    .iter_mut()
-                    .fold(Row::new(), |row, button| row.push(button.view())),
+                Text::new("Select the known language:")
+                    .horizontal_alignment(HorizontalAlignment::Left),
             )
+            .push(known_languages.iter_mut().fold(
+                Row::new().width(Length::Fill),
+                |row, button| row.push(button.view()),
+            ))
             .into()
     }
 

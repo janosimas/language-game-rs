@@ -1,5 +1,5 @@
 use crate::general;
-use iced::{Column, Command, Element, Image, Length, Row};
+use iced::{Column, Command, Element, Image, Length, Row, Align};
 use log::error;
 use std::fs;
 
@@ -49,6 +49,7 @@ impl HelperTipsView {
                     col.push(
                         Row::new()
                             .spacing(10)
+                            .align_items(Align::Center)
                             .height(Length::FillPortion(1))
                             .width(Length::FillPortion(1))
                             .push(
