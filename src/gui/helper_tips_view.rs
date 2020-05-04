@@ -1,6 +1,6 @@
 use crate::general;
 use iced::{Column, Command, Element, Image, Length, Row};
-use log::{error};
+use log::error;
 use std::fs;
 
 pub struct HelperTipsView {
@@ -43,28 +43,26 @@ impl HelperTipsView {
             .fold(
                 Column::new()
                     .spacing(10)
-                    .width(Length::FillPortion(1))
-                    .height(Length::FillPortion(1)),
+                    .height(Length::FillPortion(1))
+                    .width(Length::FillPortion(1)),
                 |col, images| {
                     col.push(
                         Row::new()
                             .spacing(10)
-                            .width(Length::FillPortion(1))
                             .height(Length::FillPortion(1))
+                            .width(Length::FillPortion(1))
                             .push(
-                                Image::new(
-                                    &images[0]
-                                        .as_ref()
-                                        .unwrap_or(&format!("{}/download.png", general::resources::ICONS_FOLDER)),
-                                )
+                                Image::new(&images[0].as_ref().unwrap_or(&format!(
+                                    "{}/download.png",
+                                    general::resources::ICONS_FOLDER
+                                )))
                                 .width(Length::FillPortion(1)),
                             )
                             .push(
-                                Image::new(
-                                    &images[1]
-                                        .as_ref()
-                                        .unwrap_or(&format!("{}/download.png", general::resources::ICONS_FOLDER)),
-                                )
+                                Image::new(&images[1].as_ref().unwrap_or(&format!(
+                                    "{}/download.png",
+                                    general::resources::ICONS_FOLDER
+                                )))
                                 .width(Length::FillPortion(1)),
                             ),
                     )

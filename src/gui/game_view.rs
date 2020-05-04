@@ -42,7 +42,7 @@ impl GameView {
                 .padding(50)
                 .align_items(Align::Center)
                 .height(Length::FillPortion(1))
-                .width(Length::FillPortion(3))
+                .width(Length::FillPortion(5))
                 .push(self.question_view.view(&context))
                 .push(self.helper_tips_view.view())
                 .push(self.answer_view.view())

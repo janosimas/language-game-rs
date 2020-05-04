@@ -39,13 +39,11 @@ impl AnswerView {
             .zip(&self.options)
             .enumerate()
             .fold(
-                Row::new()
-                    .spacing(10)
-                    .width(Length::FillPortion(1))
-                    .height(Length::FillPortion(1)),
+                Row::new().spacing(10).width(Length::FillPortion(1)),
                 |row, (index, (state, value))| {
                     row.push(
                         Button::new(state, Text::new(value.as_ref().unwrap_or(&"?".to_string())))
+                            .width(Length::FillPortion(1))
                             .on_press(general::Message::UserInput(
                                 general::UserInput::OptionSelected(index),
                             )),
