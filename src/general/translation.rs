@@ -20,7 +20,7 @@ async fn checked_translate(
         .query(&[
             ("key", &key),
             ("lang", &format!("{}-{}", from, to)),
-            ("text", &word.word),
+            ("text", &word.translation_aid.unwrap_or(word.word)),
             ("format", &"plain".to_string()),
         ])
         .send()
