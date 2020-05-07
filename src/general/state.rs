@@ -1,7 +1,9 @@
-pub enum GameState{
+use super::word_pack::Word;
+
+pub enum GameState {
     NotRunning,
     Running,
-    Ended
+    Ended,
 }
 
 pub struct State {
@@ -9,8 +11,8 @@ pub struct State {
     turn_number: u16,
     score: usize,
     final_score: Option<usize>,
-    failed_words: Vec<String>,
-    success_words: Vec<String>,
+    failed_words: Vec<Word>,
+    success_words: Vec<Word>,
     pub tranlation_pair: (String, String),
     pub image_pair: (String, String),
     pub known_language: String,
@@ -27,7 +29,7 @@ impl State {
             success_words: vec![],
             tranlation_pair,
             image_pair,
-            known_language: "en".to_string()
+            known_language: "en".to_string(),
         }
     }
 
@@ -66,12 +68,12 @@ impl State {
         self.score += 1;
     }
 
-    pub fn add_correct_word(&mut self, word: &str) {
-        self.success_words.push(word.to_string());
+    pub fn add_correct_word(&mut self, word: &Word) {
+        self.success_words.push(word.clone());
     }
 
-    pub fn add_wrong_word(&mut self, word: &str) {
-        self.failed_words.push(word.to_string());
+    pub fn add_wrong_word(&mut self, word: &Word) {
+        self.failed_words.push(word.clone());
     }
 
     pub fn score(&self) -> usize {

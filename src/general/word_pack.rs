@@ -40,6 +40,31 @@ pub struct WordPack {
     pub words: Vec<Word>,
 }
 
+impl WordPack {
+    /// Load the content of a word pack file
+    fn load(word_pack_file: &Path) -> Option<WordPack> {
+        match fs::read_to_string(word_pack_file) {
+            Ok(content) => match serde_json::from_str(&content) {
+                Ok(word_pack) => {
+                    info!("file loaded: {:?}", word_pack_file.to_str());
+                    return Some(word_pack);
+                }
+                Err(err) => error!("{}", err),
+            },
+            Err(err) => error!("{}", err),
+        }
+        None
+    }
+
+    /// Return a list of randomly selected Words
+    pub fn choose_random(&self, number_of_words: usize) -> Vec<Word> {
+        self.words
+            .choose_multiple(&mut rand::thread_rng(), number_of_words)
+            .cloned()
+            .collect()
+    }
+}
+
 /// Word and helper data for learning, translation and image locating
 ///
 /// The `word` member has the proper word to be used but some languages
@@ -75,31 +100,6 @@ pub struct Word {
     pub image_search_aid: Option<String>,
 }
 
-impl WordPack {
-    /// Load the content of a word pack file
-    fn load(word_pack_file: &Path) -> Option<WordPack> {
-        match fs::read_to_string(word_pack_file) {
-            Ok(content) => match serde_json::from_str(&content) {
-                Ok(word_pack) => {
-                    info!("file loaded: {:?}", word_pack_file.to_str());
-                    return Some(word_pack);
-                }
-                Err(err) => error!("{}", err),
-            },
-            Err(err) => error!("{}", err),
-        }
-        None
-    }
-
-    /// Return a list of randomly selected Words
-    pub fn choose_random(&self, number_of_words: usize) -> Vec<Word> {
-        self.words
-            .choose_multiple(&mut rand::thread_rng(), number_of_words)
-            .cloned()
-            .collect()
-    }
-}
-
 impl fmt::Display for Word {
     /// Display method for a Word
     ///
@@ -107,8 +107,7 @@ impl fmt::Display for Word {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         write!(
             f,
-            "{} {}",
-            self.prefix.as_ref().unwrap_or(&String::new()),
+            "{}",
             self.word
         )
     }

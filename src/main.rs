@@ -88,7 +88,7 @@ impl Game {
 
         // Create a contex with the current word and the index of it in the options list
         self.context = Some(general::Context::new(
-            current_word.to_string(),
+            current_word.clone(),
             options
                 .iter()
                 .enumerate()
