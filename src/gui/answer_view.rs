@@ -20,6 +20,11 @@ impl AnswerView {
             options: vec![None, None, None, None, None],
         }
     }
+
+    pub fn option(&self, index: usize) -> Option<&String> {
+        self.options[index].as_ref()
+    }
+
     pub fn update(&mut self, message: general::Message) -> Command<general::Message> {
         match message {
             general::Message::TranslationDownloaded(index, value) => {

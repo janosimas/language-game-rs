@@ -7,6 +7,7 @@ pub struct GameView {
     question_view: QuestionView,
     helper_tips_view: HelperTipsView,
     answer_view: AnswerView,
+    end_turn_view: EndTurnView,
 }
 
 impl GameView {
@@ -15,6 +16,7 @@ impl GameView {
             question_view: QuestionView::new(),
             helper_tips_view: HelperTipsView::new(),
             answer_view: AnswerView::new(),
+            end_turn_view: EndTurnView::new(),
         }
     }
 
@@ -26,9 +28,13 @@ impl GameView {
             general::Message::ImageDownloaded(_, _) => {
                 self.helper_tips_view.update(message);
             }
+            general::Message::NextTurn => {
+                self.end_turn_view.update(message.clone());
+                self.answer_view.update(message);
+            }
             general::Message::EndTurn => {
                 self.helper_tips_view.update(message.clone());
-                self.answer_view.update(message);
+                self.end_turn_view.update(message);
             }
             _ => {}
         }
@@ -37,6 +43,13 @@ impl GameView {
 
     pub fn view(&mut self, context: &Option<general::Context>) -> Element<general::Message> {
         if let Some(context) = context {
+            if self.end_turn_view.is_end_of_turn() {
+                return self.end_turn_view.view(
+                    &context.word_original,
+                    self.answer_view.option(context.current_word_index),
+                );
+            }
+
             Column::new()
                 .spacing(10)
                 .padding(50)

@@ -3,6 +3,7 @@ pub enum Message {
     GameBegin(String),
     GameEnd,
     EndTurn,
+    NextTurn,
     RequestImages(Vec<String>),
     ImageDownloaded(usize, String),
     TranslationDownloaded(usize, String),

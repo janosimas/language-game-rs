@@ -173,6 +173,10 @@ impl Application for Game {
             general::Message::TranslationDownloaded(_, _) => self.game_view.update(message),
             general::Message::ImageDownloaded(_, _) => self.game_view.update(message),
             general::Message::EndTurn => self.game_view.update(message),
+            general::Message::NextTurn => {
+                self.game_view.update(message);
+                self.advance_turn()
+            }
             general::Message::GameEnd => {
                 self.game_view.update(general::Message::EndTurn);
                 info!("Game ended!!!");
@@ -198,7 +202,7 @@ impl Application for Game {
                     }
 
                     self.game_view.update(general::Message::EndTurn);
-                    self.advance_turn()
+                    Command::none()
                 }
                 general::UserInput::HintSelected(_) => Command::none(),
                 general::UserInput::OptionWritten(_) => Command::none(),
