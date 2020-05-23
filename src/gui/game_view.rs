@@ -32,7 +32,11 @@ impl GameView {
                 self.end_turn_view.update(message.clone());
                 self.answer_view.update(message);
             }
-            general::Message::EndTurn => {
+            general::Message::EndTurn(_) => {
+                self.helper_tips_view.update(message.clone());
+                self.end_turn_view.update(message);
+            }
+            general::Message::GameEnd => {
                 self.helper_tips_view.update(message.clone());
                 self.end_turn_view.update(message);
             }

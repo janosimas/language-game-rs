@@ -172,13 +172,13 @@ impl Application for Game {
             }
             general::Message::TranslationDownloaded(_, _) => self.game_view.update(message),
             general::Message::ImageDownloaded(_, _) => self.game_view.update(message),
-            general::Message::EndTurn => self.game_view.update(message),
+            general::Message::EndTurn(_) => self.game_view.update(message),
             general::Message::NextTurn => {
                 self.game_view.update(message);
                 self.advance_turn()
             }
             general::Message::GameEnd => {
-                self.game_view.update(general::Message::EndTurn);
+                self.game_view.update(message);
                 info!("Game ended!!!");
                 Command::none()
             }
@@ -193,19 +193,20 @@ impl Application for Game {
                     if index == context.current_word_index {
                         self.state.advance_score();
                         self.state.add_correct_word(&context.word_original);
+                        self.game_view
+                            .update(general::Message::EndTurn(general::Answer::Correct));
                     } else {
                         self.state.add_wrong_word(&context.word_original);
+                        self.game_view
+                            .update(general::Message::EndTurn(general::Answer::Wrong));
                     }
 
                     if self.state.has_game_ended() {
                         return Command::from((|| async { general::Message::GameEnd })());
                     }
 
-                    self.game_view.update(general::Message::EndTurn);
                     Command::none()
                 }
-                general::UserInput::HintSelected(_) => Command::none(),
-                general::UserInput::OptionWritten(_) => Command::none(),
                 general::UserInput::WordPackSelected(_) => self
                     .start_view
                     .update(general::Message::UserInput(user_input)),

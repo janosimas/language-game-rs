@@ -103,12 +103,14 @@ pub struct Word {
 impl fmt::Display for Word {
     /// Display method for a Word
     ///
-    /// TODO: Use suffix and define if a space should be used or not
+    /// TODO: Define if a space should be used or not
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         write!(
             f,
-            "{}",
-            self.word
+            "{} {} {}",
+            self.prefix.as_ref().unwrap_or(&String::new()),
+            self.word,
+            self.sufix.as_ref().unwrap_or(&String::new())
         )
     }
 }

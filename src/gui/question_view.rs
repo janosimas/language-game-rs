@@ -23,9 +23,9 @@ impl QuestionView {
             row = row.push(Text::new(prefix).size(40));
         }
 
-        debug!("current word: {}", context.word_original.to_string());
+        debug!("current word: {}", context.word_original.word.to_string());
         row = row.push(
-            Text::new(&context.word_original.to_string())
+            Text::new(&context.word_original.word.to_string())
                 .size(40)
                 .width(Length::Shrink),
         );

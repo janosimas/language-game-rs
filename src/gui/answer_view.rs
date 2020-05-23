@@ -30,7 +30,7 @@ impl AnswerView {
             general::Message::TranslationDownloaded(index, value) => {
                 self.options[index] = Some(value);
             }
-            general::Message::EndTurn => {
+            general::Message::EndTurn(_) => {
                 self.options = iter::repeat(None).take(5).collect();
             }
             _ => {}

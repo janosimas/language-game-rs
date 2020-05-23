@@ -18,7 +18,21 @@ impl HelperTipsView {
             general::Message::ImageDownloaded(index, value) => {
                 self.helper_tips[index] = Some(value);
             }
-            general::Message::EndTurn => {
+            general::Message::EndTurn(_) => {
+                self.helper_tips = self
+                    .helper_tips
+                    .iter()
+                    .map(|file| {
+                        if let Some(path) = file.as_ref() {
+                            if let Err(err) = fs::remove_file(path) {
+                                error!("{}", err);
+                            }
+                        }
+                        None
+                    })
+                    .collect()
+            }
+            general::Message::GameEnd => {
                 self.helper_tips = self
                     .helper_tips
                     .iter()

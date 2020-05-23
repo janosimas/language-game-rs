@@ -2,7 +2,7 @@
 pub enum Message {
     GameBegin(String),
     GameEnd,
-    EndTurn,
+    EndTurn(Answer),
     NextTurn,
     RequestImages(Vec<String>),
     ImageDownloaded(usize, String),
@@ -22,6 +22,10 @@ pub enum Error {
 pub enum UserInput {
     WordPackSelected(usize),
     OptionSelected(usize),
-    HintSelected(usize),
-    OptionWritten(String),
+}
+
+#[derive(Debug, Clone)]
+pub enum Answer {
+    Correct,
+    Wrong
 }
