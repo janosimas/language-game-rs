@@ -11,10 +11,13 @@
                 "word": "folgen"
             },
             {
-                "word": "gefallen"
+                "word": "gefallen",
+                "image_search_aid": "like"
+
             },
             {
-                "word": "gehören"
+                "word": "gehören",
+                "image_search_aid": "belong"
             },
             {
                 "word": "glauben"
@@ -23,16 +26,18 @@
                 "word": "helfen (bei)"
             },
             {
-                "word": "passieren"
+                "word": "passieren",
+                "image_search_aid": "happen"
             },
             {
-                "word": "raten (zu / Infinitivsatz)"
+                "word": "zuraten (zu)"
             },
             {
                 "word": "schmecken"
             },
             {
-                "word": "wehtun"
+                "word": "wehtun",
+                "image_search_aid": "hurt"
             },
             {
                 "word": "zuhören"
@@ -44,16 +49,19 @@
                 "word": "danken (für)"
             },
             {
-                "word": "fehlen"
+                "word": "fehlen",
+                "image_search_aid": "missing"
             },
             {
-                "word": "passen"
+                "word": "passen",
+                "image_search_aid": "fit"
             },
             {
                 "word": "vertrauen"
             },
             {
-                "word": "vergeben"
+                "word": "vergeben",
+                "image_search_aid": "awarded"
             },
             {
                 "word": "verzeihen"
@@ -110,7 +118,8 @@
                 "word": "nützen"
             },
             {
-                "word": "ausweichen"
+                "word": "ausweichen",
+                "image_search_aid": "dodge"
             },
             {
                 "word": "dienen"
