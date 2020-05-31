@@ -5,6 +5,7 @@ mod game_view;
 mod helper_tips_view;
 mod question_view;
 mod start_view;
+mod acknowledgments;
 
 use answer_view::*;
 pub use end_turn_view::*;
@@ -13,3 +14,4 @@ pub use game_view::*;
 use helper_tips_view::*;
 use question_view::*;
 pub use start_view::*;
+pub use acknowledgments::*;

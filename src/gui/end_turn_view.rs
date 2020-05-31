@@ -2,6 +2,7 @@ use crate::general;
 use iced::{
     button, Align, Button, Column, Command, Element, HorizontalAlignment, Length, Space, Text,
 };
+use super::acknowledgments;
 
 pub struct EndTurnView {
     btn_state: button::State,
@@ -74,6 +75,7 @@ impl EndTurnView {
                     .on_press(general::Message::NextTurn),
             )
             .push(Space::new(Length::Fill, Length::FillPortion(3)))
+            .push(acknowledgments())
             .into()
     }
 }

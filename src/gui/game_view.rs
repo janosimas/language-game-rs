@@ -63,6 +63,7 @@ impl GameView {
                 .push(self.question_view.view(&context))
                 .push(self.helper_tips_view.view())
                 .push(self.answer_view.view())
+                .push(acknowledgments())
                 .into()
         } else {
             Text::new("No context loaded").into()
