@@ -1,5 +1,5 @@
 use crate::general;
-use iced::{Column, Element, Length, Space, Text};
+use iced::{Column, Element, Text};
 
 pub fn acknowledgments() -> Element<'static, general::Message> {
     Column::new()

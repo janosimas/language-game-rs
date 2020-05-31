@@ -16,7 +16,7 @@ impl EndView {
             .align_items(Align::Center)
             .height(Length::FillPortion(1))
             .width(Length::FillPortion(3))
-            .push(Text::new("Game ended!"))
+            .push(Text::new("Good job!\nYou got 10 correct answers!"))
             .into()
     }
 }
