@@ -6,6 +6,7 @@ use log::{error, info};
 use rand::seq::SliceRandom;
 use std::env;
 use std::iter;
+use gui::full_acknowledgments;
 
 mod general;
 mod gui;
@@ -226,7 +227,8 @@ impl Application for Game {
                         .height(Length::FillPortion(1))
                         .width(Length::FillPortion(1))
                         .push(Text::new(format!("score: {}", &self.state.score())))
-                        .push(Text::new(format!("turn: {}", &self.state.turn()))),
+                        .push(Text::new(format!("turn: {}", &self.state.turn())))
+                        .push(full_acknowledgments()),
                 )
                 .into(),
         }
