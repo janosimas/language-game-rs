@@ -36,4 +36,4 @@ After that go to the folder in your command line and execute `cargo run`.
 
 Flag Icons made by [Freepik](https://www.flaticon.com/authors/freepik) from [Flaticon](https://www.flaticon.com/)
 
-Downlaod image by [Papirus Development Team](https://github.com/PapirusDevelopmentTeam)
+Download image by [Papirus Development Team](https://github.com/PapirusDevelopmentTeam)
