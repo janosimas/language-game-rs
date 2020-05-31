@@ -1,5 +1,7 @@
 use crate::general;
-use iced::{button, Align, Button, Column, Command, Element, Length, Text};
+use iced::{
+    button, Align, Button, Column, Command, Element, HorizontalAlignment, Length, Space, Text,
+};
 
 pub struct EndTurnView {
     btn_state: button::State,
@@ -45,15 +47,33 @@ impl EndTurnView {
             .align_items(Align::Center)
             .height(Length::FillPortion(1))
             .width(Length::FillPortion(5))
-            .push(Text::new(format!("{:?}", self.answer.as_ref().unwrap()))) // TODO: use a proper print method
-            .push(Text::new(word_original.to_string()))
-            .push(Text::new(
-                word_translated.unwrap_or(&"Error loading translation".to_string()),
-            ))
+            .push(Space::new(Length::Fill, Length::FillPortion(3)))
+            .push(
+                Text::new(format!("{:?}", self.answer.as_ref().unwrap()))
+                    .width(Length::Fill)
+                    .horizontal_alignment(HorizontalAlignment::Center)
+                    .size(20),
+            ) // TODO: use a proper print method
+            .push(Space::new(Length::Fill, Length::FillPortion(3)))
+            .push(
+                Text::new(word_original.to_string())
+                    .width(Length::Fill)
+                    .horizontal_alignment(HorizontalAlignment::Center)
+                    .size(60),
+            )
+            .push(Space::new(Length::Fill, Length::Fill))
+            .push(
+                Text::new(word_translated.unwrap_or(&"Error loading translation".to_string()))
+                    .width(Length::Fill)
+                    .horizontal_alignment(HorizontalAlignment::Center)
+                    .size(40),
+            )
+            .push(Space::new(Length::Fill, Length::FillPortion(3)))
             .push(
                 Button::new(&mut self.btn_state, Text::new("next!"))
                     .on_press(general::Message::NextTurn),
             )
+            .push(Space::new(Length::Fill, Length::FillPortion(3)))
             .into()
     }
 }
