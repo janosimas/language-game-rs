@@ -15,7 +15,7 @@ pub struct State {
     success_words: Vec<Word>,
     pub tranlation_pair: (String, String),
     pub image_pair: (String, String),
-    pub known_language: String,
+    pub target_language: String,
 }
 
 impl State {
@@ -29,7 +29,7 @@ impl State {
             success_words: vec![],
             tranlation_pair,
             image_pair,
-            known_language: "en".to_string(),
+            target_language: "en".to_string(),
         }
     }
 

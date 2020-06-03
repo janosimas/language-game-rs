@@ -1,15 +1,19 @@
 use chrono;
 use dotenv;
 use fern;
+use gui::full_acknowledgments;
 use iced::{Application, Column, Command, Element, Length, Row, Settings, Text};
 use log::{error, info};
 use rand::seq::SliceRandom;
 use std::env;
 use std::iter;
-use gui::full_acknowledgments;
+use std::sync::Arc;
 
 mod general;
 mod gui;
+mod translation;
+
+use translation::{get_translator, Translate};
 
 fn main() {
     dotenv::dotenv().ok();
@@ -52,6 +56,7 @@ struct Game {
     word_pack: Option<general::word_pack::WordPack>,
     state: general::State,
     context: Option<general::Context>,
+    translator: Option<Arc<dyn Translate + Sync + Send>>,
 }
 
 impl Game {
@@ -66,13 +71,16 @@ impl Game {
             }
         }
 
+        let state = general::State::new(tranlation_pair, image_pair);
+
         Self {
             game_view: gui::GameView::new(),
             start_view: gui::StartView::new(),
             end_view: gui::EndView::new(),
             word_pack: None,
-            state: general::State::new(tranlation_pair, image_pair),
+            state,
             context: None,
+            translator: None,
         }
     }
 
@@ -114,13 +122,7 @@ impl Game {
             .cloned()
             .enumerate()
             .map(|(index, word)| {
-                general::translation::translate(
-                    word,
-                    self.word_pack.as_ref().unwrap().language.clone(),
-                    self.state.known_language.clone(),
-                    index,
-                    self.state.tranlation_pair.1.clone(),
-                )
+                Self::translate(index, word, Arc::clone(&self.translator.as_ref().unwrap()))
             })
             .map(Command::from)
             .collect::<Vec<_>>();
@@ -132,6 +134,20 @@ impl Game {
                 self.state.image_pair.1.to_string(),
             ),
         ))))
+    }
+
+    async fn translate(
+        index: usize,
+        word: general::word_pack::Word,
+        translator: Arc<dyn Translate + Sync + Send>,
+    ) -> general::Message {
+        match translator.translate(word.word).await {
+            Ok(val) => general::Message::TranslationDownloaded(index, val),
+            Err(err) => {
+                error!("Translation error: {}", err);
+                general::Message::Error(general::Error::ErrorDownloadingTranslation(index))
+            }
+        }
     }
 }
 
@@ -156,9 +172,14 @@ impl Application for Game {
 
     fn update(&mut self, message: Self::Message) -> Command<Self::Message> {
         match message {
-            general::Message::GameBegin(known_language) => {
-                self.state.known_language = known_language;
+            general::Message::GameBegin(target_language) => {
+                self.state.target_language = target_language;
                 self.word_pack = Some(self.start_view.word_pack());
+                self.translator = Some(get_translator(
+                    &self.word_pack.as_ref().unwrap().language,
+                    &self.state.target_language,
+                    &self.state,
+                ));
                 self.state.start();
                 self.advance_turn()
             }

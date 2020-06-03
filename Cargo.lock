@@ -101,6 +101,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "async-trait"
+version = "0.1.32"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0eb7f9ad01405feb3c1dac82463038945cf88eea4569acaf3ad662233496dd96"
+dependencies = [
+ "proc-macro2 1.0.10",
+ "quote 1.0.3",
+ "syn 1.0.17",
+]
+
+[[package]]
 name = "atom"
 version = "0.3.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -108,9 +119,9 @@ checksum = "3c86699c3f02778ec07158376991c8f783dd1f2f95c579ffaf0738dc984b2fe2"
 
 [[package]]
 name = "attohttpc"
-version = "0.12.0"
+version = "0.13.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "de33d017f0add8b019c6d98c3132c82c8815ca96bbed8e8006e7402c840562b3"
+checksum = "d5db1932a9d70d5091139d6b0e04ec6a4d9f9184041c15d71a5ef954cb3c5312"
 dependencies = [
  "flate2",
  "http",
@@ -1168,9 +1179,9 @@ dependencies = [
 
 [[package]]
 name = "iced_native"
-version = "0.2.1"
+version = "0.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2659a85ccde671089266dd85f664002a4290e8ca357e9fb8057dd2db6bbf8077"
+checksum = "206e519650f28fd94dcd1004a20b6ccef989d3c4d12160832377c94ac837c93c"
 dependencies = [
  "iced_core",
  "iced_futures",
@@ -1346,6 +1357,7 @@ name = "language-game-rs"
 version = "0.1.0"
 dependencies = [
  "async-std",
+ "async-trait",
  "attohttpc",
  "chrono",
  "directories",
