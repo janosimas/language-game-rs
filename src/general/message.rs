@@ -13,9 +13,9 @@ pub enum Message {
 
 #[derive(Debug, Clone)]
 pub enum Error {
-    ErrorDownloadingTranslation(usize),
-    ErrorDownloadingImage(usize),
-    ErrorRequestingImages,
+    DownloadingTranslation(usize),
+    DownloadingImage(usize),
+    RequestingImages,
 }
 
 #[derive(Debug, Clone)]

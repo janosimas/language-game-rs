@@ -115,11 +115,10 @@ impl fmt::Display for Word {
     }
 }
 
-/// Return a list of WordPack found in the `resourses/word_pack` folder
+/// Return a list of 'WordPack' found in the `resourses/word_pack` folder
 pub fn load() -> Vec<WordPack> {
     fs::read_dir(resources::WORD_PACK_FOLDER)
         .expect("Unable to read word pack folder!")
-        .into_iter()
         .filter_map(Result::ok)
         .filter_map(|entry| match entry.file_type() {
             Ok(file_type) => {
@@ -145,7 +144,6 @@ pub fn load() -> Vec<WordPack> {
 pub fn available_knonw_languages() -> Vec<String> {
     fs::read_dir(resources::LANGUAGES_FOLDER)
         .expect("Unable to read languages folder!")
-        .into_iter()
         .filter_map(Result::ok)
         .filter_map(|entry| match entry.file_type() {
             Ok(file_type) => {

@@ -1,6 +1,5 @@
-use chrono;
-use dotenv;
-use fern;
+#![warn(clippy::all)]
+
 use gui::full_acknowledgments;
 use iced::{Application, Column, Command, Element, Length, Row, Settings, Text};
 use log::{error, info};
@@ -101,14 +100,13 @@ impl Game {
             options
                 .iter()
                 .enumerate()
-                .filter_map(|(index, word)| {
+                .find_map(|(index, word)| {
                     if *word == current_word {
                         Some(index)
                     } else {
                         None
                     }
                 })
-                .next()
                 .unwrap(),
         ));
 
@@ -129,10 +127,7 @@ impl Game {
         // convert the futures to iced::Command
         // and create a future for the list of images
         Command::batch(translations.into_iter().chain(iter::once(Command::from(
-            general::image::get_images_url(
-                current_word.clone(),
-                self.state.image_pair.1.to_string(),
-            ),
+            general::image::get_images_url(current_word, self.state.image_pair.1.to_string()),
         ))))
     }
 
@@ -145,7 +140,7 @@ impl Game {
             Ok(val) => general::Message::TranslationDownloaded(index, val),
             Err(err) => {
                 error!("Translation error: {}", err);
-                general::Message::Error(general::Error::ErrorDownloadingTranslation(index))
+                general::Message::Error(general::Error::DownloadingTranslation(index))
             }
         }
     }
@@ -187,14 +182,14 @@ impl Application for Game {
                 let images = images_uri
                     .into_iter()
                     .enumerate()
-                    .map(|(index, url)| general::image::download_image(url, index))
+                    .map(|(index, url)| general::image::download(url, index))
                     .map(Command::from)
                     .collect::<Vec<_>>();
                 Command::batch(images.into_iter())
             }
-            general::Message::TranslationDownloaded(_, _) => self.game_view.update(message),
-            general::Message::ImageDownloaded(_, _) => self.game_view.update(message),
-            general::Message::EndTurn(_) => self.game_view.update(message),
+            general::Message::TranslationDownloaded(_, _)
+            | general::Message::ImageDownloaded(_, _)
+            | general::Message::EndTurn(_) => self.game_view.update(message),
             general::Message::NextTurn => {
                 self.game_view.update(message);
                 self.advance_turn()
@@ -224,7 +219,7 @@ impl Application for Game {
                     }
 
                     if self.state.has_game_ended() {
-                        return Command::from((|| async { general::Message::GameEnd })());
+                        return Command::from(async { general::Message::GameEnd });
                     }
 
                     Command::none()
@@ -238,8 +233,8 @@ impl Application for Game {
 
     fn view(&mut self) -> Element<Self::Message> {
         match self.state.game_state() {
-            general::GameState::NotRunning => self.start_view.view().into(),
-            general::GameState::Ended => self.end_view.view().into(),
+            general::GameState::NotRunning => self.start_view.view(),
+            general::GameState::Ended => self.end_view.view(),
             general::GameState::Running => Row::new()
                 .push(self.game_view.view(&self.context))
                 .push(

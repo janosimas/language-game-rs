@@ -1,5 +1,5 @@
 use super::*;
-use reqwest;
+
 use serde::{Deserialize, Serialize};
 use std::fs::{create_dir_all, OpenOptions};
 use std::io::Write;
@@ -25,10 +25,10 @@ async fn checked_download_image(url: String) -> Option<String> {
 }
 
 /// Download the image from `url` and signal the image widget in position `index` when finished.
-pub async fn download_image(url: String, index: usize) -> Message {
+pub async fn download(url: String, index: usize) -> Message {
     match checked_download_image(url).await {
         Some(path) => Message::ImageDownloaded(index, path),
-        None => Message::Error(Error::ErrorDownloadingImage(index)),
+        None => Message::Error(Error::DownloadingImage(index)),
     }
 }
 
@@ -61,7 +61,7 @@ pub async fn get_images_url(word: word_pack::Word, key: String) -> Message {
         Some(res) => {
             Message::RequestImages(res.hits.into_iter().map(|hit| hit.webformat_url).collect())
         }
-        None => Message::Error(Error::ErrorRequestingImages),
+        None => Message::Error(Error::RequestingImages),
     }
 }
 

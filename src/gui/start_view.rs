@@ -57,17 +57,14 @@ impl StartView {
     }
 
     pub fn update(&mut self, message: general::Message) -> Command<general::Message> {
-        match message {
-            general::Message::UserInput(general::UserInput::WordPackSelected(index)) => {
-                self.selected_word_pack = Some(index)
-            }
-            _ => {}
+        if let general::Message::UserInput(general::UserInput::WordPackSelected(index)) = message {
+            self.selected_word_pack = Some(index)
         }
         Command::none()
     }
 
     fn word_packs_radio<'a>(
-        available_word_packs: &Vec<general::word_pack::WordPack>,
+        available_word_packs: &[general::word_pack::WordPack],
         option: &Option<usize>,
     ) -> Element<'a, general::Message> {
         available_word_packs
@@ -79,7 +76,7 @@ impl StartView {
                     col.push(Radio::new(
                         index,
                         &language.description,
-                        option.clone(),
+                        *option,
                         |index| {
                             general::Message::UserInput(general::UserInput::WordPackSelected(index))
                         },

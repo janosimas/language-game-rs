@@ -1,6 +1,6 @@
 use super::Translate;
 use async_trait::async_trait;
-use reqwest;
+
 use serde::{Deserialize, Serialize};
 use std::error::Error;
 
@@ -47,7 +47,7 @@ impl Translate for Yandex {
         Ok(response
             .text
             .first()
-            .map_or(Err("Error acquiring translation"), |word| Ok(word))?
+            .map_or(Err("Error acquiring translation"), Ok)?
             .clone())
     }
 }
