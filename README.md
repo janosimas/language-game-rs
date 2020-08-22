@@ -37,3 +37,9 @@ After that go to the folder in your command line and execute `cargo run`.
 Flag Icons made by [Freepik](https://www.flaticon.com/authors/freepik) from [Flaticon](https://www.flaticon.com/)
 
 Download image by [Papirus Development Team](https://github.com/PapirusDevelopmentTeam)
+
+# TODO
+
+- [x] Add Google as a translator option
+- [ ] Write answer instead of a button
+- [ ] Text to speech

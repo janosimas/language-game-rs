@@ -63,7 +63,8 @@ impl Game {
         let mut tranlation_pair: (String, String) = (String::new(), String::new());
         let mut image_pair: (String, String) = (String::new(), String::new());
         for (key, value) in env::vars() {
-            if key == "YANDEX_KEY" {
+            // if key == "YANDEX_KEY" {
+            if key == "GOOGLE_KEY" {
                 tranlation_pair = (key, value);
             } else if key == "PIXABAY_KEY" {
                 image_pair = (key, value);
