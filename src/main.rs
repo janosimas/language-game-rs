@@ -4,9 +4,9 @@ use gui::full_acknowledgments;
 use iced::{Application, Column, Command, Element, Length, Row, Settings, Text};
 use log::{error, info};
 use rand::seq::SliceRandom;
-use std::env;
 use std::iter;
 use std::sync::Arc;
+use std::env;
 
 mod general;
 mod gui;
@@ -39,13 +39,16 @@ fn main() {
         .level_for("wgpu_native", log::LevelFilter::Off)
         .level_for("gfx_backend_vulkan", log::LevelFilter::Off)
         .level_for("gfx_backend_dx11", log::LevelFilter::Off)
+        .level_for("wgpu_core", log::LevelFilter::Off)
+        .level_for("wgpu", log::LevelFilter::Off)
+        .level_for("tracing", log::LevelFilter::Off)
         // Output to stdout, files, and other Dispatch configurations
         .chain(std::io::stdout())
         // Apply globally
         .apply()
         .unwrap();
 
-    Game::run(Settings::default())
+    Game::run(Settings::default());
 }
 
 struct Game {
@@ -63,7 +66,6 @@ impl Game {
         let mut tranlation_pair: (String, String) = (String::new(), String::new());
         let mut image_pair: (String, String) = (String::new(), String::new());
         for (key, value) in env::vars() {
-            // if key == "YANDEX_KEY" {
             if key == "GOOGLE_KEY" {
                 tranlation_pair = (key, value);
             } else if key == "PIXABAY_KEY" {

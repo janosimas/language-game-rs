@@ -1,9 +1,9 @@
-use super::Translate;
-use async_trait::async_trait;
-
-use log::debug;
-use serde::{Deserialize, Serialize};
 use std::error::Error;
+
+use async_trait::async_trait;
+use serde::{Deserialize, Serialize};
+
+use super::Translate;
 
 pub struct Google {
     key: String,
@@ -23,28 +23,23 @@ impl Google {
 
 #[async_trait]
 impl Translate for Google {
-    fn from(&self) -> String {
-        self.source_language.clone()
-    }
-
-    fn to(&self) -> String {
-        self.target_language.clone()
-    }
-
     async fn translate(&self, word: String) -> Result<String, Box<dyn Error>> {
         let response = reqwest::Client::new()
             .post("https://translation.googleapis.com/language/translate/v2")
-            .query(&[
-                ("key", &self.key)
-            ])
-            .body(format!( r#"{{
+            .query(&[("key", &self.key)])
+            .body(format!(
+                r#"{{
                 "q": "{}",
                 "source": "{}",
                 "target": "{}",
                 "format": "text"
-              }}"#, word, self.source_language, self.target_language))
+              }}"#,
+                word, self.source_language, self.target_language
+            ))
             .send()
-            .await?.json::<GoogleResponse>().await?;
+            .await?
+            .json::<GoogleResponse>()
+            .await?;
 
         Ok(response
             .data
@@ -53,6 +48,14 @@ impl Translate for Google {
             .map_or(Err("Error acquiring translation"), Ok)?
             .translated_text
             .clone())
+    }
+
+    fn from(&self) -> String {
+        self.source_language.clone()
+    }
+
+    fn to(&self) -> String {
+        self.target_language.clone()
     }
 }
 

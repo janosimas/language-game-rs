@@ -137,7 +137,7 @@ pub fn load() -> Vec<WordPack> {
 ///
 /// Currently an available language is defined by having a icon in the `resources/icons` folder.
 ///
-/// To add a new language option, just add a new icon. The icon name must be a valid language for the [yandex translate](https://translate.yandex.com/).
+/// To add a new language option, just add a new icon. The icon name must be a valid language for the google translate.
 ///
 /// For example `en.png`.
 ///

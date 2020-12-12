@@ -10,12 +10,12 @@ A few images are shown to help, the idea is to link visual and language memory.
 
 The app uses online resources to translate and get the images, you'll need to create an account (free) and get an API key for
 
-  - [Yandex](https://translate.yandex.com/developers)
+  - [Google](https://cloud.google.com/translate)
   - [Pixabay](https://pixabay.com/api/docs/)
 
 When you have the keys, create a file `.env` with the content:
 ```
-YANDEX_KEY='your_key_to_yandex'
+GOOGLE_KEY='your_key_to_google'
 PIXABAY_KEY='your_key_to_pixabay'
 ```
 
@@ -27,8 +27,7 @@ After that go to the folder in your command line and execute `cargo run`.
 
 # Acknowledgments
 
-[Powered by Yandex.](http://translate.yandex.com/)
-
+[Powered by Google Translate.](https://cloud.google.com/translate)
 [Powered by Pixabay.](https://pixabay.com/)
 
 
@@ -40,6 +39,5 @@ Download image by [Papirus Development Team](https://github.com/PapirusDevelopme
 
 # TODO
 
-- [x] Add Google as a translator option
 - [ ] Write answer instead of a button
 - [ ] Text to speech
