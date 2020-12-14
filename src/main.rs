@@ -4,9 +4,9 @@ use gui::full_acknowledgments;
 use iced::{Application, Column, Command, Element, Length, Row, Settings, Text};
 use log::{error, info};
 use rand::seq::SliceRandom;
+use std::env;
 use std::iter;
 use std::sync::Arc;
-use std::env;
 
 mod general;
 mod gui;
@@ -125,11 +125,10 @@ impl Game {
             .map(|(index, word)| {
                 Self::translate(index, word, Arc::clone(&self.translator.as_ref().unwrap()))
             })
-            .map(Command::from)
-            .collect::<Vec<_>>();
+            .map(Command::from);
         // convert the futures to iced::Command
         // and create a future for the list of images
-        Command::batch(translations.into_iter().chain(iter::once(Command::from(
+        Command::batch(translations.chain(iter::once(Command::from(
             general::image::get_images_url(current_word, self.state.image_pair.1.to_string()),
         ))))
     }
@@ -186,9 +185,8 @@ impl Application for Game {
                     .into_iter()
                     .enumerate()
                     .map(|(index, url)| general::image::download(url, index))
-                    .map(Command::from)
-                    .collect::<Vec<_>>();
-                Command::batch(images.into_iter())
+                    .map(Command::from);
+                Command::batch(images)
             }
             general::Message::TranslationDownloaded(_, _)
             | general::Message::ImageDownloaded(_, _)
@@ -238,17 +236,21 @@ impl Application for Game {
         match self.state.game_state() {
             general::GameState::NotRunning => self.start_view.view(),
             general::GameState::Ended => self.end_view.view(),
-            general::GameState::Running => Row::new()
-                .push(self.game_view.view(&self.context))
+            general::GameState::Running => Column::new()
                 .push(
-                    Column::new()
-                        .spacing(10)
-                        .height(Length::FillPortion(1))
-                        .width(Length::FillPortion(1))
-                        .push(Text::new(format!("score: {}", &self.state.score())))
-                        .push(Text::new(format!("turn: {}", &self.state.turn())))
-                        .push(full_acknowledgments()),
+                    Row::new()
+                        .height(Length::FillPortion(9))
+                        .push(self.game_view.view(&self.context))
+                        .push(
+                            Column::new()
+                                .spacing(10)
+                                .height(Length::FillPortion(1))
+                                .width(Length::FillPortion(1))
+                                .push(Text::new(format!("score: {}", &self.state.score())))
+                                .push(Text::new(format!("turn: {}", &self.state.turn()))),
+                        ),
                 )
+                .push(full_acknowledgments())
                 .into(),
         }
     }
