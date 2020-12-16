@@ -1,9 +1,10 @@
 #![warn(clippy::all)]
 
-use gui::full_acknowledgments;
+use general::word_pack;
+use gui::{full_acknowledgments, EndView};
 use iced::{Application, Column, Command, Element, Length, Row, Settings, Text};
 use log::{error, info};
-use rand::seq::SliceRandom;
+use rand::prelude::SliceRandom;
 use std::env;
 use std::iter;
 use std::sync::Arc;
@@ -51,13 +52,16 @@ fn main() {
     Game::run(Settings::default());
 }
 
+enum GuiState {
+    START(gui::StartView),
+    GAME(gui::GameView, word_pack::WordPack, general::Context),
+    SETTINGS,
+    END(gui::EndView),
+}
+
 struct Game {
-    game_view: gui::GameView,
-    start_view: gui::StartView,
-    end_view: gui::EndView,
-    word_pack: Option<general::word_pack::WordPack>,
+    gui_state: GuiState,
     state: general::State,
-    context: Option<general::Context>,
     translator: Option<Arc<dyn Translate + Sync + Send>>,
 }
 
@@ -76,18 +80,14 @@ impl Game {
         let state = general::State::new(tranlation_pair, image_pair);
 
         Self {
-            game_view: gui::GameView::new(),
-            start_view: gui::StartView::new(),
-            end_view: gui::EndView::new(),
-            word_pack: None,
+            gui_state: GuiState::START(gui::StartView::new()),
             state,
-            context: None,
             translator: None,
         }
     }
 
-    fn advance_turn(&mut self) -> Command<general::Message> {
-        let mut options = self.word_pack.as_ref().unwrap().choose_random(5);
+    pub fn new_context(word_pack: &word_pack::WordPack) -> general::Context {
+        let mut options = word_pack.choose_random(5);
 
         // get the first word to use as "question word"
         // should never fail
@@ -98,7 +98,7 @@ impl Game {
         options.shuffle(&mut rand::thread_rng());
 
         // Create a contex with the current word and the index of it in the options list
-        self.context = Some(general::Context::new(
+        general::Context::new(
             current_word.clone(),
             options
                 .iter()
@@ -111,26 +111,34 @@ impl Game {
                     }
                 })
                 .unwrap(),
-        ));
+            options,
+        )
+    }
 
-        // Advance the turn in the game state
-        self.state.advance_turn();
+    fn get_remote_resources(&self) -> Command<general::Message> {
+        if let GuiState::GAME(_, _, context) = &self.gui_state {
+            let options = &context.options;
+            let word_original = context.word_original.clone();
 
-        // create a list of future for the translations
-        // these futures will send a message to update the interface with the translations
-        let translations = options
-            .iter()
-            .cloned()
-            .enumerate()
-            .map(|(index, word)| {
-                Self::translate(index, word, Arc::clone(&self.translator.as_ref().unwrap()))
-            })
-            .map(Command::from);
-        // convert the futures to iced::Command
-        // and create a future for the list of images
-        Command::batch(translations.chain(iter::once(Command::from(
-            general::image::get_images_url(current_word, self.state.image_pair.1.to_string()),
-        ))))
+            // create a list of future for the translations
+            // these futures will send a message to update the interface with the translations
+            let translations = options
+                .iter()
+                .cloned()
+                .enumerate()
+                .map(|(index, word)| {
+                    Self::translate(index, word, Arc::clone(&self.translator.as_ref().unwrap()))
+                })
+                .map(Command::from);
+
+            // convert the futures to iced::Command
+            // and create a future for the list of images
+            Command::batch(translations.chain(iter::once(Command::from(
+                general::image::get_images_url(word_original, self.state.image_pair.1.to_string()),
+            ))))
+        } else {
+            Command::none()
+        }
     }
 
     async fn translate(
@@ -168,79 +176,98 @@ impl Application for Game {
     }
 
     fn update(&mut self, message: Self::Message) -> Command<Self::Message> {
-        match message {
-            general::Message::GameBegin(target_language) => {
-                self.state.target_language = target_language;
-                self.word_pack = Some(self.start_view.word_pack());
-                self.translator = Some(get_translator(
-                    &self.word_pack.as_ref().unwrap().language,
-                    &self.state.target_language,
-                    &self.state,
-                ));
-                self.state.start();
-                self.advance_turn()
-            }
-            general::Message::RequestImages(images_uri) => {
-                let images = images_uri
-                    .into_iter()
-                    .enumerate()
-                    .map(|(index, url)| general::image::download(url, index))
-                    .map(Command::from);
-                Command::batch(images)
-            }
-            general::Message::TranslationDownloaded(_, _)
-            | general::Message::ImageDownloaded(_, _)
-            | general::Message::EndTurn(_) => self.game_view.update(message),
-            general::Message::NextTurn => {
-                self.game_view.update(message);
-                self.advance_turn()
-            }
-            general::Message::GameEnd => {
-                self.game_view.update(message);
-                info!("Game ended!!!");
-                Command::none()
-            }
-            general::Message::Error(_) => {
-                error!("Some error happened!!!");
-                Command::none()
-            }
-            general::Message::UserInput(user_input) => match user_input {
-                general::UserInput::OptionSelected(index) => {
-                    let context = self.context.as_ref().unwrap();
+        if let general::Message::Error(_) = message {
+            error!("Some error happened!!!");
+            return Command::none();
+        }
 
-                    if index == context.current_word_index {
-                        self.state.advance_score();
-                        self.state.add_correct_word(&context.word_original);
-                        self.game_view
-                            .update(general::Message::EndTurn(general::Answer::Correct));
-                    } else {
-                        self.state.add_wrong_word(&context.word_original);
-                        self.game_view
-                            .update(general::Message::EndTurn(general::Answer::Wrong));
+        match &mut self.gui_state {
+            GuiState::START(gui) => {
+                match &message {
+                    general::Message::GameBegin(target_language) => {
+                        self.state.target_language = target_language.clone();
+                        let word_pack = gui.word_pack();
+                        self.translator = Some(get_translator(
+                            &word_pack.language,
+                            &self.state.target_language,
+                            &self.state,
+                        ));
+
+                        let context = Game::new_context(&word_pack);
+                        // update gui state
+                        self.gui_state = GuiState::GAME(gui::GameView::new(), word_pack, context);
+
+                        // Advance the turn in the game state
+                        self.state.advance_turn();
+                        self.get_remote_resources()
                     }
+                    general::Message::UserInput(user_input) => {
+                        if let general::UserInput::WordPackSelected(_) = user_input {
+                            gui.update(general::Message::UserInput(user_input.clone()))
+                        } else {
+                            Command::none()
+                        }
+                    }
+                    _ => Command::none(),
+                }
+            }
+            GuiState::GAME(gui, word_pack, context) => match message {
+                general::Message::TranslationDownloaded(_, _)
+                | general::Message::ImageDownloaded(_, _)
+                | general::Message::EndTurn(_) => gui.update(message),
+                general::Message::NextTurn => {
+                    gui.update(message);
+                    *context = Game::new_context(word_pack);
+                    self.state.advance_turn();
+                    self.get_remote_resources()
+                }
+                general::Message::GameEnd => {
+                    let messages = gui.update(message);
+                    self.gui_state = GuiState::END(EndView::new());
+                    info!("Game ended!!!");
+                    messages
+                }
+                general::Message::RequestImages(images_uri) => {
+                    let images = images_uri
+                        .into_iter()
+                        .enumerate()
+                        .map(|(index, url)| general::image::download(url, index))
+                        .map(Command::from);
+                    Command::batch(images)
+                }
+                general::Message::UserInput(user_input) => {
+                    if let general::UserInput::OptionSelected(index) = user_input {
+                        if index == context.current_word_index {
+                            self.state.advance_score();
+                            self.state.add_correct_word(&context.word_original);
+                            gui.update(general::Message::EndTurn(general::Answer::Correct));
+                        } else {
+                            self.state.add_wrong_word(&context.word_original);
+                            gui.update(general::Message::EndTurn(general::Answer::Wrong));
+                        }
 
-                    if self.state.has_game_ended() {
-                        return Command::from(async { general::Message::GameEnd });
+                        if self.state.has_game_ended() {
+                            return Command::from(async { general::Message::GameEnd });
+                        }
                     }
 
                     Command::none()
                 }
-                general::UserInput::WordPackSelected(_) => self
-                    .start_view
-                    .update(general::Message::UserInput(user_input)),
+                _ => Command::none(),
             },
+            GuiState::SETTINGS => Command::none(),
+            GuiState::END(_gui) => Command::none(),
         }
     }
 
     fn view(&mut self) -> Element<Self::Message> {
-        match self.state.game_state() {
-            general::GameState::NotRunning => self.start_view.view(),
-            general::GameState::Ended => self.end_view.view(),
-            general::GameState::Running => Column::new()
+        match &mut self.gui_state {
+            GuiState::START(gui) => gui.view(),
+            GuiState::GAME(gui, _word_pack, context) => Column::new()
                 .push(
                     Row::new()
                         .height(Length::FillPortion(9))
-                        .push(self.game_view.view(&self.context))
+                        .push(gui.view(context))
                         .push(
                             Column::new()
                                 .spacing(10)
@@ -252,6 +279,10 @@ impl Application for Game {
                 )
                 .push(full_acknowledgments())
                 .into(),
+            GuiState::SETTINGS => {
+                todo!()
+            }
+            GuiState::END(gui) => gui.view(),
         }
     }
 }

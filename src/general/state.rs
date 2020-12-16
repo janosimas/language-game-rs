@@ -1,13 +1,6 @@
 use super::word_pack::Word;
 
-pub enum GameState {
-    NotRunning,
-    Running,
-    Ended,
-}
-
 pub struct State {
-    game_running: bool,
     turn_number: u16,
     score: usize,
     final_score: Option<usize>,
@@ -21,7 +14,6 @@ pub struct State {
 impl State {
     pub fn new(tranlation_pair: (String, String), image_pair: (String, String)) -> Self {
         Self {
-            game_running: false,
             turn_number: 0,
             score: 0,
             final_score: Some(10),
@@ -31,26 +23,6 @@ impl State {
             image_pair,
             target_language: "en".to_string(),
         }
-    }
-
-    pub fn game_state(&self) -> GameState {
-        if !self.is_game_running() {
-            return GameState::NotRunning;
-        }
-
-        if self.has_game_ended() {
-            return GameState::Ended;
-        }
-
-        GameState::Running
-    }
-
-    pub fn start(&mut self) {
-        self.game_running = true;
-    }
-
-    pub fn is_game_running(&self) -> bool {
-        self.game_running
     }
 
     pub fn has_game_ended(&self) -> bool {

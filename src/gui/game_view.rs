@@ -45,27 +45,23 @@ impl GameView {
         Command::none()
     }
 
-    pub fn view(&mut self, context: &Option<general::Context>) -> Element<general::Message> {
-        if let Some(context) = context {
-            if self.end_turn_view.is_end_of_turn() {
-                return self.end_turn_view.view(
-                    &context.word_original,
-                    self.answer_view.option(context.current_word_index),
-                );
-            }
-
-            Column::new()
-                .spacing(10)
-                .padding(50)
-                .align_items(Align::Center)
-                .height(Length::FillPortion(1))
-                .width(Length::FillPortion(5))
-                .push(self.question_view.view(&context))
-                .push(self.helper_tips_view.view())
-                .push(self.answer_view.view())
-                .into()
-        } else {
-            Text::new("No context loaded").into()
+    pub fn view(&mut self, context: &general::Context) -> Element<general::Message> {
+        if self.end_turn_view.is_end_of_turn() {
+            return self.end_turn_view.view(
+                &context.word_original,
+                self.answer_view.option(context.current_word_index),
+            );
         }
+
+        Column::new()
+            .spacing(10)
+            .padding(50)
+            .align_items(Align::Center)
+            .height(Length::FillPortion(1))
+            .width(Length::FillPortion(5))
+            .push(self.question_view.view(&context))
+            .push(self.helper_tips_view.view())
+            .push(self.answer_view.view())
+            .into()
     }
 }
