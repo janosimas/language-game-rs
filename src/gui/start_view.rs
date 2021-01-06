@@ -73,14 +73,9 @@ impl StartView {
             .fold(
                 Column::new().width(Length::Fill),
                 |col, (index, language)| {
-                    col.push(Radio::new(
-                        index,
-                        &language.description,
-                        *option,
-                        |index| {
-                            general::Message::UserInput(general::UserInput::WordPackSelected(index))
-                        },
-                    ))
+                    col.push(Radio::new(index, &language.description, *option, |index| {
+                        general::Message::UserInput(general::UserInput::WordPackSelected(index))
+                    }))
                 },
             )
             .into()
