@@ -49,7 +49,7 @@ fn main() {
         .apply()
         .unwrap();
 
-    Game::run(Settings::default());
+    Game::run(Settings::default()).expect("Unable to start UI.");
 }
 
 enum GuiState {
