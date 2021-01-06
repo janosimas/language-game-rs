@@ -2,6 +2,8 @@ use crate::general;
 use iced::{button, Button, Command, Element, Length, Row, Text};
 use std::iter;
 
+use super::simple_widget_trait;
+
 pub struct AnswerView {
     button_states: Vec<button::State>,
     options: Vec<Option<String>>,
@@ -24,21 +26,10 @@ impl AnswerView {
     pub fn option(&self, index: usize) -> Option<&String> {
         self.options[index].as_ref()
     }
+}
 
-    pub fn update(&mut self, message: general::Message) -> Command<general::Message> {
-        match message {
-            general::Message::TranslationDownloaded(index, value) => {
-                self.options[index] = Some(value);
-            }
-            general::Message::EndTurn(_) => {
-                self.options = iter::repeat(None).take(5).collect();
-            }
-            _ => {}
-        }
-        Command::none()
-    }
-
-    pub fn view(&mut self) -> Element<general::Message> {
+impl simple_widget_trait::SimpleWidget for AnswerView {
+    fn view(&mut self) -> Element<general::Message> {
         self.button_states
             .iter_mut()
             .zip(&self.options)
@@ -56,5 +47,18 @@ impl AnswerView {
                 },
             )
             .into()
+    }
+
+    fn update(&mut self, message: general::Message) -> Command<general::Message> {
+        match message {
+            general::Message::TranslationDownloaded(index, value) => {
+                self.options[index] = Some(value);
+            }
+            general::Message::EndTurn(_) => {
+                self.options = iter::repeat(None).take(5).collect();
+            }
+            _ => {}
+        }
+        Command::none()
     }
 }

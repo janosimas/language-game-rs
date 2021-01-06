@@ -1,6 +1,6 @@
 use iced::{Align, Column, Command, Element, Length};
 
-use super::*;
+use super::{AnswerView, EndTurnView, HelperTipsView, QuestionView, SimpleWidget};
 use crate::general;
 
 pub struct GameView {

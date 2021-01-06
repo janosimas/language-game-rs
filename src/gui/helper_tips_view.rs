@@ -1,7 +1,9 @@
 use crate::general;
-use iced::{Column, Command, Element, Image, Length, Row, Align};
+use iced::{Align, Column, Command, Element, Image, Length, Row};
 use log::error;
 use std::fs;
+
+use super::simple_widget_trait::SimpleWidget;
 
 pub struct HelperTipsView {
     helper_tips: Vec<Option<String>>,
@@ -13,7 +15,10 @@ impl HelperTipsView {
             helper_tips: vec![None, None, None, None],
         }
     }
-    pub fn update(&mut self, message: general::Message) -> Command<general::Message> {
+}
+
+impl SimpleWidget for HelperTipsView {
+    fn update(&mut self, message: general::Message) -> Command<general::Message> {
         match message {
             general::Message::ImageDownloaded(index, value) => {
                 self.helper_tips[index] = Some(value);
@@ -51,7 +56,7 @@ impl HelperTipsView {
         Command::none()
     }
 
-    pub fn view(&mut self) -> Element<general::Message> {
+    fn view(&mut self) -> Element<general::Message> {
         self.helper_tips
             .chunks(2)
             .fold(

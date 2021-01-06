@@ -1,7 +1,7 @@
 #![warn(clippy::all)]
 
 use general::word_pack;
-use gui::{full_acknowledgments, EndView};
+use gui::{full_acknowledgments, EndView, SimpleWidget};
 use iced::{Application, Column, Command, Element, Length, Row, Settings, Text};
 use log::{error, info};
 use rand::prelude::SliceRandom;

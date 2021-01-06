@@ -5,6 +5,8 @@ use iced::{
 
 use crate::general;
 
+use super::simple_widget_trait::SimpleWidget;
+
 struct LanguageButton {
     language: String,
     state: button::State,
@@ -56,13 +58,6 @@ impl StartView {
         self.available_word_packs[self.selected_word_pack.unwrap()].clone()
     }
 
-    pub fn update(&mut self, message: general::Message) -> Command<general::Message> {
-        if let general::Message::UserInput(general::UserInput::WordPackSelected(index)) = message {
-            self.selected_word_pack = Some(index)
-        }
-        Command::none()
-    }
-
     fn word_packs_radio<'a>(
         available_word_packs: &[general::word_pack::WordPack],
         option: &Option<usize>,
@@ -104,8 +99,17 @@ impl StartView {
             )
             .into()
     }
+}
 
-    pub fn view(&mut self) -> Element<general::Message> {
+impl SimpleWidget for StartView {
+    fn update(&mut self, message: general::Message) -> Command<general::Message> {
+        if let general::Message::UserInput(general::UserInput::WordPackSelected(index)) = message {
+            self.selected_word_pack = Some(index)
+        }
+        Command::none()
+    }
+
+    fn view(&mut self) -> Element<general::Message> {
         Column::new()
             .spacing(10)
             .padding(50)
