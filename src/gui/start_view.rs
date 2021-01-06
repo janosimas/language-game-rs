@@ -3,8 +3,6 @@ use iced::{
     Length, Radio, Row, Scrollable, Text,
 };
 
-use rand::seq::SliceRandom;
-
 use crate::general;
 
 struct LanguageButton {

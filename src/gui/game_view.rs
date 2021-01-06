@@ -1,4 +1,4 @@
-use iced::{Align, Column, Command, Element, Length, Text};
+use iced::{Align, Column, Command, Element, Length};
 
 use super::*;
 use crate::general;
