@@ -55,7 +55,6 @@ fn main() {
 enum GuiState {
     START(gui::StartView),
     GAME(gui::GameView, word_pack::WordPack, general::Context),
-    SETTINGS,
     END(gui::EndView),
 }
 
@@ -255,7 +254,6 @@ impl Application for Game {
                 }
                 _ => Command::none(),
             },
-            GuiState::SETTINGS => Command::none(),
             GuiState::END(_gui) => Command::none(),
         }
     }
@@ -279,9 +277,6 @@ impl Application for Game {
                 )
                 .push(full_acknowledgments())
                 .into(),
-            GuiState::SETTINGS => {
-                todo!()
-            }
             GuiState::END(gui) => gui.view(),
         }
     }
