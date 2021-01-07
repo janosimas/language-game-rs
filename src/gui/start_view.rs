@@ -1,3 +1,4 @@
+use general::Options;
 use iced::{
     button, scrollable, Align, Button, Column, Command, Element, HorizontalAlignment, Image,
     Length, Radio, Row, Scrollable, Text,
@@ -31,6 +32,7 @@ pub struct StartView {
     known_languages: Vec<LanguageButton>,
     selected_word_pack: Option<usize>,
     scroll_state: scrollable::State,
+    setting_btn_state: button::State,
 }
 
 impl StartView {
@@ -49,6 +51,7 @@ impl StartView {
             known_languages,
             selected_word_pack: Some(0),
             scroll_state: scrollable::State::new(),
+            setting_btn_state: button::State::default(),
         }
     }
 
@@ -110,14 +113,23 @@ impl StartView {
             .spacing(10)
             .padding(50)
             .align_items(Align::Center)
-            .height(Length::FillPortion(1))
+            .height(Length::Fill)
             .push(
-                Scrollable::new(&mut self.scroll_state)
+                Row::new()
                     .height(Length::Fill)
-                    .push(StartView::word_packs_radio(
-                        &self.available_word_packs,
-                        &self.selected_word_pack,
-                    )),
+                    .push(
+                        Scrollable::new(&mut self.scroll_state)
+                            .height(Length::Fill)
+                            .width(Length::FillPortion(3))
+                            .push(StartView::word_packs_radio(
+                                &self.available_word_packs,
+                                &self.selected_word_pack,
+                            )),
+                    )
+                    .push(
+                        Button::new(&mut self.setting_btn_state, Text::new("Settings"))
+                            .on_press(general::Message::Options(general::Options::Start)),
+                    ),
             )
             .push(StartView::known_languages_buttons(
                 &mut self.known_languages,

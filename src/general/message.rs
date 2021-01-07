@@ -9,6 +9,12 @@ pub enum Message {
     TranslationDownloaded(usize, String),
     UserInput(UserInput),
     Error(Error),
+    Options(Options)
+}
+
+#[derive(Debug, Clone)]
+pub enum Options {
+    Start
 }
 
 #[derive(Debug, Clone)]

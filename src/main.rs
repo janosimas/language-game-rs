@@ -55,6 +55,7 @@ fn main() {
 enum GuiState {
     START(gui::StartView),
     GAME(gui::GameView, word_pack::WordPack, general::Context),
+    OPTIONS(gui::OptionsView),
     END(gui::EndView),
 }
 
@@ -207,6 +208,10 @@ impl Application for Game {
                             Command::none()
                         }
                     }
+                    general::Message::Options(general::Options::Start) => {
+                        self.gui_state = GuiState::OPTIONS(gui::OptionsView::new());
+                        Command::none()
+                    }
                     _ => Command::none(),
                 }
             }
@@ -254,6 +259,7 @@ impl Application for Game {
                 }
                 _ => Command::none(),
             },
+            GuiState::OPTIONS(_gui) => Command::none(),
             GuiState::END(_gui) => Command::none(),
         }
     }
@@ -277,6 +283,7 @@ impl Application for Game {
                 )
                 .push(full_acknowledgments())
                 .into(),
+            GuiState::OPTIONS(gui) => gui.view(),
             GuiState::END(gui) => gui.view(),
         }
     }
