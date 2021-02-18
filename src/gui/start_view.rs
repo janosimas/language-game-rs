@@ -1,4 +1,3 @@
-use general::Options;
 use iced::{
     button, scrollable, Align, Button, Column, Command, Element, HorizontalAlignment, Image,
     Length, Radio, Row, Scrollable, Text,
