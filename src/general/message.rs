@@ -1,3 +1,5 @@
+use super::GameOptions;
+
 #[derive(Debug, Clone)]
 pub enum Message {
     GameBegin(String),
@@ -9,12 +11,14 @@ pub enum Message {
     TranslationDownloaded(usize, String),
     UserInput(UserInput),
     Error(Error),
-    Options(Options)
+    Options(Options),
 }
 
 #[derive(Debug, Clone)]
 pub enum Options {
-    Start
+    Start,
+    AlterTargetScore(String),
+    SetOptions(GameOptions),
 }
 
 #[derive(Debug, Clone)]
@@ -33,5 +37,5 @@ pub enum UserInput {
 #[derive(Debug, Clone)]
 pub enum Answer {
     Correct,
-    Wrong
+    Wrong,
 }

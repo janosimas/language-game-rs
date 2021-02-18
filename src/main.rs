@@ -259,7 +259,10 @@ impl Application for Game {
                 }
                 _ => Command::none(),
             },
-            GuiState::OPTIONS(_gui) => Command::none(),
+            GuiState::OPTIONS(gui) => match message {
+                general::Message::Options(_) => gui.update(message),
+                _ => Command::none(),
+            },
             GuiState::END(_gui) => Command::none(),
         }
     }
